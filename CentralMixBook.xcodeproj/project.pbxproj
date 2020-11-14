@@ -7,19 +7,67 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		961C64B6255B3BCC007B1AAF /* Bundle-Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961C64B5255B3BCC007B1AAF /* Bundle-Decodable.swift */; };
+		961C64BB255D5E75007B1AAF /* IngredientDetailedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961C64BA255D5E75007B1AAF /* IngredientDetailedView.swift */; };
+		961C64C2255D6D1E007B1AAF /* Spec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961C64C1255D6D1E007B1AAF /* Spec.swift */; };
+		961C64C7255D711F007B1AAF /* SpecsTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961C64C6255D711F007B1AAF /* SpecsTabView.swift */; };
+		961C64CB255D7218007B1AAF /* SpecsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961C64CA255D7218007B1AAF /* SpecsListView.swift */; };
+		961C64CF255D7D2F007B1AAF /* AddSpecView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961C64CE255D7D2F007B1AAF /* AddSpecView.swift */; };
+		961C64D2255D7D5A007B1AAF /* SpecDetailedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961C64D1255D7D5A007B1AAF /* SpecDetailedView.swift */; };
+		961C64D5255D7D80007B1AAF /* AddIngredientToSpecView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961C64D4255D7D80007B1AAF /* AddIngredientToSpecView.swift */; };
+		961C64D9255D8154007B1AAF /* MultiLineTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961C64D8255D8154007B1AAF /* MultiLineTextField.swift */; };
+		9627B7C1256021A7001089FF /* UserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9627B7C0256021A7001089FF /* UserSettings.swift */; };
+		9627B7C5256029CA001089FF /* DefaultIngredients.json in Resources */ = {isa = PBXBuildFile; fileRef = 9627B7C4256029CA001089FF /* DefaultIngredients.json */; };
+		9627B7C9256029E4001089FF /* DefaultSpecs.json in Resources */ = {isa = PBXBuildFile; fileRef = 9627B7C8256029E4001089FF /* DefaultSpecs.json */; };
 		96AE471D255A2D060091CB23 /* CentralMixBookApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AE471C255A2D060091CB23 /* CentralMixBookApp.swift */; };
 		96AE471F255A2D060091CB23 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AE471E255A2D060091CB23 /* ContentView.swift */; };
 		96AE4721255A2D0F0091CB23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96AE4720255A2D0F0091CB23 /* Assets.xcassets */; };
 		96AE4724255A2D0F0091CB23 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96AE4723255A2D0F0091CB23 /* Preview Assets.xcassets */; };
+		96AE472D255A2D550091CB23 /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AE472C255A2D550091CB23 /* Ingredient.swift */; };
+		96AE4733255AC7730091CB23 /* AddIngredientToInventoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AE4732255AC7730091CB23 /* AddIngredientToInventoryView.swift */; };
+		96AE4736255AC7BB0091CB23 /* IngredientEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AE4735255AC7BB0091CB23 /* IngredientEditorView.swift */; };
+		96AE473A255B183D0091CB23 /* ShakeAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AE4739255B183D0091CB23 /* ShakeAnimation.swift */; };
+		96AE473E255B23610091CB23 /* InventoryTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AE473D255B23610091CB23 /* InventoryTabView.swift */; };
+		96AE4741255B2A0C0091CB23 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AE4740255B2A0B0091CB23 /* HeaderView.swift */; };
+		96AE4745255B2A540091CB23 /* InventoryRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AE4744255B2A540091CB23 /* InventoryRowView.swift */; };
+		96AE4748255B2AB50091CB23 /* InventoryTypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AE4747255B2AB50091CB23 /* InventoryTypeView.swift */; };
+		96AE474C255B2BED0091CB23 /* EditExistingIngredientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AE474B255B2BED0091CB23 /* EditExistingIngredientView.swift */; };
+		96E2DBEF255DF42C00C0914D /* SpecRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E2DBEE255DF42C00C0914D /* SpecRowView.swift */; };
+		96E2DBF4255EBE3900C0914D /* EditExisitingSpecView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E2DBF3255EBE3900C0914D /* EditExisitingSpecView.swift */; };
+		96E2DBF8255ECF0E00C0914D /* SpecEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E2DBF7255ECF0E00C0914D /* SpecEditorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		961C64B5255B3BCC007B1AAF /* Bundle-Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle-Decodable.swift"; sourceTree = "<group>"; };
+		961C64BA255D5E75007B1AAF /* IngredientDetailedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientDetailedView.swift; sourceTree = "<group>"; };
+		961C64C1255D6D1E007B1AAF /* Spec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spec.swift; sourceTree = "<group>"; };
+		961C64C6255D711F007B1AAF /* SpecsTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecsTabView.swift; sourceTree = "<group>"; };
+		961C64CA255D7218007B1AAF /* SpecsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecsListView.swift; sourceTree = "<group>"; };
+		961C64CE255D7D2F007B1AAF /* AddSpecView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSpecView.swift; sourceTree = "<group>"; };
+		961C64D1255D7D5A007B1AAF /* SpecDetailedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecDetailedView.swift; sourceTree = "<group>"; };
+		961C64D4255D7D80007B1AAF /* AddIngredientToSpecView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddIngredientToSpecView.swift; sourceTree = "<group>"; };
+		961C64D8255D8154007B1AAF /* MultiLineTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiLineTextField.swift; sourceTree = "<group>"; };
+		9627B7C0256021A7001089FF /* UserSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettings.swift; sourceTree = "<group>"; };
+		9627B7C4256029CA001089FF /* DefaultIngredients.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = DefaultIngredients.json; sourceTree = "<group>"; };
+		9627B7C8256029E4001089FF /* DefaultSpecs.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = DefaultSpecs.json; sourceTree = "<group>"; };
 		96AE4719255A2D050091CB23 /* CentralMixBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CentralMixBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96AE471C255A2D060091CB23 /* CentralMixBookApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CentralMixBookApp.swift; sourceTree = "<group>"; };
 		96AE471E255A2D060091CB23 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		96AE4720255A2D0F0091CB23 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		96AE4723255A2D0F0091CB23 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		96AE4725255A2D0F0091CB23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96AE472C255A2D550091CB23 /* Ingredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
+		96AE4732255AC7730091CB23 /* AddIngredientToInventoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddIngredientToInventoryView.swift; sourceTree = "<group>"; };
+		96AE4735255AC7BB0091CB23 /* IngredientEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientEditorView.swift; sourceTree = "<group>"; };
+		96AE4739255B183D0091CB23 /* ShakeAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeAnimation.swift; sourceTree = "<group>"; };
+		96AE473D255B23610091CB23 /* InventoryTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryTabView.swift; sourceTree = "<group>"; };
+		96AE4740255B2A0B0091CB23 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		96AE4744255B2A540091CB23 /* InventoryRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryRowView.swift; sourceTree = "<group>"; };
+		96AE4747255B2AB50091CB23 /* InventoryTypeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryTypeView.swift; sourceTree = "<group>"; };
+		96AE474B255B2BED0091CB23 /* EditExistingIngredientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditExistingIngredientView.swift; sourceTree = "<group>"; };
+		96E2DBEE255DF42C00C0914D /* SpecRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecRowView.swift; sourceTree = "<group>"; };
+		96E2DBF3255EBE3900C0914D /* EditExisitingSpecView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditExisitingSpecView.swift; sourceTree = "<group>"; };
+		96E2DBF7255ECF0E00C0914D /* SpecEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecEditorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +81,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		961C64C0255D6CCC007B1AAF /* InventoryViews */ = {
+			isa = PBXGroup;
+			children = (
+				96AE473D255B23610091CB23 /* InventoryTabView.swift */,
+				96AE4732255AC7730091CB23 /* AddIngredientToInventoryView.swift */,
+				96AE474B255B2BED0091CB23 /* EditExistingIngredientView.swift */,
+				96AE4735255AC7BB0091CB23 /* IngredientEditorView.swift */,
+				96AE4747255B2AB50091CB23 /* InventoryTypeView.swift */,
+				96AE4744255B2A540091CB23 /* InventoryRowView.swift */,
+				961C64BA255D5E75007B1AAF /* IngredientDetailedView.swift */,
+			);
+			path = InventoryViews;
+			sourceTree = "<group>";
+		};
+		961C64C9255D7129007B1AAF /* SpecsViews */ = {
+			isa = PBXGroup;
+			children = (
+				961C64C6255D711F007B1AAF /* SpecsTabView.swift */,
+				961C64CE255D7D2F007B1AAF /* AddSpecView.swift */,
+				96E2DBF3255EBE3900C0914D /* EditExisitingSpecView.swift */,
+				961C64D4255D7D80007B1AAF /* AddIngredientToSpecView.swift */,
+				96E2DBF7255ECF0E00C0914D /* SpecEditorView.swift */,
+				961C64CA255D7218007B1AAF /* SpecsListView.swift */,
+				96E2DBEE255DF42C00C0914D /* SpecRowView.swift */,
+				961C64D1255D7D5A007B1AAF /* SpecDetailedView.swift */,
+			);
+			path = SpecsViews;
+			sourceTree = "<group>";
+		};
 		96AE4710255A2D050091CB23 = {
 			isa = PBXGroup;
 			children = (
@@ -54,8 +131,19 @@
 			children = (
 				96AE471C255A2D060091CB23 /* CentralMixBookApp.swift */,
 				96AE471E255A2D060091CB23 /* ContentView.swift */,
+				96AE472C255A2D550091CB23 /* Ingredient.swift */,
+				961C64C1255D6D1E007B1AAF /* Spec.swift */,
+				9627B7C0256021A7001089FF /* UserSettings.swift */,
+				961C64B5255B3BCC007B1AAF /* Bundle-Decodable.swift */,
+				96AE4739255B183D0091CB23 /* ShakeAnimation.swift */,
+				961C64D8255D8154007B1AAF /* MultiLineTextField.swift */,
+				96AE4740255B2A0B0091CB23 /* HeaderView.swift */,
+				961C64C0255D6CCC007B1AAF /* InventoryViews */,
+				961C64C9255D7129007B1AAF /* SpecsViews */,
 				96AE4720255A2D0F0091CB23 /* Assets.xcassets */,
 				96AE4725255A2D0F0091CB23 /* Info.plist */,
+				9627B7C4256029CA001089FF /* DefaultIngredients.json */,
+				9627B7C8256029E4001089FF /* DefaultSpecs.json */,
 				96AE4722255A2D0F0091CB23 /* Preview Content */,
 			);
 			path = CentralMixBook;
@@ -126,6 +214,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9627B7C5256029CA001089FF /* DefaultIngredients.json in Resources */,
+				9627B7C9256029E4001089FF /* DefaultSpecs.json in Resources */,
 				96AE4724255A2D0F0091CB23 /* Preview Assets.xcassets in Resources */,
 				96AE4721255A2D0F0091CB23 /* Assets.xcassets in Resources */,
 			);
@@ -138,8 +228,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96AE4748255B2AB50091CB23 /* InventoryTypeView.swift in Sources */,
+				96AE474C255B2BED0091CB23 /* EditExistingIngredientView.swift in Sources */,
+				96E2DBF4255EBE3900C0914D /* EditExisitingSpecView.swift in Sources */,
+				961C64CF255D7D2F007B1AAF /* AddSpecView.swift in Sources */,
+				96AE473E255B23610091CB23 /* InventoryTabView.swift in Sources */,
+				96E2DBF8255ECF0E00C0914D /* SpecEditorView.swift in Sources */,
+				961C64CB255D7218007B1AAF /* SpecsListView.swift in Sources */,
+				961C64D2255D7D5A007B1AAF /* SpecDetailedView.swift in Sources */,
+				961C64B6255B3BCC007B1AAF /* Bundle-Decodable.swift in Sources */,
+				96AE4733255AC7730091CB23 /* AddIngredientToInventoryView.swift in Sources */,
 				96AE471F255A2D060091CB23 /* ContentView.swift in Sources */,
+				96AE4745255B2A540091CB23 /* InventoryRowView.swift in Sources */,
 				96AE471D255A2D060091CB23 /* CentralMixBookApp.swift in Sources */,
+				9627B7C1256021A7001089FF /* UserSettings.swift in Sources */,
+				961C64D9255D8154007B1AAF /* MultiLineTextField.swift in Sources */,
+				96AE4741255B2A0C0091CB23 /* HeaderView.swift in Sources */,
+				961C64D5255D7D80007B1AAF /* AddIngredientToSpecView.swift in Sources */,
+				96AE4736255AC7BB0091CB23 /* IngredientEditorView.swift in Sources */,
+				961C64BB255D5E75007B1AAF /* IngredientDetailedView.swift in Sources */,
+				96E2DBEF255DF42C00C0914D /* SpecRowView.swift in Sources */,
+				961C64C7255D711F007B1AAF /* SpecsTabView.swift in Sources */,
+				96AE473A255B183D0091CB23 /* ShakeAnimation.swift in Sources */,
+				961C64C2255D6D1E007B1AAF /* Spec.swift in Sources */,
+				96AE472D255A2D550091CB23 /* Ingredient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +381,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"CentralMixBook/Preview Content\"";
+				DEVELOPMENT_TEAM = 2Y4T6R8HCH;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = CentralMixBook/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -290,6 +403,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"CentralMixBook/Preview Content\"";
+				DEVELOPMENT_TEAM = 2Y4T6R8HCH;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = CentralMixBook/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;

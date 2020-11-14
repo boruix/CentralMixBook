@@ -1,0 +1,480 @@
+[
+    {
+        "name":"Absolut Elyx Vodka",
+        "type":"vodka",
+        "subtype":"",
+        "stock":false,
+        "price":"",
+        "supplier":"",
+        "notes":"None"
+    },
+    {
+        "name":"Agave Nectar",
+        "type":"sweetener",
+        "subtype":"",
+        "stock":false,
+        "price":"",
+        "supplier":"",
+        "notes":"None"
+    },
+    {
+        "name":"Angostura Bitters",
+        "type":"bitters",
+        "subtype":"",
+        "stock":false,
+        "price":"",
+        "supplier":"",
+        "notes":"None"
+    },
+    {
+        "name":"Appleton Estate Reserve Blend Rum",
+        "type":"base",
+        "subtype":"brandy",
+        "stock":false,
+        "price":"",
+        "supplier":"",
+        "notes":"None"
+    },
+    {
+        "name":"Aylesbury Duck Vodka",
+        "type":"vodka",
+        "subtype":"",
+        "stock":false,
+        "price":"",
+        "supplier":"",
+        "notes":"None"
+    },
+    {
+        "name":"Beefeater Gin",
+        "type":"base",
+        "subtype":"gin",
+        "stock":false,
+        "price":"",
+        "supplier":"",
+        "notes":"None"
+    },
+    {
+        "name":"Bigallet China-China Amer",
+        "type":"modifier",
+        "subtype":"amaro / aperitif / digestif",
+        "stock":false,
+        "price":"",
+        "supplier":"",
+        "notes":"None"
+    },
+    {
+        "name":"Bitter Truth Aromatic Bitters",
+        "type":"bitters",
+        "subtype":"",
+        "stock":false,
+        "price":"",
+        "supplier":"",
+        "notes":"None"
+    },
+    {
+        "name":"Buffalo Trace Bourbon",
+        "type":"base",
+        "subtype":"whiskey",
+        "stock":false,
+        "price":"",
+        "supplier":"",
+        "notes":"None"
+    },
+    {
+        "name":"Campari",
+        "type":"modifier",
+        "subtype":"amaro / aperitif / digestif",
+        "stock":false,
+        "price":"",
+        "supplier":"",
+        "notes":"None"
+    },
+    {
+        "name":"Campo de Encanto Grand and Noble Pisco",
+        "type":"base",
+        "subtype":"brandy",
+        "stock":false,
+        "price":"",
+        "supplier":"",
+        "notes":"None"
+    },
+    {
+        "name":"Caña Brava White Rum",
+        "type":"base",
+        "subtype":"rum",
+        "stock":false,
+        "price":"",
+        "supplier":"",
+        "notes":"None"
+    },
+    {
+        "name":"Carpano Antica Formula Vermouth",
+        "type":"modifier",
+        "subtype":"vermouth",
+        "stock":false,
+        "price":"",
+        "supplier":"",
+        "notes":"None"
+    },
+    {
+        "name":"Cocchi Vermouth di Torino",
+        "type":"modifier",
+        "subtype":"vermouth",
+        "stock":false,
+        "price":"",
+        "supplier":"",
+        "notes":"None"
+    },
+    {
+        "name":"Cointreau Liqueur",
+        "type":"modifier",
+        "subtype":"fortified wine",
+        "stock":false,
+        "price":"",
+        "supplier":"",
+        "notes":"None"
+    },
+    {
+        "name":"Death & Co House Orange Bitters",
+        "type":"bitters",
+        "subtype":"",
+        "stock":false,
+        "price":"",
+        "supplier":"",
+        "notes":"100 g Fee Brothers West Indian Orange Bitters\n100 g Angostura Orange Bitters\n100 g Regans' Orange Bitters\n\n1. Place all the ingredients in a bowl\n2. Stir to combine\n3. Transfer to a storage container\n4. Store at room temperature until ready to use, up to 1 year"
+    },
+    {
+        "name":"Del Maguey San Luis Del Rio Mezcal",
+        "type":"base",
+        "subtype":"mezcal",
+        "stock":false,
+        "price":"",
+        "supplier":"",
+        "notes":"None"
+    },
+    {
+        "name":"Demerara Gum Syrup",
+        "type":"sweetener",
+        "subtype":"",
+        "stock":false,
+        "price":"",
+        "supplier":"",
+        "notes":"None"
+    },
+    {
+        "name":"Dolin Blanc Vermouth",
+        "type":"modifier",
+        "subtype":"vermouth",
+        "stock":false,
+        "price":"",
+        "supplier":"",
+        "notes":"None"
+    },
+    {
+        "name":"Dolin Dry Vermouth",
+        "type":"modifier",
+        "subtype":"vermouth",
+        "stock":false,
+        "price":"",
+        "supplier":"",
+        "notes":"None"
+    },
+    {
+        "name":"Egg White",
+        "type":"other",
+        "subtype":"",
+        "stock":false,
+        "price":"",
+        "supplier":"",
+        "notes":"None"
+    },
+    {
+        "name":"El Tesoro Reposado Tequila",
+        "type":"base",
+        "subtype":"tequila",
+        "stock":false,
+        "price":"",
+        "supplier":"",
+        "notes":"None"
+    },
+    {
+        "name":"Elijah Craig Small Batch Bourbon",
+        "type":"base",
+        "subtype":"whiskey",
+        "stock":false,
+        "price":"",
+        "supplier":"",
+        "notes":"None"
+    },
+    {
+        "name":"Flor de Caña 4-Yr White Rum",
+        "type":"base",
+        "subtype":"rum",
+        "stock":false,
+        "price":"",
+        "supplier":"",
+        "notes":"None"
+    },
+    {
+        "name":"Grapefruit Juice",
+        "type":"juice",
+        "subtype":"",
+        "stock":false,
+        "price":"",
+        "supplier":"",
+        "notes":"None"
+    },
+    {
+        "name":"Hayman's Old Tom Gin",
+        "type":"base",
+        "subtype":"gin",
+        "stock":false,
+        "price":"",
+        "supplier":"",
+        "notes":"None"
+    },
+    {
+        "name":"Honey Syrup",
+        "type":"sweetener",
+        "subtype":"",
+        "stock":false,
+        "price":"",
+        "supplier":"",
+        "notes":"Yield: 16 oz\n\n540 g acacia / wildflower honey\n100 g warm filtered water\n\n1. Combine the honey and water in a bowl\n2. Whisk until thoroughly blended\n3. Transfer to a storage container\n4. Refrigerate until ready to use, up to 2 weeks"
+    },
+    {
+        "name":"Kosher Salt",
+        "type":"other",
+        "subtype":"",
+        "stock":false,
+        "price":"",
+        "supplier":"",
+        "notes":"None"
+    },
+    {
+        "name":"La Favorite Rhum Agricole Blanc",
+        "type":"base",
+        "subtype":"rum",
+        "stock":false,
+        "price":"",
+        "supplier":"",
+        "notes":"None"
+    },
+    {
+        "name":"Lemon Juice",
+        "type":"juice",
+        "subtype":"",
+        "stock":false,
+        "price":"",
+        "supplier":"",
+        "notes":"None"
+    },
+    {
+        "name":"Lemon Wedge",
+        "type":"other",
+        "subtype":"",
+        "stock":false,
+        "price":"",
+        "supplier":"",
+        "notes":"None"
+    },
+    {
+        "name":"Lillet Blanc",
+        "type":"modifier",
+        "subtype":"amaro / aperitif / digestif",
+        "stock":false,
+        "price":"",
+        "supplier":"",
+        "notes":"None"
+    },
+    {
+        "name":"Lime Juice",
+        "type":"juice",
+        "subtype":"",
+        "stock":false,
+        "price":"",
+        "supplier":"",
+        "notes":"None"
+    },
+    {
+        "name":"Lime Wedge",
+        "type":"other",
+        "subtype":"",
+        "stock":false,
+        "price":"",
+        "supplier":"",
+        "notes":"None"
+    },
+    {
+        "name":"Lustau Los Arcos Amontillado Sherry",
+        "type":"modifier",
+        "subtype":"fortified wine",
+        "subtype2": "sherry",
+        "stock":false,
+        "price":"19",
+        "supplier":"Astor Wines & Spirits",
+        "notes":"None"
+    },
+    {
+        "name":"Luxardo Maraschino Liqueur",
+        "type":"modifier",
+        "subtype":"fortified wine",
+        "stock":false,
+        "price":"",
+        "supplier":"",
+        "notes":"None"
+    },
+    {
+        "name":"Maraska Maraschino Liqueur",
+        "type":"modifier",
+        "subtype":"fortified wine",
+        "stock":false,
+        "price":"",
+        "supplier":"",
+        "notes":"None"
+    },
+    {
+        "name":"Mint Bouquet",
+        "type":"other",
+        "subtype":"",
+        "stock":false,
+        "price":"",
+        "supplier":"",
+        "notes":"None"
+    },
+    {
+        "name":"Mint Leaf",
+        "type":"other",
+        "subtype":"",
+        "stock":false,
+        "price":"",
+        "supplier":"",
+        "notes":"None"
+    },
+    {
+        "name":"Paul Beau VS Cognac",
+        "type":"base",
+        "subtype":"brandy",
+        "stock":false,
+        "price":"",
+        "supplier":"",
+        "notes":"None"
+    },
+    {
+        "name":"Peychaud's Bitters",
+        "type":"bitters",
+        "subtype":"",
+        "stock":false,
+        "price":"",
+        "supplier":"",
+        "notes":"None"
+    },
+    {
+        "name":"Pierre Ferrand 1840 Cognac",
+        "type":"base",
+        "subtype":"brandy",
+        "stock":false,
+        "price":"",
+        "supplier":"",
+        "notes":"None"
+    },
+    {
+        "name":"Pierre Ferrand Ambre Cognac",
+        "type":"base",
+        "subtype":"brandy",
+        "stock":false,
+        "price":"",
+        "supplier":"",
+        "notes":"None"
+    },
+    {
+        "name":"Pierre Ferrand Dry Curaçao",
+        "type":"base",
+        "subtype":"brandy",
+        "stock":false,
+        "price":"",
+        "supplier":"",
+        "notes":"None"
+    },
+    {
+        "name":"Plymouth Gin",
+        "type":"base",
+        "subtype":"gin",
+        "stock":false,
+        "price":"",
+        "supplier":"",
+        "notes":"None"
+    },
+    {
+        "name":"Rittenhouse Rye 100 Proof",
+        "type":"base",
+        "subtype":"whiskey",
+        "stock":false,
+        "price":"",
+        "supplier":"",
+        "notes":"None"
+    },
+    {
+        "name":"Seltzer",
+        "type":"topper",
+        "subtype":"",
+        "stock":false,
+        "price":"",
+        "supplier":"",
+        "notes":"None"
+    },
+    {
+        "name":"Siembra Azul Blanco Tequila",
+        "type":"base",
+        "subtype":"tequila",
+        "stock":false,
+        "price":"",
+        "supplier":"",
+        "notes":"None"
+    },
+    {
+        "name":"Siembra Azul Reposado Tequila",
+        "type":"base",
+        "subtype":"tequila",
+        "stock":false,
+        "price":"",
+        "supplier":"",
+        "notes":"None"
+    },
+    {
+        "name":"Simple Syrup",
+        "type":"sweetener",
+        "subtype":"",
+        "stock":false,
+        "price":"",
+        "supplier":"",
+        "notes":"Yield: 16 oz\n\n250 g white sugar\n250 g filtered water\n\n1. Put the sugar and water in a bowl\n2. Whisk until the suger is dissolved\n3. Transfer to a storage container\n4. Refrigerate until ready to use, up to 2 weeks"
+    },
+    {
+        "name":"Tanqueray Gin",
+        "type":"base",
+        "subtype":"gin",
+        "stock":false,
+        "price":"",
+        "supplier":"",
+        "notes":"None"
+    },
+    {
+        "name":"Vieux Pontarlier Absinthe",
+        "type":"base",
+        "subtype":"other",
+        "stock":false,
+        "price":"",
+        "supplier":"",
+        "notes":"None"
+    },
+    {
+        "name":"Water",
+        "type":"topper",
+        "subtype":"",
+        "stock":true,
+        "price":"",
+        "supplier":"",
+        "notes":"None"
+    }
+]

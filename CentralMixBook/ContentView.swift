@@ -2,15 +2,32 @@
 //  ContentView.swift
 //  CentralMixBook
 //
-//  Created by Borui Xu on 11/9/20.
 //
 
 import SwiftUI
 
 struct ContentView: View {
+    var inventory = Inventory()
+    var dex = Dex()
+    var userSettings = UserSettings()
+
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        TabView {
+            SpecsTabView()
+                .tabItem {
+                    Image(systemName: "book")
+                    Text("Specs")
+                }
+            
+            InventoryTabView()
+                .tabItem {
+                    Image(systemName: "list.bullet")
+                    Text("Inventory")
+                }
+        }
+        .environmentObject(inventory)
+        .environmentObject(dex)
+        .environmentObject(userSettings)
     }
 }
 
