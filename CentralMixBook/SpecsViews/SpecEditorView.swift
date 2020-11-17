@@ -19,10 +19,18 @@ struct SpecEditorView: View {
         Group {
             Section(header: Text("Drink Information").fontWeight(.bold)) {
                 TextField("Name of drink", text: $spec.name)
-                TextField("Bar of origin", text: $spec.barName)
-                TextField("Location of bar", text: $spec.barLocation)
                 
                 HStack {
+                    Image(systemName: "house").frame(width: 30)
+                    TextField("Bar of origin", text: $spec.barName)
+                }
+                HStack {
+                    Image(systemName: "mappin.and.ellipse").frame(width: 30)
+                    TextField("Location of bar", text: $spec.barLocation)
+                }
+                
+                HStack {
+                    Image(systemName: "tag").frame(width: 30)
                     Text("Cocktail type")
                     Spacer()
                     
@@ -49,8 +57,10 @@ struct SpecEditorView: View {
                             .keyboardType(.numbersAndPunctuation)
                             .onChange(of: spec.ingredients[i].amount) { newAmount in
                                 spec.ingredients[i].amount = newAmount
-                                    .replacingOccurrences(of: "1/4", with: "¼")
                                     .replacingOccurrences(of: "1/2", with: "½")
+                                    .replacingOccurrences(of: "1/3", with: "⅓")
+                                    .replacingOccurrences(of: "2/3", with: "⅔")
+                                    .replacingOccurrences(of: "1/4", with: "¼")
                                     .replacingOccurrences(of: "3/4", with: "¾")
                             }
                         
@@ -100,6 +110,14 @@ struct SpecEditorView: View {
                 
                 // garnish
                 TextField("Garnish", text: $spec.garnish)
+                    .onChange(of: spec.garnish) { garnish in
+                        spec.garnish = garnish
+                            .replacingOccurrences(of: "1/2", with: "½")
+                            .replacingOccurrences(of: "1/3", with: "⅓")
+                            .replacingOccurrences(of: "2/3", with: "⅔")
+                            .replacingOccurrences(of: "1/4", with: "¼")
+                            .replacingOccurrences(of: "3/4", with: "¾")
+                    }
                 
                 // glassware
                 HStack {
@@ -144,6 +162,14 @@ struct SpecEditorView: View {
                             .padding(.top, 9)
                         
                         MultiLineTextField("New direction", text: $spec.directions[i])
+                            .onChange(of: spec.directions[i]) { direction in
+                            spec.directions[i] = direction
+                                .replacingOccurrences(of: "1/2", with: "½")
+                                .replacingOccurrences(of: "1/3", with: "⅓")
+                                .replacingOccurrences(of: "2/3", with: "⅔")
+                                .replacingOccurrences(of: "1/4", with: "¼")
+                                .replacingOccurrences(of: "3/4", with: "¾")
+                        }
                     }
                     .modifier(ShakeAnimation(shakes: directionsInvalidAttempts[i]))
                     .animation(Animation.linear)

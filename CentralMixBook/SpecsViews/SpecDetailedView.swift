@@ -20,32 +20,22 @@ struct SpecDetailedView: View {
         Form {
             Section(header: Text("Drink Information").fontWeight(.bold)) {
                 // name
-                Text(spec.name)
-                    .font(.title3)
-                    .fontWeight(.bold)
+                Text(spec.name).fontWeight(.heavy)
             
                 // bar name
                 if !spec.barName.isEmpty {
-                    HStack {
-                        Image(systemName: "house").frame(width: 30)
-                        Text(spec.barName)
-                    }
+                    Label(spec.barName, systemImage: "house")
                 }
                 
                 // bar city
                 if !spec.barLocation.isEmpty {
-                    HStack {
-                        Image(systemName: "mappin.and.ellipse").frame(width: 30)
-                        Text(spec.barLocation)
-                    }
+                    Label(spec.barLocation, systemImage: "mappin.and.ellipse")
                 }
                 
                 // cocktail type
-                HStack {
-                    Image(systemName: "tag").frame(width: 30)
-                    Text(spec.type.capitalized)
-                }
+                Label(spec.type.capitalized, systemImage: "tag")
             }
+            .foregroundColor(.primary)
             
             // list of ingredients
             Section(header: Text("Ingredients").fontWeight(.bold)) {
@@ -122,12 +112,8 @@ struct SpecDetailedView: View {
             // list of directions
             Section(header: Text("Directions").fontWeight(.bold)) {
                 ForEach(spec.directions.indices, id: \.self) { i in
-                    HStack(alignment: .top) {
-                        Image(systemName: "\(i + 1).circle")
-                            .padding(.top, 2)
-                        
-                        Text(spec.directions[i])
-                    }
+                    Label(spec.directions[i], systemImage: "\(i + 1).circle")
+                        .foregroundColor(.primary)
                 }
             }
             

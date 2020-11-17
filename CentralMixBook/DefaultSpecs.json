@@ -1,71 +1,412 @@
 [
     {
-        "name":"Bamboo",
-        "barName":"Death & Co",
-        "barLocation":"New York",
-        "type":"martini",
-        "ingredients":[
-            {
-                "amount":"1½ oz",
-                "ingredient":"Lustau Los Arcos Amontillado Sherry"
-            },
-            {
-                "amount":"¾ oz",
-                "ingredient":"Dolin Blanc Vermouth"
-            },
-            {
-                "amount":"¾ oz",
-                "ingredient":"Dolin Dry Vermouth"
-            },
-            {
-                "amount":"2 dashes",
-                "ingredient":"Death & Co House Orange Bitters"
-            }
-        ],
-        "garnish":"1 lemon twist",
-        "glassware":"Nick & Nora",
-        "ice":"None",
-        "directions":[
-            "Stir all the ingredients over ice",
-            "Strain into chilled glass",
-            "Express the lemon twist over the drink, then place it into the drink"
-        ],
-        "editorsNotes":"",
-        "favorite":false
-    },
-    {
-        "name":"Between the Sheets",
+        "name":"18th Century",
         "barName":"Death & Co",
         "barLocation":"New York",
         "type":"sidecar",
         "ingredients":[
             {
-                "amount":"1 oz",
-                "ingredient":"Paul Beau VS Cognac"
-            },
-            {
-                "amount":"1 oz",
-                "ingredient":"Appleton Estate Reserve Blend Rum"
+                "amount":"1½ oz",
+                "ingredient":"Van Oosten Batavia Arrack"
             },
             {
                 "amount":"¾ oz",
-                "ingredient":"Pierre Ferrand Dry Curaçao"
+                "ingredient":"Marie Brizard Crème de Cacao Blanc"
             },
             {
                 "amount":"¾ oz",
-                "ingredient":"Lemon Juice"
+                "ingredient":"Carpano Antica Formula Vermouth"
             },
             {
-                "amount":"1 tsp",
-                "ingredient":"Demerara Gum Syrup"
+                "amount":"¾ oz",
+                "ingredient":"Lime Juice"
             }
         ],
         "garnish":"",
         "glassware":"coupe",
-        "ice":"none",
+        "ice":"None",
         "directions":[
             "Shake all the ingredients with ice",
-            "Strain into chilled glass"
+            "Strain into a coupe"
+        ],
+        "editorsNotes":"",
+        "favorite":false
+    },
+    {
+        "name":"19th Century",
+        "barName":"Death & Co",
+        "barLocation":"New York",
+        "type":"sidecar",
+        "ingredients":[
+            {
+                "amount":"1½ oz",
+                "ingredient":"Woodford Reserve Bourbon"
+            },
+            {
+                "amount":"¾ oz",
+                "ingredient":"Lillet Rouge"
+            },
+            {
+                "amount":"¾ oz",
+                "ingredient":"Marie Brizard Crème de Cacao Blanc"
+            },
+
+            {
+                "amount":"¾ oz",
+                "ingredient":"Lemon Juice"
+            }
+        ],
+        "garnish":"",
+        "glassware":"coupe",
+        "ice":"None",
+        "directions":[
+            "Shake all the ingredients with ice",
+            "Strain into a coupe"
+        ],
+        "editorsNotes":"",
+        "favorite":false
+    },
+    {
+        "name":"20th Century",
+        "barName":"Death & Co",
+        "barLocation":"New York",
+        "type":"sidecar",
+        "ingredients":[
+            {
+                "amount":"1½ oz",
+                "ingredient":"Beefeater London Dry Gin"
+            },
+            {
+                "amount":"¾ oz",
+                "ingredient":"Marie Brizard Crème de Cacao Blanc"
+            },
+            {
+                "amount":"¾ oz",
+                "ingredient":"Cocchi Americano Aperitif"
+            },
+            {
+                "amount":"¾ oz",
+                "ingredient":"Lemon Juice"
+            }
+        ],
+        "garnish":"",
+        "glassware":"coupe",
+        "ice":"None",
+        "directions":[
+            "Shake all the ingredients with ice",
+            "Double strain into a coupe"
+        ],
+        "editorsNotes":"",
+        "favorite":false
+    },
+    {
+        "name":"21st Century",
+        "barName":"Pegu Club",
+        "barLocation":"New York",
+        "type":"sidecar",
+        "ingredients":[
+            {
+                "amount":"",
+                "ingredient":"Pernod Absinthe"
+            },
+            {
+                "amount":"2 oz",
+                "ingredient":"Siete Laguas Blanco Tequila"
+            },
+            {
+                "amount":"¾ oz",
+                "ingredient":"Marie Brizard Crème de Cacao Blanc"
+            },
+            {
+                "amount":"¾ oz",
+                "ingredient":"Lemon Juice"
+            }
+        ],
+        "garnish":"",
+        "glassware":"coupe",
+        "ice":"None",
+        "directions":[
+            "Shake with ice",
+            "Strain into a chilled, Pernod-rinsed coupe"
+        ],
+        "editorsNotes":"",
+        "favorite":false
+    },
+    {
+        "name":"Absinthe Cocktail",
+        "barName":"Dead Rabbit",
+        "barLocation":"New York",
+        "type":"sidecar",
+        "ingredients":[
+            {
+                "amount":"1½ oz",
+                "ingredient":"Vieux Pontarlier Absinthe"
+            },
+            {
+                "amount":"½ oz",
+                "ingredient":"Varnelli l'Anice Secco Speciale"
+            },
+            {
+                "amount":"¼ oz",
+                "ingredient":"Luxardo Maraschino Liqueur"
+            },
+            {
+                "amount":"¾ oz",
+                "ingredient":"Water"
+            },
+            {
+                "amount":"2 dashes",
+                "ingredient":"Peychaud's Bitters"
+            },
+            {
+                "amount":"2 dashes",
+                "ingredient":"Angostura Bitters"
+            }
+        ],
+        "garnish":"1 lemon peel",
+        "glassware":"coupe",
+        "ice":"None",
+        "directions":[
+            "Add all the ingredients to a mixing glass",
+            "Fill with ice",
+            "Stir until chilled",
+            "Strain into coupe",
+            "Twist the lemon peel over the glass to express the oils",
+            "Discard the peel"
+        ],
+        "editorsNotes":"",
+        "favorite":false
+    },
+    {
+        "name":"Americano",
+        "barName":"Death & Co",
+        "barLocation":"New York",
+        "type":"whiskey highball",
+        "ingredients":[
+            {
+                "amount":"1 oz",
+                "ingredient":"Campari"
+            },
+            {
+                "amount":"1 oz",
+                "ingredient":"Carpano Antica Formula Vermouth"
+            },
+            {
+                "amount":"4 oz",
+                "ingredient":"Seltzer"
+            }
+        ],
+        "garnish":"1 orange half-wheel, 1 small bottle of cold seltzer",
+        "glassware":"highball",
+        "ice":"1¼-in cubes",
+        "directions":[
+            "Pour the Campari and vermouth into glass",
+            "Add 3 1¼-in ice cubes",
+            "Stir for 3 seconds",
+            "Add the cold seltzer",
+            "Stir once",
+            "Garnish with the orange half-wheel",
+            "Serve with a bottle of seltzer"
+        ],
+        "editorsNotes":"",
+        "favorite":false
+    },
+    {
+        "name":"Argyle",
+        "barName":"NoMad Bar",
+        "barLocation":"New York",
+        "type":"martini",
+        "ingredients":[
+            {
+                "amount":"1½ oz",
+                "ingredient":"Linie Aquavit"
+            },
+            {
+                "amount":"¾ oz",
+                "ingredient":"Noilly Prat Extra-Dry Vermouth"
+            },
+            {
+                "amount":"½ oz",
+                "ingredient":"Amaro Meletti"
+            },
+            {
+                "amount":"1 tsp",
+                "ingredient":"Luxardo Maraschino Liqueur"
+            },
+            {
+                "amount":"1 dash",
+                "ingredient":"Angostura Bitters"
+            }
+        ],
+        "garnish":"1 lemon twist",
+        "glassware":"coupe",
+        "ice":"None",
+        "directions":[
+            "Combine all the ingredients in a mixing glass",
+            "Fill the mixing glass with ice and stir",
+            "Strain the drink into a coupe",
+            "Express the oils of the lemon twist over the glass",
+            "Rub the twist on the rim of the glass and drop it into the glass, leaving the flesh side up"
+        ],
+        "editorsNotes":"",
+        "favorite":false
+    },
+    {
+        "name":"Augie March",
+        "barName":"Death & Co",
+        "barLocation":"New York",
+        "type":"martini",
+        "ingredients":[
+            {
+                "amount":"2 oz",
+                "ingredient":"El Tesoro Reposado Tequila"
+            },
+            {
+                "amount":"¾ oz",
+                "ingredient":"Carpano Antica Formula Vermouth"
+            },
+            {
+                "amount":"½ oz",
+                "ingredient":"Cynar Ricetta Originale"
+            }
+        ],
+        "garnish":"1 brandied cherry",
+        "glassware":"coupe",
+        "ice":"None",
+        "directions":[
+            "Stir all the ingredients over ice",
+            "Strain into a coupe",
+            "Garnish with the cherry"
+        ],
+        "editorsNotes":"",
+        "favorite":false
+    },
+    {
+        "name":"Barnaby Jones",
+        "barName":"Death & Co",
+        "barLocation":"New York",
+        "type":"flip",
+        "ingredients":[
+            {
+                "amount":"1½ oz",
+                "ingredient":"Famous Grouse Blended Scotch"
+            },
+            {
+                "amount":"½ oz",
+                "ingredient":"Cynar Ricetta Originale"
+            },
+            {
+                "amount":"½ oz",
+                "ingredient":"Maple Syrup"
+            },
+            {
+                "amount":"½ oz",
+                "ingredient":"Heavy Cream"
+            },
+            {
+                "amount":"1 whole",
+                "ingredient":"Egg"
+            },
+            {
+                "amount":"12",
+                "ingredient":"Coffee Bean"
+            }
+        ],
+        "garnish":"Cinnamon",
+        "glassware":"coupe",
+        "ice":"None",
+        "directions":[
+            "Dry-shake all the ingredients",
+            "Shake again with ice",
+            "Double strain into a chilled coupe",
+            "Garnish with a few grates of cinnamon"
+        ],
+        "editorsNotes":"",
+        "favorite":false
+    },
+    {
+        "name":"Billingsley Punch",
+        "barName":"Death & Co",
+        "barLocation":"New York",
+        "type":"sidecar",
+        "ingredients":[
+            {
+                "amount":"12",
+                "ingredient":"White Sugar Cube"
+            },
+            {
+                "amount":"8 oz",
+                "ingredient":"Club Soda"
+            },
+            {
+                "amount":"6 oz",
+                "ingredient":"Tanqueray No. Ten Gin"
+            },
+            {
+                "amount":"2 oz",
+                "ingredient":"Aperol Aperitivo Liqueur"
+            },
+            {
+                "amount":"2 oz",
+                "ingredient":"Grapefruit Juice"
+            },
+            {
+                "amount":"2 oz",
+                "ingredient":"Lemon Juice"
+            },
+            {
+                "amount":"4 dashes",
+                "ingredient":"Death & Co Peychaud's Bitters"
+            }
+        ],
+        "garnish":"6 grapefruit crescents",
+        "glassware":"punch bowl",
+        "ice":"1¼-in cubes",
+        "directions":[
+            "In a pitcher, muddle the sugar cubes with 4 oz of the Club Soda until the sugar is fully broken up",
+            "Add the remaining ingredients (except the remaining Club Soda)",
+            "Fill the pitcher ¾ full with 1¼-in ice cubes",
+            "Stir until cold",
+            "Strain into a punch bowl over 1 large block of ice",
+            "Top with the remaining 4 oz of Club Soda",
+            "Garnish with the grapefruit crescents",
+            "Serve with a ladle and punch glasses"
+        ],
+        "editorsNotes":"",
+        "favorite":false
+    },
+    {
+        "name":"Bohemia",
+        "barName":"NoMad Bar",
+        "barLocation":"New York",
+        "type":"martini",
+        "ingredients":[
+            {
+                "amount":"1½ oz",
+                "ingredient":"Bols Genever Gin"
+            },
+            {
+                "amount":"1 oz",
+                "ingredient":"Dolin Dry Vermouth"
+            },
+            {
+                "amount":"½ oz",
+                "ingredient":"Krogstad Aquavit"
+            },
+            {
+                "amount":"¼ oz",
+                "ingredient":"Luxardo Maraschino Liqueur"
+            }
+        ],
+        "garnish":"1 lemon twist",
+        "glassware":"coupe",
+        "ice":"None",
+        "directions":[
+            "Combine all the ingredients in a mixing glass",
+            "Fill the mixing glass with ice and stir",
+            "Strain the drink into a coupe",
+            "Express the oils of the lemon twist over the glass",
+            "Rub the twist on the rim of the glass and drop it into the glass, leaving the flesh side up"
         ],
         "editorsNotes":"",
         "favorite":false
@@ -94,8 +435,38 @@
         "ice":"None",
         "directions":[
             "Stir all the ingredients over ice",
-            "Strain into chilled glass",
+            "Strain into a chilled coupe",
             "Garnish with the cherry"
+        ],
+        "editorsNotes":"",
+        "favorite":false
+    },
+    {
+        "name":"Brandy Alexander",
+        "barName":"Death & Co",
+        "barLocation":"New York",
+        "type":"flip",
+        "ingredients":[
+            {
+                "amount":"1½ oz",
+                "ingredient":"Pierre Ferrand Ambre Cognac"
+            },
+            {
+                "amount":"1 oz",
+                "ingredient":"Giffard Crème de Cacao Blanc"
+            },
+            {
+                "amount":"1 oz",
+                "ingredient":"Heavy Cream"
+            }
+        ],
+        "garnish":"Nutmeg",
+        "glassware":"coupe",
+        "ice":"None",
+        "directions":[
+            "Shake all the ingredients with ice",
+            "Double strain into a chilled coupe",
+            "Garnish with a few grates of nutmeg"
         ],
         "editorsNotes":"",
         "favorite":false
@@ -128,33 +499,205 @@
         "ice":"None",
         "directions":[
             "Stir all the ingredients over ice",
-            "Strain into chilled glass",
+            "Strain into a chilled Nick & Nora glass",
             "Garnish with the cherry"
         ],
         "editorsNotes":"",
         "favorite":false
     },
     {
-        "name":"Brown Derby",
-        "barName":"Death & Co",
+        "name":"Brown Bomber",
+        "barName":"PDT",
         "barLocation":"New York",
-        "type":"daiquiri",
+        "type":"martini",
         "ingredients":[
             {
                 "amount":"2 oz",
-                "ingredient":"Elijah Craig Small Batch Bourbon"
+                "ingredient":"George Dickel #12 Whiskey"
             },
             {
-                "amount":"1 oz",
-                "ingredient":"Grapefruit Juice"
-            },
-            {
-                "amount":"1 tsp",
-                "ingredient":"Lemon Juice"
+                "amount":"¾ oz",
+                "ingredient":"Lillet Blanc"
             },
             {
                 "amount":"½ oz",
-                "ingredient":"Honey Syrup"
+                "ingredient":"Suze Aperitif"
+            }
+        ],
+        "garnish":"1 lemon twist",
+        "glassware":"coupe",
+        "ice":"",
+        "directions":[
+            "Stir with ice",
+            "Strain into a chilled coupe",
+            "Garnish with a lemon twist"
+        ],
+        "editorsNotes":"",
+        "favorite":false
+    },
+    {
+        "name":"Brown Sugar",
+        "barName":"NoMad Bar",
+        "barLocation":"New York",
+        "type":"martini",
+        "ingredients":[
+            {
+                "amount":"1 oz",
+                "ingredient":"Diplomático Reserva Exclusiva Rum"
+            },
+            {
+                "amount":"¾ oz",
+                "ingredient":"Rittenhouse Rye 100 Proof"
+            },
+            {
+                "amount":"¾ oz",
+                "ingredient":"Cynar Ricetta Originale"
+            },
+            {
+                "amount":"¾ oz",
+                "ingredient":"Lustau East India Solera Reserva Cream Sherry"
+            },
+            {
+                "amount":"2 dashes",
+                "ingredient":"Bittermens Xocolatl Mole Bitters"
+            }
+        ],
+        "garnish":"",
+        "glassware":"coupe",
+        "ice":"None",
+        "directions":[
+            "Combine all the ingredients in a mixing glass",
+            "Fill the mixing glass with ice and stir",
+            "Strain the drink into a coupe"
+        ],
+        "editorsNotes":"",
+        "favorite":false
+    },
+    {
+        "name":"Calvados and Tonic",
+        "barName":"Death & Co",
+        "barLocation":"New York",
+        "type":"whiskey highball",
+        "ingredients":[
+            {
+                "amount":"2 oz",
+                "ingredient":"Dom. Montreuil Réserve Calvados"
+            },
+            {
+                "amount":"4 oz",
+                "ingredient":"Fever-Tree Tonic Water"
+            }
+        ],
+        "garnish":"",
+        "glassware":"highball",
+        "ice":"1¼-in cubes",
+        "directions":[
+            "Pour the Calvados into a Highball glass",
+            "Add 3 1¼-in ice cubes",
+            "Stir for 3 seconds",
+            "Add the tonic",
+            "Stir once"
+        ],
+        "editorsNotes":"",
+        "favorite":false
+    },
+    {
+        "name":"Camp Council",
+        "barName":"Death & Co",
+        "barLocation":"New York",
+        "type":"sidecar",
+        "ingredients":[
+            {
+                "amount":"1½ oz",
+                "ingredient":"Siete Laguas Reposado Tequila"
+            },
+            {
+                "amount":"½ oz",
+                "ingredient":"Zirbenz Stone Pine Liqueur"
+            },
+            {
+                "amount":"½ oz",
+                "ingredient":"Chartreuse Yellow"
+            },
+            {
+                "amount":"½ oz",
+                "ingredient":"Pineapple Juice"
+            },
+            {
+                "amount":"½ oz",
+                "ingredient":"Lemon Juice"
+            }
+        ],
+        "garnish":"1 mint sprig",
+        "glassware":"pilsner",
+        "ice":"Crushed",
+        "directions":[
+            "Shake all the ingredients with 3 1¼-in ice cubes",
+            "Strain into a pilsner glass filled with crushed ice",
+            "Garnish with the mint sprig"
+        ],
+        "editorsNotes":"",
+        "favorite":false
+    },
+    {
+        "name":"Carroll Gardens",
+        "barName":"Death & Co",
+        "barLocation":"New York",
+        "type":"martini",
+        "ingredients":[
+            {
+                "amount":"2 oz",
+                "ingredient":"Rittenhouse Rye 100 Proof"
+            },
+            {
+                "amount":"½ oz",
+                "ingredient":"Carpano Punt e Mes"
+            },
+            {
+                "amount":"½ oz",
+                "ingredient":"Nardini Amaro"
+            },
+            {
+                "amount":"1 tsp",
+                "ingredient":"Luxardo Maraschino Liqueur"
+            }
+        ],
+        "garnish":"1 lemon twist",
+        "glassware":"coupe",
+        "ice":"None",
+        "directions":[
+            "Stir all the ingredients over ice",
+            "Strain into a coupe",
+            "Squeeze the lemon twist over the drink and discard"
+        ],
+        "editorsNotes":"",
+        "favorite":false
+    },
+    {
+        "name":"Corpse Reviver #2",
+        "barName":"Death & Co",
+        "barLocation":"New York",
+        "type":"sidecar",
+        "ingredients":[
+            {
+                "amount":"¾ oz",
+                "ingredient":"Beefeater London Dry Gin"
+            },
+            {
+                "amount":"¾ oz",
+                "ingredient":"Cointreau Liqueur"
+            },
+            {
+                "amount":"¾ oz",
+                "ingredient":"Lillet Blanc"
+            },
+            {
+                "amount":"2 dashes",
+                "ingredient":"Vieux Pontarlier Absinthe"
+            },
+            {
+                "amount":"¾ oz",
+                "ingredient":"Lemon Juice"
             }
         ],
         "garnish":"",
@@ -162,77 +705,869 @@
         "ice":"None",
         "directions":[
             "Shake all the ingredients with ice",
-            "Strain into chilled glass"
+            "Strain into a coupe"
         ],
         "editorsNotes":"",
         "favorite":false
     },
     {
-        "name":"Daiquiri",
+        "name":"Crop Top",
         "barName":"Death & Co",
         "barLocation":"New York",
-        "type":"daiquiri",
+        "type":"sidecar",
         "ingredients":[
             {
-                "amount":"1¾ oz",
-                "ingredient":"Caña Brava White Rum"
-            },
-            {
-                "amount":"¼ oz",
-                "ingredient":"La Favorite Rhum Agricole Blanc"
-            },
-            {
-                "amount":"1 oz",
-                "ingredient":"Lime Juice"
+                "amount":"¾ oz",
+                "ingredient":"Beefeater 24 London Dry Gin"
             },
             {
                 "amount":"¾ oz",
-                "ingredient":"Simple Syrup"
+                "ingredient":"Amaro Montenegro"
+            },
+            {
+                "amount":"¾ oz",
+                "ingredient":"Giffard Crème de Pamplemousse"
+            },
+            {
+                "amount":"¾ oz",
+                "ingredient":"Lemon Juice"
             }
         ],
-        "garnish":"1 lime wedge",
+        "garnish":"",
+        "glassware":"Nick & Nora",
+        "ice":"None",
+        "directions":[
+            "Shake all the ingredients with ice",
+            "Strain into a chilled Nick & Nora glass"
+        ],
+        "editorsNotes":"",
+        "favorite":false
+    },
+    {
+        "name":"Crysanthemum",
+        "barName":"Death & Co",
+        "barLocation":"New York",
+        "type":"old-fashioned",
+        "ingredients":[
+            {
+                "amount":"2½ oz",
+                "ingredient":"Dolin Dry Vermouth"
+            },
+            {
+                "amount":"½ oz",
+                "ingredient":"Bénédictine"
+            },
+            {
+                "amount":"1 tsp",
+                "ingredient":"Pernod Absinthe"
+            }
+        ],
+        "garnish":"1 orange twist",
+        "glassware":"coupe",
+        "ice":"None",
+        "directions":[
+            "Stir all the ingredients over ice",
+            "Strain into a chilled coupe",
+            "Express the orange twist over the drink, then gently rub it around the rim of the glass and place it into the drink"
+        ],
+        "editorsNotes":"",
+        "favorite":false
+    },
+    {
+        "name":"Cynartown",
+        "barName":"Death & Co",
+        "barLocation":"New York",
+        "type":"martini",
+        "ingredients":[
+            {
+                "amount":"2 oz",
+                "ingredient":"Beefeater London Dry Gin"
+            },
+            {
+                "amount":"¾ oz",
+                "ingredient":"Carpano Antica Formula Vermouth"
+            },
+            {
+                "amount":"½ oz",
+                "ingredient":"Cynar Ricetta Originale"
+            }
+        ],
+        "garnish":"1 brandied cherry",
+        "glassware":"coupe",
+        "ice":"None",
+        "directions":[
+            "Stir all the ingredients over ice",
+            "Strain into a coupe",
+            "Garnish with the cherry"
+        ],
+        "editorsNotes":"",
+        "favorite":false
+    },
+    {
+        "name":"Dewey D.",
+        "barName":"PDT",
+        "barLocation":"New York",
+        "type":"martini",
+        "ingredients":[
+            {
+                "amount":"2 oz",
+                "ingredient":"Old Overholt Rye Whiskey"
+            },
+            {
+                "amount":"¾ oz",
+                "ingredient":"Lustau East India Solera Reserva Cream Sherry"
+            },
+            {
+                "amount":"½ oz",
+                "ingredient":"Aperol Aperitivo Liqueur"
+            },
+            {
+                "amount":"2 dashes",
+                "ingredient":"Angostura Bitters"
+            }
+        ],
+        "garnish":"1 orange twist",
+        "glassware":"coupe",
+        "ice":"None",
+        "directions":[
+            "Stir with icee",
+            "Strain into a chilled coupe",
+            "Garnish with an orange twist"
+        ],
+        "editorsNotes":"",
+        "favorite":false
+    },
+    {
+        "name":"Diamondback",
+        "barName":"Death & Co",
+        "barLocation":"New York",
+        "type":"old-fashioned",
+        "ingredients":[
+            {
+                "amount":"2 oz",
+                "ingredient":"Rittenhouse Rye 100 Proof"
+            },
+            {
+                "amount":"½ oz",
+                "ingredient":"Laird’s Apple Brandy 100"
+            },
+            {
+                "amount":"½ oz",
+                "ingredient":"Chartreuse Yellow"
+            }
+        ],
+        "garnish":"",
+        "glassware":"Nick & Nora",
+        "ice":"None",
+        "directions":[
+            "Stir all the ingredients over ice",
+            "Strain into a Nick & Nora glass"
+        ],
+        "editorsNotes":"",
+        "favorite":false
+    },
+    {
+        "name":"Don't Give Up the Ship",
+        "barName":"NoMad Bar",
+        "barLocation":"New York",
+        "type":"martini",
+        "ingredients":[
+            {
+                "amount":"2 oz",
+                "ingredient":"Tanqueray London Dry Gin"
+            },
+            {
+                "amount":"1 oz",
+                "ingredient":"Carpano Antica Formula Vermouth"
+            },
+            {
+                "amount":"¼ oz",
+                "ingredient":"Grand Marnier"
+            },
+            {
+                "amount":"1 tsp",
+                "ingredient":"Fernet-Branca"
+            }
+        ],
+        "garnish":"1 lemon twist",
+        "glassware":"coupe",
+        "ice":"None",
+        "directions":[
+            "In a chilled mixing glass, combine all the ingredients",
+            "Fill the mixing glass with 1¼-in ice cubes and stir",
+            "Strain the drink into a chilled coupe",
+            "Express the lemon twist over the drink and then insert it into the glass"
+        ],
+        "editorsNotes":"",
+        "favorite":false
+    },
+    {
+        "name":"Doyers Street",
+        "barName":"NoMad Bar",
+        "barLocation":"New York",
+        "type":"martini",
+        "ingredients":[
+            {
+                "amount":"1½ oz",
+                "ingredient":"Rittenhouse Rye 100 Proof"
+            },
+            {
+                "amount":"¾ oz",
+                "ingredient":"Dolin Dry Vermouth"
+            },
+            {
+                "amount":"½ oz",
+                "ingredient":"Bigallet China-China Amer"
+            },
+            {
+                "amount":"¼ oz",
+                "ingredient":"St-Germain"
+            },
+            {
+                "amount":"2 dashes",
+                "ingredient":"Angostura Bitters"
+            }
+        ],
+        "garnish":"",
+        "glassware":"double rocks",
+        "ice":"2-in cube",
+        "directions":[
+            "Combine all the ingredients in a mixing glass",
+            "Place a 2-in ice cube in a double rocks glass",
+            "Fill the mixing glass with ice and stir",
+            "Strain the drink into the double rocks glass over the 2-in cube"
+        ],
+        "editorsNotes":"",
+        "favorite":false
+    },
+    {
+        "name":"Duboudreau Cocktail",
+        "barName":"PDT",
+        "barLocation":"New York",
+        "type":"martini",
+        "ingredients":[
+            {
+                "amount":"2 oz",
+                "ingredient":"Rittenhouse Rye 100 Proof"
+            },
+            {
+                "amount":"¾ oz",
+                "ingredient":"Dubonnet Rouge"
+            },
+            {
+                "amount":"¼ oz",
+                "ingredient":"Fernet-Branca"
+            },
+            {
+                "amount":"¼ oz",
+                "ingredient":"St-Germain"
+            }
+        ],
+        "garnish":"1 lemon twist",
+        "glassware":"coupe",
+        "ice":"None",
+        "directions":[
+            "Stir with ice",
+            "Strain into a chilled coupe",
+            "Garnish with a lemon twist"
+        ],
+        "editorsNotes":"",
+        "favorite":false
+    },
+    {
+        "name":"East India Negroni",
+        "barName":"PDT",
+        "barLocation":"New York",
+        "type":"martini",
+        "ingredients":[
+            {
+                "amount":"2 oz",
+                "ingredient":"Banks 5-Island Rum"
+            },
+            {
+                "amount":"¾ oz",
+                "ingredient":"Lustau East India Solera Reserva Cream Sherry"
+            },
+            {
+                "amount":"¾ oz",
+                "ingredient":"Campari"
+            }
+        ],
+        "garnish":"1 orange twist",
+        "glassware":"single rocks",
+        "ice":"2-in cube",
+        "directions":[
+            "Stir with ice",
+            "Strain into a chilled single rocks glass over a 2-in ice cube",
+            "Garnish with the orange twist"
+        ],
+        "editorsNotes":"",
+        "favorite":false
+    },
+    {
+        "name":"East Village Athletic Club Cocktail",
+        "barName":"PDT",
+        "barLocation":"New York",
+        "type":"sidecar",
+        "ingredients":[
+            {
+                "amount":"1½ oz",
+                "ingredient":"Siembre Azul Blanco Tequila"
+            },
+            {
+                "amount":"¾ oz",
+                "ingredient":"Lemon Juice"
+            },
+            {
+                "amount":"½ oz",
+                "ingredient":"Chartreuse Yellow"
+            },
+            {
+                "amount":"½ oz",
+                "ingredient":"Grand Marnier"
+            }
+        ],
+        "garnish":"",
+        "glassware":"coupe",
+        "ice":"None",
+        "directions":[
+            "Shake with ice",
+            "Strain into a chilled coupe"
+        ],
+        "editorsNotes":"",
+        "favorite":false
+    },
+    {
+        "name":"El Molino",
+        "barName":"PDT",
+        "barLocation":"New York",
+        "type":"martini",
+        "ingredients":[
+            {
+                "amount":"1½ oz",
+                "ingredient":"Sombra Mezcal"
+            },
+            {
+                "amount":"¾ oz",
+                "ingredient":"Lustau Palo Cortado Sherry"
+            },
+            {
+                "amount":"¼ oz",
+                "ingredient":"St. Elizabeth Allspice Dram"
+            },
+            {
+                "amount":"¼ oz",
+                "ingredient":"Marie Brizard Crème de Cacao Blanc"
+            }
+        ],
+        "garnish":"",
+        "glassware":"coupe",
+        "ice":"None",
+        "directions":[
+            "Stir with ice",
+            "Strain into a chilled coupe"
+        ],
+        "editorsNotes":"",
+        "favorite":false
+    },
+    {
+        "name":"Fail-Safe",
+        "barName":"Death & Co",
+        "barLocation":"New York",
+        "type":"martini",
+        "ingredients":[
+            {
+                "amount":"¾ oz",
+                "ingredient":"Perry's Tot Navy-Strength Gin"
+            },
+            {
+                "amount":"¾ oz",
+                "ingredient":"Plymouth Sloe Gin"
+            },
+            {
+                "amount":"½ oz",
+                "ingredient":"Aperol Aperitivo Liqueur"
+            },
+            {
+                "amount":"½ oz",
+                "ingredient":"Pierre Ferrand Dry Curaçao"
+            },
+            {
+                "amount":"2 dashes",
+                "ingredient":"Angostura Bitters"
+            }
+        ],
+        "garnish":"",
+        "glassware":"double rocks",
+        "ice":"2-in cube",
+        "directions":[
+            "Stir all the ingredients over ice",
+            "Strain into a double rocks glass over a 2-in ice cube"
+        ],
+        "editorsNotes":"",
+        "favorite":false
+    },
+    {
+        "name":"Field Cocktail",
+        "barName":"PDT",
+        "barLocation":"New York",
+        "type":"martini",
+        "ingredients":[
+            {
+                "amount":"2 oz",
+                "ingredient":"Pierre Ferrand Ambre Cognac"
+            },
+            {
+                "amount":"1 oz",
+                "ingredient":"Noilly Prat Dry Vermouth"
+            },
+            {
+                "amount":"¾ oz",
+                "ingredient":"Pineapple Juice"
+            }
+        ],
+        "garnish":"1 pineapple leaf",
+        "glassware":"coupe",
+        "ice":"None",
+        "directions":[
+            "Stir with ice",
+            "Strain into a chilled coupe",
+            "Garnish with a pineapple leaf"
+        ],
+        "editorsNotes":"",
+        "favorite":false
+    },
+    {
+        "name":"Five Families Frank",
+        "barName":"NoMad Bar",
+        "barLocation":"New York",
+        "type":"martini",
+        "ingredients":[
+            {
+                "amount":"2 oz",
+                "ingredient":"Rittenhouse Rye 100 Proof"
+            },
+            {
+                "amount":"½ oz",
+                "ingredient":"Cocchi Barolo Chinato"
+            },
+            {
+                "amount":"¼ oz",
+                "ingredient":"Amaro Averna"
+            },
+            {
+                "amount":"¼ oz",
+                "ingredient":"Rabarbaro Zucca Amaro"
+            },
+            {
+                "amount":"1 tsp",
+                "ingredient":"Luxardo Maraschino Liqueur"
+            }
+        ],
+        "garnish":"1 lemon twist",
+        "glassware":"coupe",
+        "ice":"None",
+        "directions":[
+            "Combine all the ingredients in a mixing glass",
+            "Fill the mixing glass with ice and stir",
+            "Strain the drink into a coupe"
+        ],
+        "editorsNotes":"",
+        "favorite":false
+    },
+    {
+        "name":"Flor de Jalisco",
+        "barName":"Death & Co",
+        "barLocation":"New York",
+        "type":"sidecar",
+        "ingredients":[
+            {
+                "amount":"2 oz",
+                "ingredient":"Siembre Azul Blanco Tequila"
+            },
+            {
+                "amount":"¾ oz",
+                "ingredient":"Lemon Juice"
+            },
+            {
+                "amount":"¼ oz",
+                "ingredient":"Agave Nectar"
+            },
+            {
+                "amount":"1 tsp",
+                "ingredient":"Orange Marmalade"
+            }
+        ],
+        "garnish":"",
         "glassware":"coupe",
         "ice":"None",
         "directions":[
             "Shake all the ingredients with ice",
-            "Strain into chilled glass",
-            "Garnish with the lime wedge"
+            "Strain into a coupe"
         ],
         "editorsNotes":"",
         "favorite":false
     },
     {
-        "name":"Gimlet",
-        "barName":"Death & Co",
+        "name":"Fourth Degree",
+        "barName":"NoMad Bar",
         "barLocation":"New York",
-        "type":"daiquiri",
+        "type":"martini",
         "ingredients":[
             {
                 "amount":"2 oz",
+                "ingredient":"Beefeater London Dry Gin"
+            },
+            {
+                "amount":"1 oz",
+                "ingredient":"Carpano Antica Formula Vermouth"
+            },
+            {
+                "amount":"½ oz",
+                "ingredient":"Dolin Dry Vermouth"
+            },
+            {
+                "amount":"2 dashes",
+                "ingredient":"Pernod Absinthe"
+            }
+        ],
+        "garnish":"1 brandied cherry",
+        "glassware":"coupe",
+        "ice":"None",
+        "directions":[
+            "Combine all the ingredients in a mixing glass",
+            "Place the cherry into a coupe",
+            "Fill the mixing glass with ice and stir",
+            "Strain the drink into the coupe"
+        ],
+        "editorsNotes":"",
+        "favorite":false
+    },
+    {
+        "name":"Fortune Teller",
+        "barName":"NoMad Bar",
+        "barLocation":"New York",
+        "type":"martini",
+        "ingredients":[
+            {
+                "amount":"1 oz",
+                "ingredient":"Diplomático Reserva Exclusiva Rum"
+            },
+            {
+                "amount":"1 oz",
+                "ingredient":"Santa Teresa 1796 Rum"
+            },
+            {
+                "amount":"½ oz",
+                "ingredient":"Bonal Gentiane-Quina"
+            },
+            {
+                "amount":"½ oz",
+                "ingredient":"Cynar Ricetta Originale"
+            }
+        ],
+        "garnish":"",
+        "glassware":"double rocks",
+        "ice":"2-in cube",
+        "directions":[
+            "Combine all the ingredients in a mixing glass",
+            "Place a 2-in ice cube in a double rocks glass",
+            "Fill the mixing glass with ice and stir",
+            "Strain the drink into the double rocks glass over the 2-in cube"
+        ],
+        "editorsNotes":"",
+        "favorite":false
+    },
+    {
+        "name":"Fresa Verde",
+        "barName":"PDT",
+        "barLocation":"New York",
+        "type":"sidecar",
+        "ingredients":[
+            {
+                "amount":"2",
+                "ingredient":"Strawberry"
+            },
+            {
+                "amount":"2 thin slices",
+                "ingredient":"Green Bell Pepper"
+            },
+            {
+                "amount":"2 oz",
+                "ingredient":"Gran Centenario Plata Tequila"
+            },
+            {
+                "amount":"¾ oz",
+                "ingredient":"Lime Juice"
+            },
+            {
+                "amount":"¼ oz",
+                "ingredient":"Ali Wadi Pomegranate Molasses"
+            },
+            {
+                "amount":"¼ oz",
+                "ingredient":"Agave Nectar"
+            }
+        ],
+        "garnish":"1 strawberry slice",
+        "glassware":"coupe",
+        "ice":"None",
+        "directions":[
+            "Add the strawberries, green pepper slices, and molasses to a mixing glass and muddle",
+            "Add everything else",
+            "Shake with ice",
+            "Fine-strain into a chilled coupe",
+            "Garnish with a slice of strawberry"
+        ],
+        "editorsNotes":"",
+        "favorite":false
+    },
+    {
+        "name":"Golden Cadillac",
+        "barName":"Death & Co",
+        "barLocation":"New York",
+        "type":"flip",
+        "ingredients":[
+            {
+                "amount":"1 oz",
+                "ingredient":"Galliano l'Autentico"
+            },
+            {
+                "amount":"1 oz",
+                "ingredient":"Giffard Crème de Cacao Blanc"
+            },
+            {
+                "amount":"1 oz",
+                "ingredient":"Heavy Cream"
+            }
+        ],
+        "garnish":"Dark chocolate",
+        "glassware":"coupe",
+        "ice":"",
+        "directions":[
+            "Shake all the ingredients with ice",
+            "Double strain into a chilled coupe",
+            "Garnish with a few grates of dark chocolate"
+        ],
+        "editorsNotes":"",
+        "favorite":false
+    },
+    {
+        "name":"Golden Gate",
+        "barName":"Death & Co",
+        "barLocation":"New York",
+        "type":"sidecar",
+        "ingredients":[
+            {
+                "amount":"¾ oz",
+                "ingredient":"Grand Marnier"
+            },
+            {
+                "amount":"½ oz",
+                "ingredient":"Bénédictine"
+            },
+            {
+                "amount":"½ oz",
+                "ingredient":"Campari"
+            },
+            {
+                "amount":"¾ oz",
+                "ingredient":"Grapefruit Juice"
+            },
+            {
+                "amount":"½ oz",
+                "ingredient":"Lime Juice"
+            }
+        ],
+        "garnish":"1 lime twist",
+        "glassware":"highball",
+        "ice":"Crushed",
+        "directions":[
+            "Short shake all the ingredients with 3 1¼-in ice cubes",
+            "Strain into a highball glass filled with crushed ice",
+            "Garnish with a lime twist",
+            "Serve with a straw"
+        ],
+        "editorsNotes":"",
+        "favorite":false
+    },
+    {
+        "name":"Gonzalez",
+        "barName":"Death & Co",
+        "barLocation":"New York",
+        "type":"martini",
+        "ingredients":[
+            {
+                "amount":"2 oz",
+                "ingredient":"Beefeater London Dry Gin"
+            },
+            {
+                "amount":"¾ oz",
+                "ingredient":"Carpano Punt e Mes"
+            },
+            {
+                "amount":"¼ oz",
+                "ingredient":"Luxardo Maraschino Liqueur"
+            },
+            {
+                "amount":"2 dashes",
+                "ingredient":"Bitter Truth Aromatic Bitters"
+            }
+        ],
+        "garnish":"",
+        "glassware":"coupe",
+        "ice":"None",
+        "directions":[
+            "Stir all the ingredients over ice",
+            "Strain into a coupe"
+        ],
+        "editorsNotes":"",
+        "favorite":false
+    },
+    {
+        "name":"Grand Street",
+        "barName":"Death & Co",
+        "barLocation":"New York",
+        "type":"martini",
+        "ingredients":[
+            {
+                "amount":"1",
+                "ingredient":"Grapefruit Twist"
+            },
+            {
+                "amount":"2 oz",
+                "ingredient":"Beefeater London Dry Gin"
+            },
+            {
+                "amount":"¾ oz",
+                "ingredient":"Carpano Punt e Mes"
+            },
+            {
+                "amount":"½ oz",
+                "ingredient":"Cynar Ricetta Originale"
+            },
+            {
+                "amount":"1 tsp",
+                "ingredient":"Luxardo Maraschino Liqueur"
+            }
+        ],
+        "garnish":"",
+        "glassware":"coupe",
+        "ice":"None",
+        "directions":[
+            "In a mixing glass, gently muddle the grapefruit twist",
+            "Add the remaining ingredients",
+            "Stir with ice",
+            "Strain into a coupe"
+        ],
+        "editorsNotes":"",
+        "favorite":false
+    },
+    {
+        "name":"Green Deacon",
+        "barName":"PDT",
+        "barLocation":"New York",
+        "type":"sidecar",
+        "ingredients":[
+            {
+                "amount":"",
+                "ingredient":"St. George Absinthe Verte"
+            },
+            {
+                "amount":"1½ oz",
                 "ingredient":"Plymouth Gin"
             },
             {
                 "amount":"1 oz",
-                "ingredient":"Lime Juice"
+                "ingredient":"Grapefruit Juice"
             },
             {
                 "amount":"¾ oz",
-                "ingredient":"Simple Syrup"
+                "ingredient":"Plymouth Sloe Gin"
             }
         ],
-        "garnish":"1 lime wedge",
+        "garnish":"",
         "glassware":"coupe",
         "ice":"None",
         "directions":[
-            "Shake all the ingredients with ice",
-            "Strain into chilled glass",
-            "Garnish with the lime wedge"
+            "Shake with ice",
+            "Strain into a chilled, St. George Absinthe Verte-rinsed coupe"
         ],
         "editorsNotes":"",
         "favorite":false
     },
     {
-        "name":"Gin Martini",
+        "name":"House of Payne",
+        "barName":"Death & Co",
+        "barLocation":"New York",
+        "type":"martini",
+        "ingredients":[
+            {
+                "amount":"3",
+                "ingredient":"Raspberry"
+            },
+            {
+                "amount":"1½ oz",
+                "ingredient":"Beefeater London Dry Gin"
+            },
+            {
+                "amount":"1 oz",
+                "ingredient":"Plymouth Sloe Gin"
+            },
+            {
+                "amount":"1 oz",
+                "ingredient":"Campari"
+            }
+        ],
+        "garnish":"1 raspberry",
+        "glassware":"double rocks",
+        "ice":"2-in cube",
+        "directions":[
+            "In a mixing glass, gently muddle the raspberries",
+            "Add the remaining ingredients",
+            "Stir over ice",
+            "Double strain into a double rocks glass over a 2-in ice cube",
+            "Garnish with the raspberry"
+        ],
+        "editorsNotes":"",
+        "favorite":false
+    },
+    {
+        "name":"Joy Division",
+        "barName":"Death & Co",
+        "barLocation":"New York",
+        "type":"martini",
+        "ingredients":[
+            {
+                "amount":"2 oz",
+                "ingredient":"Beefeater London Dry Gin"
+            },
+            {
+                "amount":"1 oz",
+                "ingredient":"Dolin Dry Vermouth"
+            },
+            {
+                "amount":"½ oz",
+                "ingredient":"Cointreau Liqueur"
+            },
+            {
+                "amount":"3 dashes",
+                "ingredient":"Vieux Pontarlier Absinthe"
+            }
+        ],
+        "garnish":"1 lemon twist",
+        "glassware":"coupe",
+        "ice":"None",
+        "directions":[
+            "Stir all the ingredients over ice",
+            "Strain into a coupe",
+            "Garnish with the lemon twist"
+        ],
+        "editorsNotes":"",
+        "favorite":false
+    },
+    {
+        "name":"Key Party",
         "barName":"Death & Co",
         "barLocation":"New York",
         "type":"martini",
@@ -242,100 +1577,108 @@
                 "ingredient":"Plymouth Gin"
             },
             {
-                "amount":"1 oz",
-                "ingredient":"Dolin Dry Vermouth"
-            },
-            {
-                "amount":"1 dash",
-                "ingredient":"Death & Co House Orange Bitters"
-            }
-        ],
-        "garnish":"1 lemon twist",
-        "glassware":"Nick & Nora",
-        "ice":"None",
-        "directions":[
-            "Stir all the ingredients over ice",
-            "Strain into chilled glass",
-            "Express the lemon twist over the drink and set it on the edge of glass"
-        ],
-        "editorsNotes":"",
-        "favorite":false
-    },
-    {
-        "name":"Hemingway Daiquiri",
-        "barName":"Death & Co",
-        "barLocation":"New York",
-        "type":"daiquiri",
-        "ingredients":[
-            {
-                "amount":"1½ oz",
-                "ingredient":"Flor de Caña 4-Yr White Rum"
-            },
+                "amount":"½ oz",
+                "ingredient":"Bonal Gentiane-Quina"            },
             {
                 "amount":"½ oz",
-                "ingredient":"Luxardo Maraschino Liqueur"
+                "ingredient":"Nardini Amaro"
             },
             {
-                "amount":"1 oz",
-                "ingredient":"Grapefruit Juice"
-            },
-            {
-                "amount":"½ oz",
-                "ingredient":"Lime Juice"
-            },
-            {
-                "amount":"1 tsp",
-                "ingredient":"Simple Syrup"
+                "amount":"¼ oz",
+                "ingredient":"Chartreuse Green"
             }
         ],
-        "garnish":"1 lime wedge",
+        "garnish":"",
         "glassware":"coupe",
         "ice":"None",
         "directions":[
-            "Shake all the ingredients with ice",
-            "Strain into chilled glass",
-            "Garnish with the lime wedge"
+            "Stir all the ingredients over ice",
+            "Strain into a coupe"
         ],
         "editorsNotes":"",
         "favorite":false
     },
     {
-        "name":"Hot Toddy",
+        "name":"Kingston Negroni",
         "barName":"Death & Co",
         "barLocation":"New York",
-        "type":"old-fashioned",
+        "type":"martini",
         "ingredients":[
             {
-                "amount":"2",
-                "ingredient":"Lemon Wedge"
+                "amount":"1 oz",
+                "ingredient":"Smith & Cross Jamaica Rum"
             },
             {
-                "amount":"1½ oz",
-                "ingredient":"Elijah Craig Small Batch Bourbon"
+                "amount":"1 oz",
+                "ingredient":"Carpano Antica Formula Vermouth"
+            },
+            {
+                "amount":"1 oz",
+                "ingredient":"Campari"
+            }
+        ],
+        "garnish":"1 orange twist",
+        "glassware":"double rocks",
+        "ice":"None",
+        "directions":[
+            "Stir all ingredients over ice",
+            "Strain into a double rocks glass",
+            "Garnish with the orange twist"
+        ],
+        "editorsNotes":"",
+        "favorite":false
+    },
+    {
+        "name":"La Fée Noir Punch",
+        "barName":"Death & Co",
+        "barLocation":"New York",
+        "type":"sidecar",
+        "ingredients":[
+            {
+                "amount":"9",
+                "ingredient":"White Sugar Cube"
+            },
+            {
+                "amount":"9",
+                "ingredient":"Blackberry"
+            },
+            {
+                "amount":"6 oz",
+                "ingredient":"Club Soda"
+            },
+            {
+                "amount":"6 oz",
+                "ingredient":"Hayman's Old Tom Gin"
             },
             {
                 "amount":"¾ oz",
-                "ingredient":"Honey Syrup"
+                "ingredient":"Luxardo Maraschino Liqueur"
             },
             {
-                "amount":"1 dash",
-                "ingredient":"Angostura Bitters"
+                "amount":"¾ oz",
+                "ingredient":"St. George Absinthe Verte"
             },
-
             {
-                "amount":"4 oz",
-                "ingredient":"Water"
+                "amount":"3 oz",
+                "ingredient":"Orange Juice"
+            },
+            {
+                "amount":"2 oz",
+                "ingredient":"Lemon Juice"
             }
         ],
-        "garnish":"2 lemon wedges, nutmeg",
-        "glassware":"toddy mug",
-        "ice":"None",
+        "garnish":"6 orange slices",
+        "glassware":"punch bowl",
+        "ice":"1¼-in cubes",
         "directions":[
-            "Squeeze the lemon wedges into glass",
-            "Add the remaining ingredients (except the water)",
-            "Pour into the boiling water",
-            "Grate some nutmeg over the top of the drink",
-            "Garnish with the lemon wedges"
+            "In a pitcher, muddle the sugar cubes with blackberries and 3 oz of the Club Soda until the sugar is fully broken up",
+            "Add the remaining ingredients (except the remaining Club Soda)",
+            "Fill the pitcher ¾ full with 1¼-in ice cubes",
+            "Stir until cold",
+            "Strain into a punch bowl over 1 large block of ice",
+            "Top with the remaining 3 oz of Club Soda",
+            "Garnish with the orange slices",
+            "Serve with a ladle and punch glasses"
         ],
         "editorsNotes":"",
         "favorite":false
@@ -347,20 +1690,20 @@
         "type":"martini",
         "ingredients":[
             {
-                "amount":"1½ oz",
-                "ingredient":"Siembra Azul Reposado Tequila"
-            },
-            {
-                "amount":"½ oz",
-                "ingredient":"Carpano Antica Formula Vermouth"
-            },
-            {
-                "amount":"½ oz",
-                "ingredient":"Dolin Dry Vermouth"
+                "amount":"2 oz",
+                "ingredient":"El Tesoro Reposado Tequila"
             },
             {
                 "amount":"½ oz",
                 "ingredient":"Campari"
+            },
+            {
+                "amount":"½ oz",
+                "ingredient":"Cocchi Vermouth di Torino"
+            },
+            {
+                "amount":"½ oz",
+                "ingredient":"Dolin Dry Vermouth"
             },
             {
                 "amount":"1 dash",
@@ -372,8 +1715,359 @@
         "ice":"None",
         "directions":[
             "Stir all the ingredients over ice",
-            "Strain into chilled glass",
-            "Express the orange twist over the drink, then gently rub it around the rim of glass and place it into the drink"
+            "Strain into a Nick & Nora glass",
+            "Garnish with the orange twist"
+        ],
+        "editorsNotes":"",
+        "favorite":false
+    },
+    {
+        "name":"Lake George",
+        "barName":"PDT",
+        "barLocation":"New York",
+        "type":"sidecar",
+        "ingredients":[
+            {
+                "amount":"1 oz",
+                "ingredient":"Jameson Irish Whiskey"
+            },
+            {
+                "amount":"1 oz",
+                "ingredient":"Glenlivet 12-Yr Scotch"
+            },
+            {
+                "amount":"½ oz",
+                "ingredient":"Drambuie"
+            },
+            {
+                "amount":"½ oz",
+                "ingredient":"Lemon Juice"
+            }
+        ],
+        "garnish":"",
+        "glassware":"coupe",
+        "ice":"None",
+        "directions":[
+            "Shake with ice",
+            "Strain into a chilled coupe"
+        ],
+        "editorsNotes":"",
+        "favorite":false
+    },
+    {
+        "name":"Last Word",
+        "barName":"Death & Co",
+        "barLocation":"New York",
+        "type":"sidecar",
+        "ingredients":[
+            {
+                "amount":"¾ oz",
+                "ingredient":"Beefeater London Dry Gin"
+            },
+            {
+                "amount":"¾ oz",
+                "ingredient":"Chartreuse Green"
+            },
+            {
+                "amount":"¾ oz",
+                "ingredient":"Luxardo Maraschino Liqueur"
+            },
+            {
+                "amount":"¾ oz",
+                "ingredient":"Lime Juice"
+            }
+        ],
+        "garnish":"",
+        "glassware":"coupe",
+        "ice":"None",
+        "directions":[
+            "Shake all the ingredients with ice",
+            "Strain into a coupe"
+        ],
+        "editorsNotes":"",
+        "favorite":false
+    },
+    {
+        "name":"La Viña",
+        "barName":"Death & Co",
+        "barLocation":"New York",
+        "type":"martini",
+        "ingredients":[
+            {
+                "amount":"1 oz",
+                "ingredient":"Russell's Reserve Single Barrel Rye"
+            },
+            {
+                "amount":"1 oz",
+                "ingredient":"Amaro Nonino Quintessentia"
+            },
+            {
+                "amount":"1 oz",
+                "ingredient":"Lustau East India Solera Reserva Cream Sherry"
+            },
+            {
+                "amount":"1 dash",
+                "ingredient":"Regans' Orange Bitters No. 6"
+            }
+        ],
+        "garnish":"",
+        "glassware":"coupe",
+        "ice":"None",
+        "directions":[
+            "Stir all the ingredients over ice",
+            "Strain into a coupe"
+        ],
+        "editorsNotes":"",
+        "favorite":false
+    },
+    {
+        "name":"Le Bateleur",
+        "barName":"Death & Co",
+        "barLocation":"New York",
+        "type":"martini",
+        "ingredients":[
+            {
+                "amount":"2 oz",
+                "ingredient":"Beefeater London Dry Gin"
+            },
+            {
+                "amount":"¾ oz",
+                "ingredient":"Carpano Punt e Mes"
+            },
+            {
+                "amount":"½ oz",
+                "ingredient":"Strega"
+            },
+            {
+                "amount":"¼ oz",
+                "ingredient":"Cynar Ricetta Originale"
+            },
+            {
+                "amount":"1 dash",
+                "ingredient":"Angostura Bitters"
+            }
+        ],
+        "garnish":"1 orange twist",
+        "glassware":"coupe",
+        "ice":"None",
+        "directions":[
+            "Stir all the ingredients over ice",
+            "Strain into a coupe",
+            "Garnish with the orange twist"
+        ],
+        "editorsNotes":"",
+        "favorite":false
+    },
+    {
+        "name":"Le Subtil",
+        "barName":"Death & Co",
+        "barLocation":"New York",
+        "type":"martini",
+        "ingredients":[
+            {
+                "amount":"2 oz",
+                "ingredient":"Bols Genever Gin"
+            },
+            {
+                "amount":"½ oz",
+                "ingredient":"Cardamaro"
+            },
+            {
+                "amount":"½ oz",
+                "ingredient":"Carpano Antica Formula Vermouth"
+            },
+            {
+                "amount":"2 dashes",
+                "ingredient":"Bittermens Hopped Grapefruit Bitters"
+            }
+        ],
+        "garnish":"1 grapefruit twist",
+        "glassware":"coupe",
+        "ice":"None",
+        "directions":[
+            "Stir all the ingredients over ice",
+            "Strain into a coupe",
+            "Garnish with the grapefruit twist"
+        ],
+        "editorsNotes":"",
+        "favorite":false
+    },
+    {
+        "name":"Light and Day",
+        "barName":"Death & Co",
+        "barLocation":"New York",
+        "type":"sidecar",
+        "ingredients":[
+            {
+                "amount":"2 oz",
+                "ingredient":"Plymouth Gin"
+            },
+            {
+                "amount":"½ oz",
+                "ingredient":"Chartreuse Yellow"
+            },
+            {
+                "amount":"¼ oz",
+                "ingredient":"Maraska Maraschino Liqueur"
+            },
+            {
+                "amount":"¼ oz",
+                "ingredient":"Orange Juice"
+            },
+            {
+                "amount":"4 dashes",
+                "ingredient":"Death & Co Peychaud's Bitters"
+            }
+        ],
+        "garnish":"",
+        "glassware":"coupe",
+        "ice":"None",
+        "directions":[
+            "Stir all the ingredients over ice",
+            "Strain into a coupe"
+        ],
+        "editorsNotes":"",
+        "favorite":false
+    },
+    {
+        "name":"Lilywhacker",
+        "barName":"Death & Co",
+        "barLocation":"New York",
+        "type":"martini",
+        "ingredients":[
+            {
+                "amount":"2 oz",
+                "ingredient":"Laird’s Apple Brandy 100"
+            },
+            {
+                "amount":"¾ oz",
+                "ingredient":"Carpano Antica Formula Vermouth"
+            },
+            {
+                "amount":"½ oz",
+                "ingredient":"Cointreau Liqueur"
+            },
+            {
+                "amount":"1 dash",
+                "ingredient":"Bittermens Xocolatl Mole Bitters"
+            }
+        ],
+        "garnish":"",
+        "glassware":"coupe",
+        "ice":"None",
+        "directions":[
+            "Stir all the ingredients over ice",
+            "Strain into a coupe"
+        ],
+        "editorsNotes":"",
+        "favorite":false
+    },
+    {
+        "name":"Little Red Rooster",
+        "barName":"NoMad Bar",
+        "barLocation":"New York",
+        "type":"daiquiri",
+        "ingredients":[
+            {
+                "amount":"1 oz",
+                "ingredient":"Jameson Irish Whiskey"
+            },
+            {
+                "amount":"1 oz",
+                "ingredient":"Cocchi Barolo Chinato"
+            },
+            {
+                "amount":"¾ oz",
+                "ingredient":"Lemon Juice"
+            },
+            {
+                "amount":"¾ oz",
+                "ingredient":"Strega"
+            },
+            {
+                "amount":"½ oz",
+                "ingredient":"Thai Bird Chile-Infused Aperol"
+            },
+            {
+                "amount":"1",
+                "ingredient":"Strawberry"
+            }
+        ],
+        "garnish":"",
+        "glassware":"coupe",
+        "ice":"None",
+        "directions":[
+            "Muddle the strawberry in a cocktail tin",
+            "Add the remaining ingredients",
+            "Fill the tin with ice, cover, and shake",
+            "Strain the drink into a coupe"
+        ],
+        "editorsNotes":"",
+        "favorite":false
+    },
+    {
+        "name":"Lucien Gaudin",
+        "barName":"Death & Co",
+        "barLocation":"New York",
+        "type":"martini",
+        "ingredients":[
+            {
+                "amount":"1½ oz",
+                "ingredient":"Tanqueray London Dry Gin"
+            },
+            {
+                "amount":"½ oz",
+                "ingredient":"Dolin Dry Vermouth"
+            },
+            {
+                "amount":"½ oz",
+                "ingredient":"Campari"
+            },
+            {
+                "amount":"½ oz",
+                "ingredient":"Cointreau Liqueur"
+            }
+        ],
+        "garnish":"1 lemon twist",
+        "glassware":"Nick & Nora",
+        "ice":"None",
+        "directions":[
+            "Stir all the ingredients over ice",
+            "Strain into a Nick & Nora glass",
+            "Garnish with the lemon twist"
+        ],
+        "editorsNotes":"",
+        "favorite":false
+    },
+    {
+        "name":"Lucino's Delight",
+        "barName":"Death & Co",
+        "barLocation":"New York",
+        "type":"martini",
+        "ingredients":[
+            {
+                "amount":"2 oz",
+                "ingredient":"Beefeater London Dry Gin"
+            },
+            {
+                "amount":"¾ oz",
+                "ingredient":"Carpano Antica Formula Vermouth"
+            },
+            {
+                "amount":"¼ oz",
+                "ingredient":"Luxardo Maraschino Liqueur"
+            },
+            {
+                "amount":"¼ oz",
+                "ingredient":"Amaro Lucano"
+            }
+        ],
+        "garnish":"",
+        "glassware":"coupe",
+        "ice":"None",
+        "directions":[
+            "Stir all the ingredients over ice",
+            "Strain into a coupe"
         ],
         "editorsNotes":"",
         "favorite":false
@@ -402,8 +2096,39 @@
         "ice":"None",
         "directions":[
             "Stir all the ingredients over ice",
-            "Strain into chilled glass",
+            "Strain into a chilled Nick & Nora glass",
             "Garnish with the cherry"
+        ],
+        "editorsNotes":"",
+        "favorite":false
+    },
+    {
+        "name":"Maple Julep",
+        "barName":"Death & Co",
+        "barLocation":"New York",
+        "type":"old-fashioned",
+        "ingredients":[
+            {
+                "amount":"2 oz",
+                "ingredient":"Old Overholt Rye"
+            },
+            {
+                "amount":"¼ oz",
+                "ingredient":"Maple Syrup"
+            }
+        ],
+        "garnish":"1 mint bouquet",
+        "glassware":"julep",
+        "ice":"Crushed",
+        "directions":[
+            "Put the rye and maple syrup in a julep tin",
+            "Fill the tin halfway with crushed ice",
+            "Stir with a teaspoon, churing the ice, for about 10 seconds, holding the tin by the rim so the entire tin can eventually frost up",
+            "Add more crushed ice to fill the tin ⅔ full",
+            "Stir until the tin is completely frosted",
+            "Add more crushed ice to form a cone above the rim",
+            "Garnish with the mint bouquet in the center of the ice",
+            "Serve with a straw"
         ],
         "editorsNotes":"",
         "favorite":false
@@ -415,54 +2140,46 @@
         "type":"sidecar",
         "ingredients":[
             {
-                "amount":"1",
-                "ingredient":"Lime Wedge"
-            },
-            {
-                "amount":"",
-                "ingredient":"Kosher Salt"
-            },
-            {
                 "amount":"2 oz",
-                "ingredient":"Siembra Azul Blanco Tequila"
+                "ingredient":"Siembre Azul Blanco Tequila"
             },
             {
                 "amount":"¾ oz",
                 "ingredient":"Cointreau Liqueur"
             },
             {
-                "amount":"¾ oz",
+                "amount":"1 oz",
                 "ingredient":"Lime Juice"
             },
             {
                 "amount":"¼ oz",
-                "ingredient":"Simple Syrup"
+                "ingredient":"Agave Nectar"
             }
         ],
-        "garnish":"",
-        "glassware":"double rocks",
-        "ice":"2-in cube",
+        "garnish":"1 lime wedge",
+        "glassware":"double rockls",
+        "ice":"1¼-in cubes",
         "directions":[
-            "Rub the lime wedge along the upper ½-in of glass, halfway around the circumference, then roll the wet portion in the salt",
-            "Put a 2-in ice cube in glass",
-            "Shake the remaining ingredients with ice",
-            "Strain into prepared glass"
+            "Rim half of a double rocks glass with kosher salt",
+            "Shake all the ingredients with ice",
+            "Strain into the rimmed glass over 1¼-in ice cubes",
+            "Garnish with the lime wedge"
         ],
         "editorsNotes":"",
         "favorite":false
     },
     {
         "name":"Martinez",
-        "barName":"Death & Co",
+        "barName":"NoMad Bar",
         "barLocation":"New York",
         "type":"martini",
         "ingredients":[
             {
-                "amount":"1½ oz",
+                "amount":"2 oz",
                 "ingredient":"Hayman's Old Tom Gin"
             },
             {
-                "amount":"1½ oz",
+                "amount":"1 oz",
                 "ingredient":"Carpano Antica Formula Vermouth"
             },
             {
@@ -471,53 +2188,160 @@
             },
             {
                 "amount":"2 dashes",
-                "ingredient":"Death & Co House Orange Bitters"
+                "ingredient":"Angostura Bitters"
             }
         ],
         "garnish":"1 lemon twist",
-        "glassware":"Nick & Nora",
+        "glassware":"coupe",
         "ice":"None",
         "directions":[
-            "Stir all the ingredients over ice",
-            "Strain into chilled glass",
-            "Express the lemon twist over the drink, then set it on the edge of glass"
+            "Combine all the ingredients in a mixing glass",
+            "Fill the mixing glass with ice and stir",
+            "Strain the drink into a coupe",
+            "Express the oils from the lemon twist over the glass and insert it into the drink"
         ],
         "editorsNotes":"",
         "favorite":false
     },
     {
-        "name":"Mint Julep",
+        "name":"May Fair",
+        "barName":"Death & Co",
+        "barLocation":"New York",
+        "type":"martini",
+        "ingredients":[
+            {
+                "amount":"1 oz",
+                "ingredient":"Tanqueray London Dry Gin"
+            },
+            {
+                "amount":"½ oz",
+                "ingredient":"Krogstad Aquavit"
+            },
+            {
+                "amount":"½ oz",
+                "ingredient":"Linie Aquavit"
+            },
+            {
+                "amount":"1 oz",
+                "ingredient":"Death & Co Sweet Vermouth"
+            },
+            {
+                "amount":"¼ oz",
+                "ingredient":"Bénédictine"
+            },
+            {
+                "amount":"2 dashes",
+                "ingredient":"Angostura Bitters"
+            },
+            {
+                "amount":"2 dashes",
+                "ingredient":"Death & Co Peychaud's Bitters"
+            }
+        ],
+        "garnish":"1 orange twist",
+        "glassware":"double rocks",
+        "ice":"2-in cube",
+        "directions":[
+            "Stir all the ingredients over ice",
+            "Strain into a double rocks glass over a 2-in ice cube",
+            "Garnish with the orange twist"
+        ],
+        "editorsNotes":"",
+        "favorite":false
+    },
+    {
+        "name":"Midnight Mountain",
+        "barName":"Death & Co",
+        "barLocation":"New York",
+        "type":"martini",
+        "ingredients":[
+            {
+                "amount":"1½ oz",
+                "ingredient":"Nardini Amaro"
+            },
+            {
+                "amount":"1 oz",
+                "ingredient":"Carpano Antica Formula Vermouth"
+            },
+            {
+                "amount":"¼ oz",
+                "ingredient":"Marie Brizard Crème de Menthe Blanche"
+            },
+            {
+                "amount":"¼ oz",
+                "ingredient":"Marie Brizard Crème de Cacao Blanc"
+            }
+        ],
+        "garnish":"1 orange twist",
+        "glassware":"double rocks",
+        "ice":"2-in cube",
+        "directions":[
+            "Stir all the ingredients over ice",
+            "Strain into a double rocks glass over a 2-in ice cube",
+            "Garnish with the twist"
+        ],
+        "editorsNotes":"",
+        "favorite":false
+    },
+    {
+        "name":"Monte Carlo",
         "barName":"Death & Co",
         "barLocation":"New York",
         "type":"old-fashioned",
         "ingredients":[
             {
-                "amount":"1",
-                "ingredient":"Mint Bouquet"
-            },
-            {
                 "amount":"2 oz",
-                "ingredient":"Buffalo Trace Bourbon"
+                "ingredient":"Rittenhouse Rye 100 Proof"
             },
             {
-                "amount":"¼ oz",
-                "ingredient":"Simple Syrup"
+                "amount":"½ oz",
+                "ingredient":"Bénédictine"
+            },
+            {
+                "amount":"2 dashes",
+                "ingredient":"Angostura Bitters"
             }
-
         ],
-        "garnish":"1 mint bouquet",
-        "glassware":"julep",
-        "ice":"Crushed",
+        "garnish":"1 lemon twist",
+        "glassware":"single rocks",
+        "ice":"2-in cube",
         "directions":[
-            "Rub the interior of glass with the mint bouquet",
-            "Add the bourbon and syrup",
-            "Fill glass halfway with crushed ice",
-            "Holding glass by the rim, stir, churning the ice, for about 10 seconds",
-            "Add more crushed ice to fill glass about ⅔ full",
-            "Stir until glass is completely frosted",
-            "Add more crushed ice to from a cone above the rim",
-            "Garnish with the mint bouquet",
-            "Serve with a straw"
+            "Stir all the ingredients over ice",
+            "Strain into a single rocks glass over a 2-in ice cube",
+            "Express the lemon twist over the glass and place it into the drink"
+        ],
+        "editorsNotes":"",
+        "favorite":false
+    },
+    {
+        "name":"Naked and Famous",
+        "barName":"Death & Co",
+        "barLocation":"New York",
+        "type":"sidecar",
+        "ingredients":[
+            {
+                "amount":"¾ oz",
+                "ingredient":"Del Maguey Chichicapa Mezcal"
+            },
+            {
+                "amount":"¾ oz",
+                "ingredient":"Chartreuse Yellow"
+            },
+            {
+                "amount":"¾ oz",
+                "ingredient":"Aperol Aperitivo Liqueur"
+            },
+            {
+                "amount":"¾ oz",
+                "ingredient":"Lime Juice"
+            }
+        ],
+        "garnish":"",
+        "glassware":"coupe",
+        "ice":"None",
+        "directions":[
+            "Shake all the ingredients with ice",
+            "Strain into a coupe"
         ],
         "editorsNotes":"",
         "favorite":false
@@ -530,7 +2354,7 @@
         "ingredients":[
             {
                 "amount":"1 oz",
-                "ingredient":"Tanqueray Gin"
+                "ingredient":"Tanqueray London Dry Gin"
             },
             {
                 "amount":"1 oz",
@@ -546,78 +2370,253 @@
         "ice":"2-in cube",
         "directions":[
             "Stir all the ingredients over ice",
-            "Strain into glass over a 2-in ice cube",
+            "Strain into a single rocks glass over a 2-in ice cube",
             "Garnish with the orange half-wheel"
         ],
         "editorsNotes":"",
         "favorite":false
     },
     {
-        "name":"Oaxaca Old-Fashioned",
+        "name":"Newark",
+        "barName":"PDT",
+        "barLocation":"New York",
+        "type":"martini",
+        "ingredients":[
+            {
+                "amount":"2 oz",
+                "ingredient":"Laird’s Apple Brandy 100"
+            },
+            {
+                "amount":"1 oz",
+                "ingredient":"Vya Sweet Vermouth"
+            },
+            {
+                "amount":"¼ oz",
+                "ingredient":"Fernet-Branca"
+            },
+            {
+                "amount":"¼ oz",
+                "ingredient":"Maraska Maraschino Liqueur"
+            }
+        ],
+        "garnish":"",
+        "glassware":"coupe",
+        "ice":"None",
+        "directions":[
+            "Stir with ice",
+            "Strain into a chilled coupe"
+        ],
+        "editorsNotes":"",
+        "favorite":false
+    },
+    {
+        "name":"Night Owl",
         "barName":"Death & Co",
+        "barLocation":"New York",
+        "type":"martini",
+        "ingredients":[
+            {
+                "amount":"2 oz",
+                "ingredient":"Pierre Ferrand Ambre Cognac"
+            },
+            {
+                "amount":"½ oz",
+                "ingredient":"Carpano Punt e Mes"
+            },
+            {
+                "amount":"½ oz",
+                "ingredient":"Lustau East India Solera Reserva Cream Sherry"
+            },
+            {
+                "amount":"¼ oz",
+                "ingredient":"Van Oosten Batavia Arrack"
+            }
+        ],
+        "garnish":"",
+        "glassware":"coupe",
+        "ice":"None",
+        "directions":[
+            "Stir all the ingredients over ice",
+            "Strain into a coupe"
+        ],
+        "editorsNotes":"",
+        "favorite":false
+    },
+    {
+        "name":"North Sea Oil",
+        "barName":"NoMad Bar",
         "barLocation":"New York",
         "type":"old-fashioned",
         "ingredients":[
             {
                 "amount":"1½ oz",
-                "ingredient":"El Tesoro Reposado Tequila"
-                
-            },{
+                "ingredient":"Linie Aquavit"
+            },
+            {
+                "amount":"¾ oz",
+                "ingredient":"Cocchi Americano Aperitif"
+            },
+            {
                 "amount":"½ oz",
-                "ingredient":"Del Maguey San Luis Del Rio Mezcal"
-                
-            },{
-                "amount":"1 tsp",
-                "ingredient":"Agave Nectar"
-                
-            },{
-                "amount":"2 dashes",
-                "ingredient":"Angostura Bitters"
-                
+                "ingredient":"Laphroaig 10-Yr Islay Scotch"
+            },
+            {
+                "amount":"¼ oz",
+                "ingredient":"Combier Triple Sec"
             }
         ],
-        "garnish":"1 orange twist",
+        "garnish":"1 grapefruit twist",
         "glassware":"double rocks",
         "ice":"2-in cube",
         "directions":[
-            "Stir all the ingredients over ice",
-            "Strain into glass over a 2-in ice cube",
-            "Flame the orange twist over the drink, then drop it in"
+            "Combine all the ingredients in a mixing glass",
+            "Place a 2-in ice cube in a double rocks glass",
+            "Fill the mixing glass with ice and stir",
+            "Strain the drink into the double rocks glass over the 2-in cube",
+            "Express the oils from the grapefruit twist over the drink, and place it into the drink"
         ],
         "editorsNotes":"",
-        "favorite":true
+        "favorite":false
     },
     {
-        "name":"Old-Fashioned",
-        "barName":"Death & Co",
+        "name":"Nth Degree",
+        "barName":"PDT",
         "barLocation":"New York",
         "type":"old-fashioned",
         "ingredients":[
             {
-                "amount":"2 oz",
-                "ingredient":"Elijah Craig Small Batch Bourbon"
+                "amount":"1 oz",
+                "ingredient":"Rhum Clément VSOP Rum"
             },
             {
-                "amount":"1 tsp",
-                "ingredient":"Demerara Gum Syrup"
+                "amount":"1 oz",
+                "ingredient":"Laird’s Apple Brandy 100"
+            },
+            {
+                "amount":"½ oz",
+                "ingredient":"Chartreuse Green"
+            },
+            {
+                "amount":"1",
+                "ingredient":"Demerara Sugar Cube"
             },
             {
                 "amount":"2 dashes",
-                "ingredient":"Angostura Bitters"
-            },
-            {
-                "amount":"1 dash",
-                "ingredient":"Bitter Truth Aromatic Bitters"
+                "ingredient":"Fee Brothers Whiskey Barrel-Aged Bitters"
             }
         ],
         "garnish":"1 orange twist, 1 lemon twist",
         "glassware":"single rocks",
         "ice":"2-in cube",
         "directions":[
-            "Stir all the ingredients over ice",
-            "Strain into glass over a 2-in ice cube",
-            "Express the orange twist over the drink, then gently rub it around the rim of glass and place it into the drink",
-            "Express the lemon twist over the drink, then place it into the drink"
+            "Muddle the sugar cube and bitters",
+            "Add everything else",
+            "Stir with ice",
+            "Strain over a 2-in ice cube into a chilled single rocks glass",
+            "Garnish with an orange and lemon twist"
+        ],
+        "editorsNotes":"",
+        "favorite":false
+    },
+    {
+        "name":"Occidental",
+        "barName":"PDT",
+        "barLocation":"New York",
+        "type":"martini",
+        "ingredients":[
+            {
+                "amount":"",
+                "ingredient":"Fernet-Branca"
+            },
+            {
+                "amount":"2 oz",
+                "ingredient":"Linie Aquavit"
+            },
+            {
+                "amount":"¾ oz",
+                "ingredient":"Grand Marnier"
+            },
+            {
+                "amount":"½ oz",
+                "ingredient":"Amaro Nonino Quintessentia"
+            }
+        ],
+        "garnish":"1 orange twist",
+        "glassware":"coupe",
+        "ice":"None",
+        "directions":[
+            "Stir with ice",
+            "Strain into a chilled, Fernet-Branca-rinsed coupe",
+            "Garnish with an orange twist"
+        ],
+        "editorsNotes":"",
+        "favorite":false
+    },
+    {
+        "name":"Old Alhambra",
+        "barName":"NoMad Bar",
+        "barLocation":"New York",
+        "type":"martini",
+        "ingredients":[
+            {
+                "amount":"1½ oz",
+                "ingredient":"Laphroaig 10-Yr Islay Scotch"
+            },
+            {
+                "amount":"¾ oz",
+                "ingredient":"Dolin Blanc Vermouth"
+            },
+            {
+                "amount":"½ oz",
+                "ingredient":"Lustau East India Solera Reserva Cream Sherry"
+            },
+            {
+                "amount":"½ oz",
+                "ingredient":"Marie Brizard Crème de Cacao Blanc"
+            }
+        ],
+        "garnish":"1 grapefruit twist",
+        "glassware":"coupe",
+        "ice":"None",
+        "directions":[
+            "Combine all the ingredients in a mixing glass",
+            "Fill the mixing glass with ice and stir",
+            "Strain the drink into a coupe",
+            "Express the oils from the grapefruit twist over the drink, and place it into the drink"
+        ],
+        "editorsNotes":"",
+        "favorite":false
+    },
+    {
+        "name":"Old Friend",
+        "barName":"PDT",
+        "barLocation":"New York",
+        "type":"daiquiri",
+        "ingredients":[
+            {
+                "amount":"1½ oz",
+                "ingredient":"Beefeater London Dry Gin"
+            },
+            {
+                "amount":"¾ oz",
+                "ingredient":"Grapefruit Juice"
+            },
+            {
+                "amount":"½ oz",
+                "ingredient":"Campari"
+            },
+            {
+                "amount":"¼ oz",
+                "ingredient":"St-Germain"
+            }
+        ],
+        "garnish":"1 lemon twist",
+        "glassware":"coupe",
+        "ice":"None",
+        "directions":[
+            "Shake with ice",
+            "Fine-strain into a chilled coupe",
+            "Garnish with the lemon twist"
         ],
         "editorsNotes":"",
         "favorite":false
@@ -646,8 +2645,116 @@
         "ice":"None",
         "directions":[
             "Stir all the ingredients over ice",
-            "Strain into chilled glass",
+            "Strain into a chilled Nick & Nora glass",
             "Express the lemon twist over the drink, then place it into the drink"
+        ],
+        "editorsNotes":"",
+        "favorite":false
+    },
+    {
+        "name":"One, One, One",
+        "barName":"Death & Co",
+        "barLocation":"New York",
+        "type":"martini",
+        "ingredients":[
+            {
+                "amount":"1 oz",
+                "ingredient":"Krogstad Aquavit"
+            },
+            {
+                "amount":"1 oz",
+                "ingredient":"Beefeater London Dry Gin"
+            },
+            {
+                "amount":"1 oz",
+                "ingredient":"Dolin Blanc Vermouth"
+            },
+            {
+                "amount":"1 dash",
+                "ingredient":"Regans' Orange Bitters No. 6"
+            }
+        ],
+        "garnish":"",
+        "glassware":"coupe",
+        "ice":"None",
+        "directions":[
+            "Stir all the ingredients over ice",
+            "Strain into a coupe"
+        ],
+        "editorsNotes":"",
+        "favorite":false
+    },
+    {
+        "name":"Paddington",
+        "barName":"PDT",
+        "barLocation":"New York",
+        "type":"daiquiri",
+        "ingredients":[
+            {
+                "amount":"",
+                "ingredient":"St. George Absinthe Verte"
+            },
+            {
+                "amount":"1½ oz",
+                "ingredient":"Banks 5-Island Rum"
+            },
+            {
+                "amount":"½ oz",
+                "ingredient":"Lillet Blanc"
+            },
+            {
+                "amount":"½ oz",
+                "ingredient":"Grapefruit Juice"
+            },
+            {
+                "amount":"½ oz",
+                "ingredient":"Lemon Juice"
+            },
+            {
+                "amount":"1 barspoon",
+                "ingredient":"Bonne Maman Orange Marmalade"
+            }
+        ],
+        "garnish":"1 grapefruit twist",
+        "glassware":"coupe",
+        "ice":"None",
+        "directions":[
+            "Shake with ice",
+            "Strain into a chilled, St.George Absinthe Verte-rinsed coupe",
+            "Garnish with a grapefruit twist"
+        ],
+        "editorsNotes":"",
+        "favorite":false
+    },
+    {
+        "name":"Panamericano",
+        "barName":"NoMad Bar",
+        "barLocation":"New York",
+        "type":"martini",
+        "ingredients":[
+            {
+                "amount":"1 oz",
+                "ingredient":"Macchu Pisco"
+            },
+            {
+                "amount":"1 oz",
+                "ingredient":"Cocchi Americano Aperitif"
+            },
+            {
+                "amount":"1 oz",
+                "ingredient":"Dolin Blanc Vermouth"
+            }
+        ],
+        "garnish":"1 orange twist",
+        "glassware":"double rocks",
+        "ice":"2-in cube",
+        "directions":[
+            "Combine all ingredients in a mixing glass",
+            "Place a 2-in ice cube in a double rocks glass",
+            "Fill the mixing glass with ice and stir",
+            "Strain the drink into the double rocks glass",
+            "Express the oils of the orange twist over the glass",
+            "Rub the twist on the rim of the glass and drop it into the glass, leaving the flesh side up"
         ],
         "editorsNotes":"",
         "favorite":false
@@ -680,248 +2787,872 @@
         "ice":"None",
         "directions":[
             "Stir all the ingredients over ice",
-            "Strain into chilled glass",
+            "Strain into a chilled Nick & Nora glass",
             "Express the lemon twist over the drink, then set it on the edge of glass"
         ],
         "editorsNotes":"The term \"perfect\" refers to a drink that contains equal parts sweet and dry vermouth.",
         "favorite":false
     },
     {
-        "name":"Pisco Sour",
-        "barName":"Death & Co",
-        "barLocation":"New York",
-        "type":"daiquiri",
-        "ingredients":[
-            {
-                "amount":"2 oz",
-                "ingredient":"Campo de Encanto Grand and Noble Pisco"
-            },
-            {
-                "amount":"½ oz",
-                "ingredient":"Lemon Juice"
-            },
-            {
-                "amount":"½ oz",
-                "ingredient":"Lime Juice"
-            },
-            {
-                "amount":"¾ oz",
-                "ingredient":"Simple Syrup"
-            },
-            {
-                "amount":"1",
-                "ingredient":"Egg White"
-            }
-        ],
-        "garnish":"3 drops Angostura Bitters",
-        "glassware":"coupe",
-        "ice":"None",
-        "directions":[
-            "Dry shake all the ingredients",
-            "Shake again with ice",
-            "Double strain into chilled glass",
-            "Carefully garnish the top of the foam with the bitters"
-        ],
-        "editorsNotes":"",
-        "favorite":false
-    },
-    {
-        "name":"Sazerac",
-        "barName":"Death & Co",
-        "barLocation":"New York",
-        "type":"old-fashioned",
-        "ingredients":[
-            {
-                "amount":"",
-                "ingredient":"Vieux Pontarlier Absinthe"
-            },
-            {
-                "amount":"1½ oz",
-                "ingredient":"Rittenhouse Rye 100 Proof"
-            },
-            {
-                "amount":"½ oz",
-                "ingredient":"Pierre Ferrand 1840 Cognac"
-            },
-            {
-                "amount":"1 tsp",
-                "ingredient":"Demerara Gum Syrup"
-            },
-            {
-                "amount":"4 dashes",
-                "ingredient":"Peychaud's Bitters"
-            },
-            {
-                "amount":"1 dash",
-                "ingredient":"Angostura Bitters"
-            },
-        ],
-        "garnish":"1 lemon twist",
-        "glassware":"single rocks",
-        "ice":"None",
-        "directions":[
-            "Rinse glass with absinthe and dump",
-            "Stir the remaining ingredients over ice",
-            "Strain into glass",
-            "Express the lemon twist over the drink and discard"
-        ],
-        "editorsNotes":"",
-        "favorite":false
-    },
-    {
-        "name":"Sidecar",
+        "name":"Pete's Word",
         "barName":"Death & Co",
         "barLocation":"New York",
         "type":"sidecar",
         "ingredients":[
             {
-                "amount":"1½ oz",
-                "ingredient":"Pierre Ferrand Ambre Cognac"
-            },
-            {
-                "amount":"1 oz",
-                "ingredient":"Pierre Ferrand Dry Curaçao"
+                "amount":"¾ oz",
+                "ingredient":"Laphroaig 10-Yr Islay Scotch"
             },
             {
                 "amount":"¾ oz",
-                "ingredient":"Lemon Juice"
+                "ingredient":"Luxardo Maraschino Liqueur"
             },
             {
-                "amount":"1 tsp",
-                "ingredient":"Simple Syrup"
+                "amount":"¾ oz",
+                "ingredient":"Chartreuse Green"
+            },
+            {
+                "amount":"¾ oz",
+                "ingredient":"Lime Juice"
+            }
+        ],
+        "garnish":"",
+        "glassware":"coupe",
+        "ice":"None",
+        "directions":[
+            "Shake all the ingredients with ice",
+            "Strain into a coupe"
+        ],
+        "editorsNotes":"",
+        "favorite":false
+    },
+    {
+        "name":"Plátanos en Mole Old-Fashioned",
+        "barName":"PDT",
+        "barLocation":"New York",
+        "type":"old-fashioned",
+        "ingredients":[
+            {
+                "amount":"2 oz",
+                "ingredient":"Ron Zacapa 23 Rum"
+            },
+            {
+                "amount":"¼ oz",
+                "ingredient":"Giffard Banane du Brésil"
+            },
+            {
+                "amount":"12 drops",
+                "ingredient":"Bittermens Xocolatl Mole Bitters"
+            }
+        ],
+        "garnish":"1 pinch of ground chile",
+        "glassware":"single rocks",
+        "ice":"Large Sphere",
+        "directions":[
+            "Stir with ice",
+            "Strain into a large ice sphere into a chilled single rocks glass",
+            "Garnish with the chile"
+        ],
+        "editorsNotes":"",
+        "favorite":false
+    },
+    {
+        "name":"Preakness",
+        "barName":"Death & Co",
+        "barLocation":"New York",
+        "type":"martini",
+        "ingredients":[
+            {
+                "amount":"1½ oz",
+                "ingredient":"Old Grand-Dad 114 Bourbon"
+            },
+            {
+                "amount":"¾ oz",
+                "ingredient":"Carpano Antica Formula Vermouth"
+            },
+            {
+                "amount":"¼ oz",
+                "ingredient":"Bénédictine"
+            },
+            {
+                "amount":"1 dash",
+                "ingredient":"Bitter Truth Aromatic Bitters"
             }
         ],
         "garnish":"1 orange twist",
         "glassware":"coupe",
         "ice":"None",
         "directions":[
-            "Shake all the ingredients with ice",
-            "Strain into chilled glass",
-            "Express the orange twist over the drink, then gently rub it around the rim of glass and place it into the drink"
+            "Stir all the ingredients over ice",
+            "Strain into a coupe",
+            "Garnish with the orange twist"
         ],
         "editorsNotes":"",
         "favorite":false
     },
     {
-        "name":"Silver Fizz",
-        "barName":"Death & Co",
+        "name":"Psycho Killer",
+        "barName":"Dead Rabbit",
         "barLocation":"New York",
-        "type":"daiquiri",
+        "type":"martini",
         "ingredients":[
             {
                 "amount":"2 oz",
-                "ingredient":"Beefeater Gin"
+                "ingredient":"Redbreast 12-Yr Irish Whiskey"
+            },
+            {
+                "amount":"½ oz",
+                "ingredient":"Giffard Banane du Brésil"
+            },
+            {
+                "amount":"½ oz",
+                "ingredient":"Giffard Crème de Cacao Blanc"
             },
             {
                 "amount":"¾ oz",
-                "ingredient":"Simple Syrup"
+                "ingredient":"Campari"
             },
             {
-                "amount":"¾ oz",
-                "ingredient":"Lemon Juice"
-            },
-            {
-                "amount":"1",
-                "ingredient":"Egg White"
-            },
-            {
-                "amount":"2 oz",
-                "ingredient":"Seltzer"
+                "amount":"2 dashes",
+                "ingredient":"Vieux Pontarlier Absinthe"
             }
         ],
         "garnish":"",
-        "glassware":"fizz",
+        "glassware":"Nick & Nora",
         "ice":"None",
         "directions":[
-            "Dry shake all the ingredients (except the cold seltzer)",
-            "Shake again with ice",
-            "Double strain into glass",
-            "Slowly add the cold seltzer, occasionally tapping the bottom of glass on a flat surface to settle the foam"
+            "Stir with ice",
+            "Strain with julep strainer",
+            "Serve up without ice"
         ],
         "editorsNotes":"",
         "favorite":false
     },
     {
-        "name":"Southside",
+        "name":"Range Life",
+        "barName":"Death & Co",
+        "barLocation":"New York",
+        "type":"martini",
+        "ingredients":[
+            {
+                "amount":"2 oz",
+                "ingredient":"El Tesoro Reposado Tequila"
+            },
+            {
+                "amount":"½ oz",
+                "ingredient":"Campari"
+            },
+            {
+                "amount":"½ oz",
+                "ingredient":"Grand Marnier"
+            },
+            {
+                "amount":"½ oz",
+                "ingredient":"Carpano Punt e Mes"
+            }
+        ],
+        "garnish":"",
+        "glassware":"coupe",
+        "ice":"None",
+        "directions":[
+            "Stir all ingredients over ice",
+            "Strain into a coupe"
+        ],
+        "editorsNotes":"",
+        "favorite":false
+    },
+    {
+        "name":"Remember Maine",
+        "barName":"PDT",
+        "barLocation":"New York",
+        "type":"sidecar",
+        "ingredients":[
+            {
+                "amount":"2 oz",
+                "ingredient":"Rhum Clément VSOP Rum"
+            },
+            {
+                "amount":"1½ oz",
+                "ingredient":"Red Jacket Orchard Apple Cider"
+            },
+            {
+                "amount":"¼ oz",
+                "ingredient":"St. Elizabeth Allspice Dram"
+            },
+            {
+                "amount":"2 dashes",
+                "ingredient":"Angostura Bitters"
+            }
+        ],
+        "garnish":"1 apple fan sprinkled with sea salt",
+        "glassware":"single rocks",
+        "ice":"2-in cubes",
+        "directions":[
+            "Stir with ice",
+            "Stir until cold",
+            "Strain over a 2-in ice cube in a chilled single rocks glass",
+            "Garnish with an apple fan sprinkled with sea salt"
+        ],
+        "editorsNotes":"",
+        "favorite":false
+    },
+    {
+        "name":"Rock and a Hard Place",
+        "barName":"NoMad Bar",
+        "barLocation":"New York",
+        "type":"martini",
+        "ingredients":[
+            {
+                "amount":"1½ oz",
+                "ingredient":"Rittenhouse Rye 100 Proof"
+            },
+            {
+                "amount":"½ oz",
+                "ingredient":"Dolin Dry Vermouth"
+            },
+            {
+                "amount":"½ oz",
+                "ingredient":"Carpano Antica Formula Vermouth"
+            },
+            {
+                "amount":"½ oz",
+                "ingredient":"Amaro Nonino Quintessentia"
+            },
+            {
+                "amount":"1 tsp",
+                "ingredient":"Nux Alpina Walnut Liqueur"
+            },
+            {
+                "amount":"2 dashes",
+                "ingredient":"Fee Brothers Black Walnut Bitters"
+            }
+        ],
+        "garnish":"",
+        "glassware":"Nick & Nora",
+        "ice":"None",
+        "directions":[
+            "Combine all the ingredients in a mixing glass",
+            "Fill the mixing glass with ice and stir",
+            "Strain the drink into a Nick & Nora glass"
+        ],
+        "editorsNotes":"",
+        "favorite":false
+    },
+    {
+        "name":"Sergio Leone",
+        "barName":"Death & Co",
+        "barLocation":"New York",
+        "type":"martini",
+        "ingredients":[
+            {
+                "amount":"2 oz",
+                "ingredient":"El Tesoro Reposado Tequila"
+            },
+            {
+                "amount":"¾ oz",
+                "ingredient":"Carpano Antica Formula Vermouth"
+            },
+            {
+                "amount":"¼ oz",
+                "ingredient":"Solerno Blood Orange Liqueur"
+            },
+            {
+                "amount":"1 dash",
+                "ingredient":"Bittermens Xocolatl Mole Bitters"
+            }
+        ],
+        "garnish":"",
+        "glassware":"coupe",
+        "ice":"None",
+        "directions":[
+            "Stir all the ingredients over ice",
+            "Strain into a coupe"
+        ],
+        "editorsNotes":"",
+        "favorite":false
+    },
+    {
+        "name":"Sforzando",
+        "barName":"Death & Co",
+        "barLocation":"New York",
+        "type":"martini",
+        "ingredients":[
+            {
+                "amount":"1 oz",
+                "ingredient":"Rittenhouse Rye 100 Proof"
+            },
+            {
+                "amount":"¾ oz",
+                "ingredient":"Del Maguey Chichicapa Mezcal"
+            },
+            {
+                "amount":"½ oz",
+                "ingredient":"Bénédictine"
+            },
+            {
+                "amount":"½ oz",
+                "ingredient":"Dolin Dry Vermouth"
+            },
+            {
+                "amount":"2 dashes",
+                "ingredient":"Bittermens Xocolatl Mole Bitters"
+            }
+        ],
+        "garnish":"1 orange twist",
+        "glassware":"coupe",
+        "ice":"None",
+        "directions":[
+            "Stir all the ingredients over ice",
+            "Strain into a coupe",
+            "Garnish with the orange twist"
+        ],
+        "editorsNotes":"",
+        "favorite":false
+    },
+    {
+        "name":"Shattered Glasser",
+        "barName":"Death & Co",
+        "barLocation":"New York",
+        "type":"martini",
+        "ingredients":[
+            {
+                "amount":"1 oz",
+                "ingredient":"El Tesoro Reposado Tequila"
+            },
+            {
+                "amount":"½ oz",
+                "ingredient":"Los Amantes Joven Mezcal"
+            },
+            {
+                "amount":"¾ oz",
+                "ingredient":"Carpano Antica Formula Vermouth"
+            },
+            {
+                "amount":"½ oz",
+                "ingredient":"Van Oosten Batavia Arrack"
+            },
+            {
+                "amount":"¼ oz",
+                "ingredient":"St. Elizabeth Allspice Dram"
+            },
+            {
+                "amount":"¼ oz",
+                "ingredient":"Bénédictine"
+            },
+            {
+                "amount":"2 dashes",
+                "ingredient":"Bittermens Xocolatl Mole Bitters"
+            }
+        ],
+        "garnish":"",
+        "glassware":"coupe",
+        "ice":"None",
+        "directions":[
+            "Stir all the ingredients over ice",
+            "Strain into a coupe"
+        ],
+        "editorsNotes":"",
+        "favorite":false
+    },
+    {
+        "name":"Shruff's End",
+        "barName":"Death & Co",
+        "barLocation":"New York",
+        "type":"old-fashioned",
+        "ingredients":[
+            {
+                "amount":"1 oz",
+                "ingredient":"Laphroaig 10-Yr Islay Scotch"
+            },
+            {
+                "amount":"1 oz",
+                "ingredient":"Laird’s Apple Brandy 100"
+            },
+            {
+                "amount":"½ oz",
+                "ingredient":"Bénédictine"
+            },
+            {
+                "amount":"2 dashes",
+                "ingredient":"Death & Co Peychaud's Bitters"
+            }
+        ],
+        "garnish":"1 orange twist",
+        "glassware":"coupe",
+        "ice":"None",
+        "directions":[
+            "Stir all the ingredients over ice",
+            "Strain into a chilled coupe",
+            "Express the orange twist over the drink, then gently rub it around the rim of the glass and place it into the drink"
+        ],
+        "editorsNotes":"",
+        "favorite":false
+    },
+    {
+        "name":"Smoked Julep",
+        "barName":"Death & Co",
+        "barLocation":"New York",
+        "type":"old-fashioned",
+        "ingredients":[
+            {
+                "amount":"1 oz",
+                "ingredient":"Laphroaig 10-Yr Islay Scotch"
+            },
+            {
+                "amount":"1 oz",
+                "ingredient":"Laird’s Apple Brandy 100"
+            },
+            {
+                "amount":"¼ oz",
+                "ingredient":"Maple Syrup"
+            }
+        ],
+        "garnish":"1 apple fan, 1 mint bouquet",
+        "glassware":"julep",
+        "ice":"Crushed",
+        "directions":[
+            "Put all the ingredients in a julep tin",
+            "Fill the tin halfway with crushed ice",
+            "Stir with a teaspoon, churing the ice, for about 10 seconds, holding the tin by the rim so the entire tin can eventually frost up",
+            "Add more crushed ice to fill the tin ⅔ full",
+            "Stir until the tin is completely frosted",
+            "Add more crushed ice to form a cone above the rim",
+            "Garnish with the apple fan and mint bouquet in the center of the ice",
+            "Serve with a straw"
+        ],
+        "editorsNotes":"",
+        "favorite":false
+    },
+    {
+        "name":"South Slope",
+        "barName":"PDT",
+        "barLocation":"New York",
+        "type":"sidecar",
+        "ingredients":[
+            {
+                "amount":"¾ oz",
+                "ingredient":"Beefeater London Dry Gin"
+            },
+            {
+                "amount":"¾ oz",
+                "ingredient":"Aperol Aperitivo Liqueur"
+            },
+            {
+                "amount":"¾ oz",
+                "ingredient":"Lillet Blanc"
+            },
+            {
+                "amount":"½ oz",
+                "ingredient":"Marie Brizard Orange Curaçao"
+            },
+            {
+                "amount":"½ oz",
+                "ingredient":"Lemon Juice"
+            }
+        ],
+        "garnish":"1 lemon twist",
+        "glassware":"coupe",
+        "ice":"None",
+        "directions":[
+            "Shake with ice",
+            "Strain into a chilled coupe",
+            "Garnish with a lemon twist"
+        ],
+        "editorsNotes":"",
+        "favorite":false
+    },
+    {
+        "name":"Spring Sting",
+        "barName":"NoMad Bar",
+        "barLocation":"New York",
+        "type":"flip",
+        "ingredients":[
+            {
+                "amount":"1 oz",
+                "ingredient":"Pierre Ferrand 1840 Cognac"
+            },
+            {
+                "amount":"¾ oz",
+                "ingredient":"Cocchi Americano Aperitif"
+            },
+            {
+                "amount":"½ oz",
+                "ingredient":"Laphroaig 10-Yr Islay Scotch"
+            },
+            {
+                "amount":"½ oz",
+                "ingredient":"Chareau Aloe Vera Liqueur"
+            },
+            {
+                "amount":"1 tsp",
+                "ingredient":"Nardini Amaro"
+            }
+        ],
+        "garnish":"¼ cucumber",
+        "glassware":"Nick & Nora",
+        "ice":"None",
+        "directions":[
+            "In a mixing glass, combine all the ingredients",
+            "Using a melon baller, cut a dime-size ball out of the cucumber",
+            "Fill the mixing glass with 1¼-in ice cubes and stir",
+            "Strain the drink into a Nick & Nora glass using a hawthorne strainer",
+            "Skewer the cucumber and garnish the drink"
+        ],
+        "editorsNotes":"",
+        "favorite":false
+    },
+    {
+        "name":"St. Columb's Rill",
+        "barName":"Death & Co",
+        "barLocation":"New York",
+        "type":"martini",
+        "ingredients":[
+            {
+                "amount":"2 oz",
+                "ingredient":"Bushmills Irish Whiskey"
+            },
+            {
+                "amount":"¾ oz",
+                "ingredient":"Dolin Blanc Vermouth"
+            },
+            {
+                "amount":"¼ oz",
+                "ingredient":"Chartreuse Green"
+            },
+            {
+                "amount":"¼ oz",
+                "ingredient":"Luxardo Maraschino Liqueur"
+            }
+        ],
+        "garnish":"",
+        "glassware":"coupe",
+        "ice":"None",
+        "directions":[
+            "Stir all the ingredients over ice",
+            "Strain into a coupe"
+        ],
+        "editorsNotes":"",
+        "favorite":false
+    },
+    {
+        "name":"Sunset at Gowanus",
         "barName":"Death & Co",
         "barLocation":"New York",
         "type":"daiquiri",
         "ingredients":[
             {
-                "amount":"5",
-                "ingredient":"Mint Leaf"
+                "amount":"2 oz",
+                "ingredient":"Santa Teresa 1796 Rum"
             },
             {
-                "amount":"2 oz",
-                "ingredient":"Plymouth Gin"
+                "amount":"¼ oz",
+                "ingredient":"Laird’s Apple Brandy 100"
+            },
+            {
+                "amount":"¼ oz",
+                "ingredient":"Chartreuse Yellow"
             },
             {
                 "amount":"¾ oz",
                 "ingredient":"Lime Juice"
             },
             {
-                "amount":"¾ oz",
-                "ingredient":"Simple Syrup"
-            },
-            {
-                "amount":"1 dash",
-                "ingredient":"Angostura Bitters"
+                "amount":"½ oz",
+                "ingredient":"Maple Syrup"
             }
         ],
-        "garnish":"1 mint leaf",
+        "garnish":"",
         "glassware":"coupe",
         "ice":"None",
         "directions":[
-            "In a shaker, gently muddle the mint",
-            "Add the remaining ingredients",
-            "Shake with ice",
-            "Strain into chilled glass",
-            "Garnish with the mint leaf"
+            "Shake all the ingredients with ice",
+            "Strain into a coupe"
         ],
         "editorsNotes":"",
         "favorite":false
     },
     {
-        "name":"Tom Collins",
+        "name":"Sweet and Vicious",
         "barName":"Death & Co",
+        "barLocation":"New York",
+        "type":"martini",
+        "ingredients":[
+            {
+                "amount":"2",
+                "ingredient":"Fuji Apple Slice"
+            },
+            {
+                "amount":"2 oz",
+                "ingredient":"Old Overholt Rye"
+            },
+            {
+                "amount":"½ oz",
+                "ingredient":"Dolin Dry Vermouth"
+            },
+            {
+                "amount":"½ oz",
+                "ingredient":"Amaro Nonino Quintessentia"
+            },
+            {
+                "amount":"1 tsp",
+                "ingredient":"Maple Syrup"
+            }
+        ],
+        "garnish":"1 apple fan",
+        "glassware":"coupe",
+        "ice":"None",
+        "directions":[
+            "In a mixing glass, gently muddle the apple slices",
+            "Add the remaining ingredients",
+            "Stir over ice",
+            "Double strain into a coupe",
+            "Garnish with the apple fan"
+        ],
+        "editorsNotes":"",
+        "favorite":false
+    },
+    {
+        "name":"Swollen Gland",
+        "barName":"PDT",
         "barLocation":"New York",
         "type":"daiquiri",
         "ingredients":[
             {
-                "amount":"2 oz",
-                "ingredient":"Seltzer"
+                "amount":"",
+                "ingredient":"Vieux Pontarlier Absinthe"
             },
             {
                 "amount":"2 oz",
-                "ingredient":"Beefeater Gin"
+                "ingredient":"Berkshire Mountain Greylock Gin"
             },
             {
-                "amount":"1 oz",
-                "ingredient":"Lemon Juice"
+                "amount":"½ oz",
+                "ingredient":"Orange Juice"
             },
             {
-                "amount":"¾ oz",
-                "ingredient":"Simple Syrup"
+                "amount":"¼ oz",
+                "ingredient":"Chartreuse Yellow"
+            },
+            {
+                "amount":"4 dashes",
+                "ingredient":"Peychaud's Bitters"
             }
         ],
-        "garnish":"1 orange half-wheel, 1 brandied cherry on a skewer",
-        "glassware":"Collins",
-        "ice":"1¼-in cubes",
+        "garnish":"1 cucumber ribbon",
+        "glassware":"coupe",
+        "ice":"None",
         "directions":[
-            "Pour the cold seltzer into glass",
-            "Short shake the remaining ingredients with ice for about 5 seconds",
-            "Strain into glass",
-            "Fill the glass with 1¼-in ice cubes",
-            "Garnish with the orange half-wheel and cherry"
+            "Shake with ice",
+            "Fine-strain into a chilled, Vieux Pontarlier Absinthe-rinsed coupe",
+            "Garnish with a cucumber ribbon on a pick"
         ],
         "editorsNotes":"",
         "favorite":false
     },
     {
-        "name":"Vesper",
+        "name":"Ty Cobbler",
+        "barName":"NoMad Bar",
+        "barLocation":"New York",
+        "type":"old-fashioned",
+        "ingredients":[
+            {
+                "amount":"3",
+                "ingredient":"Brandied Cherry"
+            },
+            {
+                "amount":"1",
+                "ingredient":"White Sugar Cube"
+            },
+            {
+                "amount":"2 oz",
+                "ingredient":"Siete Laguas Blanco Tequila"
+            },
+            {
+                "amount":"½ oz",
+                "ingredient":"Cynar Ricetta Originale"
+            },
+            {
+                "amount":"1 dash",
+                "ingredient":"Bittermens Xocolatl Mole Bitters"
+            }
+        ],
+        "garnish":"1 orange wheel",
+        "glassware":"double rocks",
+        "ice":"Crushed",
+        "directions":[
+            "In a shaker, muddle the cherries and sugar cube",
+            "Add the remaining ingredients",
+            "Dry-shake",
+            "Dump into a double rocks glass filled with crushed ice",
+            "Garnish with the orange wheel"
+        ],
+        "editorsNotes":"",
+        "favorite":false
+    },
+    {
+        "name":"Vagabond",
+        "barName":"NoMad Bar",
+        "barLocation":"New York",
+        "type":"old-fashioned",
+        "ingredients":[
+            {
+                "amount":"",
+                "ingredient":"Pernod Absinthe"
+            },
+            {
+                "amount":"1 oz",
+                "ingredient":"Laphroaig 10-Yr Islay Scotch"
+            },
+            {
+                "amount":"¾ oz",
+                "ingredient":"Rittenhouse Rye 100 Proof"
+            },
+            {
+                "amount":"½ oz",
+                "ingredient":"Bonal Gentiane-Quina"
+            },
+            {
+                "amount":"½ oz",
+                "ingredient":"Lustau Los Arcos Amontillado Sherry"
+            },
+            {
+                "amount":"½ oz",
+                "ingredient":"Lustau Pedro Ximénez San Emilio Sherry"
+            }
+        ],
+        "garnish":"1 lemon twist",
+        "glassware":"single rocks",
+        "ice":"None",
+        "directions":[
+            "Combine all the ingredients except the absinthe in a mixing glass",
+            "Rinse a single rocks glass with 6 sprays of absinthe from an atomizer",
+            "Fill the mixing glass with ice and stir",
+            "Strain the drink into the single rocks glass",
+            "Express the oils from the lemon twist over the drink",
+            "Discard the twist"
+        ],
+        "editorsNotes":"",
+        "favorite":false
+    },
+    {
+        "name":"Vieux Carré",
         "barName":"Death & Co",
         "barLocation":"New York",
         "type":"martini",
+        "ingredients":[
+            {
+                "amount":"1 oz",
+                "ingredient":"Rittenhouse Rye 100 Proof"
+            },
+            {
+                "amount":"1 oz",
+                "ingredient":"Pierre Ferrand Ambre Cognac"
+            },
+            {
+                "amount":"2 oz",
+                "ingredient":"Carpano Antica Formula Vermouth"
+            },
+            {
+                "amount":"1 tsp",
+                "ingredient":"Bénédictine"
+            },
+            {
+                "amount":"1 dash",
+                "ingredient":"Angostura Bitters"
+            },
+            {
+                "amount":"1 dash",
+                "ingredient":"Death & Co Peychaud's Bitters"
+            }
+        ],
+        "garnish":"1 lemon twist",
+        "glassware":"double rocks",
+        "ice":"None",
+        "directions":[
+            "Stir all the ingredients over ice",
+            "Strain into a double rocks glass",
+            "Garnish with the lemon twist"
+        ],
+        "editorsNotes":"",
+        "favorite":false
+    },
+    {
+        "name":"Wheeler and Wilson",
+        "barName":"NoMad Bar",
+        "barLocation":"New York",
+        "type":"martini",
+        "ingredients":[
+            {
+                "amount":"1 oz",
+                "ingredient":"Old Forester 100 Bourbon"
+            },
+            {
+                "amount":"¾ oz",
+                "ingredient":"Diplomático Reserva Exclusiva Rum"
+            },
+            {
+                "amount":"½ oz",
+                "ingredient":"Lustau Los Arcos Amontillado Sherry"
+            },
+            {
+                "amount":"½ oz",
+                "ingredient":"Dolin Blanc Vermouth"
+            },
+            {
+                "amount":"½ oz",
+                "ingredient":"Amaro Montenegro"
+            },
+            {
+                "amount":"1 whole-length",
+                "ingredient":"Cucumber Slice"
+            }
+        ],
+        "garnish":"1 whole-length cucumber slice",
+        "glassware":"coupe",
+        "ice":"None",
+        "directions":[
+            "Combine all the ingredients in a mixing glass",
+            "Fill the mixing glass with ice and stir",
+            "Strain the drink into a coupe",
+            "Skewer the cucumber slice garnish into a wave shape",
+            "Garnish the drink"
+        ],
+        "editorsNotes":"",
+        "favorite":false
+    },
+    {
+        "name":"Whiskey Highball",
+        "barName":"Death & Co",
+        "barLocation":"New York",
+        "type":"whiskey highball",
+        "ingredients":[
+            {
+                "amount":"2 oz",
+                "ingredient":"Hakushu 12-Yr Whiskey"
+            },
+            {
+                "amount":"4 oz",
+                "ingredient":"Seltzer"
+            }
+        ],
+        "garnish":"",
+        "glassware":"highball",
+        "ice":"1¼-in cubes",
+        "directions":[
+            "Pour the whiskey into a Highball glass",
+            "Add a 1¼-in ice cube",
+            "Let sit for 3 seconds",
+            "Add the cold seltzer",
+            "Stir once"
+        ],
+        "editorsNotes":"",
+        "favorite":false
+    },
+    {
+        "name":"White Birch Fizz",
+        "barName":"PDT",
+        "barLocation":"New York",
+        "type":"daiquiri",
         "ingredients":[
             {
                 "amount":"1½ oz",
@@ -929,79 +3660,170 @@
             },
             {
                 "amount":"¾ oz",
-                "ingredient":"Aylesbury Duck Vodka"
+                "ingredient":"Lemon Juice"
             },
             {
                 "amount":"½ oz",
-                "ingredient":"Lillet Blanc"
+                "ingredient":"Strega"
+            },
+            {
+                "amount":"½ oz",
+                "ingredient":"Rothman & Winter Orchard Apricot"
+            },
+            {
+                "amount":"1",
+                "ingredient":"Egg White"
+            },
+            {
+                "amount":"2 oz",
+                "ingredient":"Club Soda"
             }
         ],
-        "garnish":"1 lemon twist",
-        "glassware":"Nick & Nora",
+        "garnish":"1 spritz of Suze",
+        "glassware":"highball",
         "ice":"None",
         "directions":[
-            "Stir all the ingredients over ice",
-            "Strain into glass",
-            "Express the lemon twist over the drink, then set it on the edge of glass"
+            "Dry-shake except the Club Soda",
+            "Shake again with ice",
+            "Strain into a chilled highball glass",
+            "Top with 2 oz Club Soda",
+            "Garnish with a spritz of Suze Aperitif"
         ],
         "editorsNotes":"",
         "favorite":false
     },
     {
-        "name":"Vodka Martini",
+        "name":"White Negroni",
         "barName":"Death & Co",
         "barLocation":"New York",
         "type":"martini",
         "ingredients":[
             {
-                "amount":"2½ oz",
-                "ingredient":"Absolut Elyx Vodka"
+                "amount":"1½ oz",
+                "ingredient":"Beefeater London Dry Gin"
             },
             {
-                "amount":"½ oz",
-                "ingredient":"Dolin Dry Vermouth"
+                "amount":"1 oz",
+                "ingredient":"Dolin Blanc Vermouth"
+            },
+            {
+                "amount":"¾ oz",
+                "ingredient":"Suze Aperitif"
             }
         ],
-        "garnish":"1 olive",
-        "glassware":"coupe",
-        "ice":"None",
+        "garnish":"1 orange twist",
+        "glassware":"single rocks",
+        "ice":"2-in cube",
         "directions":[
             "Stir all the ingredients over ice",
-            "Strain into chilled glass",
-            "Garnish with the olive"
+            "Strain into a single rocks glass over a 2-in ice cube",
+            "Express the orange twist over the drink, then gently rub it around the rim of the glass and place it into the drink"
         ],
         "editorsNotes":"",
         "favorite":false
     },
     {
-        "name":"Whiskey Sour",
+        "name":"Why Not",
         "barName":"Death & Co",
         "barLocation":"New York",
-        "type":"daiquiri",
+        "type":"sidecar",
         "ingredients":[
             {
-                "amount":"2 oz",
-                "ingredient":"Elijah Craig Small Batch Bourbon"
+                "amount":"1¾ oz",
+                "ingredient":"Evan Williams Black Label Bourbon"
+            },
+            {
+                "amount":"½ oz",
+                "ingredient":"Cointreau Liqueur"
             },
             {
                 "amount":"¾ oz",
                 "ingredient":"Lemon Juice"
             },
             {
-                "amount":"¾ oz",
-                "ingredient":"Simple Syrup"
+                "amount":"½ oz",
+                "ingredient":"Maple Syrup"
             }
         ],
-        "garnish":"1 lemon wedge",
+        "garnish":"1 sage leaf, 1 lemon wheel",
         "glassware":"double rocks",
-        "ice":"2-in cube",
+        "ice":"1¼-in cubes",
         "directions":[
             "Shake all the ingredients with ice",
-            "Strain into glass over a 2-in ice cube",
-            "Garnish with the lemon wedge"
+            "Strain into a double rocks glass filled with 1¼-in ice cubes",
+            "Garnish with the sage leaf and lemon wheel"
+        ],
+        "editorsNotes":"",
+        "favorite":false
+    },
+    {
+        "name":"Wicked Kiss",
+        "barName":"Death & Co",
+        "barLocation":"New York",
+        "type":"martini",
+        "ingredients":[
+            {
+                "amount":"1 oz",
+                "ingredient":"Rittenhouse Rye 100 Proof"
+            },
+            {
+                "amount":"1 oz",
+                "ingredient":"Laird’s Apple Brandy 100"
+            },
+            {
+                "amount":"¼ oz",
+                "ingredient":"Chartreuse Yellow"
+            },
+            {
+                "amount":"¼ oz",
+                "ingredient":"Bénédictine"
+            },
+            {
+                "amount":"1 dash",
+                "ingredient":"Angostura Bitters"
+            }
+        ],
+        "garnish":"",
+        "glassware":"coupe",
+        "ice":"None",
+        "directions":[
+            "Stir all the ingredients over ice",
+            "Strain into a coupe"
+        ],
+        "editorsNotes":"",
+        "favorite":false
+    },
+    {
+        "name":"Yeomen Warder",
+        "barName":"Death & Co",
+        "barLocation":"New York",
+        "type":"martini",
+        "ingredients":[
+            {
+                "amount":"2 oz",
+                "ingredient":"Beefeater London Dry Gin"
+            },
+            {
+                "amount":"¾ oz",
+                "ingredient":"Dolin Dry Vermouth"
+            },
+            {
+                "amount":"¼ oz",
+                "ingredient":"Cynar Ricetta Originale"
+            },
+            {
+                "amount":"¼ oz",
+                "ingredient":"Luxardo Maraschino Liqueur"
+            }
+        ],
+        "garnish":"",
+        "glassware":"coupe",
+        "ice":"None",
+        "directions":[
+            "Stir all the ingredients over ice",
+            "Strain into a coupe"
         ],
         "editorsNotes":"",
         "favorite":false
     }
 ]
-

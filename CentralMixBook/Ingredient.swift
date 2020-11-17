@@ -22,6 +22,7 @@ enum IngredientType: String, CaseIterable, Identifiable {
         case .base:
             return ["brandy", "gin", "mezcal", "rum", "tequila", "vodka", "whiskey", "other"]
         case .modifier:
+            // fortifed wine = sherry, port, madeira
             return ["amaro / aperitif / digestif", "fortified wine", "liqueur", "vermouth"]
         default:
             return []

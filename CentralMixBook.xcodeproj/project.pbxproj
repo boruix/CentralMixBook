@@ -19,6 +19,8 @@
 		9627B7C1256021A7001089FF /* UserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9627B7C0256021A7001089FF /* UserSettings.swift */; };
 		9627B7C5256029CA001089FF /* DefaultIngredients.json in Resources */ = {isa = PBXBuildFile; fileRef = 9627B7C4256029CA001089FF /* DefaultIngredients.json */; };
 		9627B7C9256029E4001089FF /* DefaultSpecs.json in Resources */ = {isa = PBXBuildFile; fileRef = 9627B7C8256029E4001089FF /* DefaultSpecs.json */; };
+		9627B7D025607D1E001089FF /* PreloadedIngredients.json in Resources */ = {isa = PBXBuildFile; fileRef = 9627B7CF25607D1E001089FF /* PreloadedIngredients.json */; };
+		9627B7D32560A499001089FF /* PreloadedSpecs.json in Resources */ = {isa = PBXBuildFile; fileRef = 9627B7D22560A499001089FF /* PreloadedSpecs.json */; };
 		96AE471D255A2D060091CB23 /* CentralMixBookApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AE471C255A2D060091CB23 /* CentralMixBookApp.swift */; };
 		96AE471F255A2D060091CB23 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AE471E255A2D060091CB23 /* ContentView.swift */; };
 		96AE4721255A2D0F0091CB23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96AE4720255A2D0F0091CB23 /* Assets.xcassets */; };
@@ -50,6 +52,8 @@
 		9627B7C0256021A7001089FF /* UserSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettings.swift; sourceTree = "<group>"; };
 		9627B7C4256029CA001089FF /* DefaultIngredients.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = DefaultIngredients.json; sourceTree = "<group>"; };
 		9627B7C8256029E4001089FF /* DefaultSpecs.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = DefaultSpecs.json; sourceTree = "<group>"; };
+		9627B7CF25607D1E001089FF /* PreloadedIngredients.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PreloadedIngredients.json; sourceTree = "<group>"; };
+		9627B7D22560A499001089FF /* PreloadedSpecs.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PreloadedSpecs.json; sourceTree = "<group>"; };
 		96AE4719255A2D050091CB23 /* CentralMixBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CentralMixBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96AE471C255A2D060091CB23 /* CentralMixBookApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CentralMixBookApp.swift; sourceTree = "<group>"; };
 		96AE471E255A2D060091CB23 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -144,6 +148,8 @@
 				96AE4725255A2D0F0091CB23 /* Info.plist */,
 				9627B7C4256029CA001089FF /* DefaultIngredients.json */,
 				9627B7C8256029E4001089FF /* DefaultSpecs.json */,
+				9627B7CF25607D1E001089FF /* PreloadedIngredients.json */,
+				9627B7D22560A499001089FF /* PreloadedSpecs.json */,
 				96AE4722255A2D0F0091CB23 /* Preview Content */,
 			);
 			path = CentralMixBook;
@@ -215,6 +221,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9627B7C5256029CA001089FF /* DefaultIngredients.json in Resources */,
+				9627B7D32560A499001089FF /* PreloadedSpecs.json in Resources */,
+				9627B7D025607D1E001089FF /* PreloadedIngredients.json in Resources */,
 				9627B7C9256029E4001089FF /* DefaultSpecs.json in Resources */,
 				96AE4724255A2D0F0091CB23 /* Preview Assets.xcassets in Resources */,
 				96AE4721255A2D0F0091CB23 /* Assets.xcassets in Resources */,

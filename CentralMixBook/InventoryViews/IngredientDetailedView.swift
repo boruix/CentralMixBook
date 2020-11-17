@@ -31,24 +31,19 @@ struct IngredientDetailedView: View {
                 }
             }
             
-            if !ingredient.price.isEmpty && !ingredient.supplier.isEmpty {
+            if !ingredient.price.isEmpty || !ingredient.supplier.isEmpty {
                 Section(header: Text("Purchase Information").fontWeight(.bold)) {
                     // price
                     if !ingredient.price.isEmpty {
-                        HStack {
-                            Image(systemName: "dollarsign.square")
-                            Text(ingredient.price)
-                        }
+                        Label(ingredient.price, systemImage: "dollarsign.square")
                     }
                     
                     // supplier
                     if !ingredient.supplier.isEmpty {
-                        HStack {
-                            Image(systemName: "mappin.and.ellipse")
-                            Text(ingredient.supplier)
-                        }
+                        Label(ingredient.supplier, systemImage: "mappin.and.ellipse")
                     }
                 }
+                .foregroundColor(.primary)
             }
             
             // notes
@@ -64,7 +59,7 @@ struct IngredientDetailedView: View {
                     ForEach(spec.ingredients.indices, id: \.self) { i in
                         if spec.ingredients[i].ingredient == ingredient.name {
                             NavigationLink(destination: SpecDetailedView(spec: spec)) {
-                                SpecRowView(spec: spec, sort: "bar location")
+                                SpecRowView(spec: spec, sort: "glassware")
                                     .onAppear() { hasRelatedSpecs = true }
                             }
                         }

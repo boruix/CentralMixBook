@@ -18,11 +18,13 @@ struct SpecsTabView: View {
     private var sortOptions: [String] {
         switch userSettings.sortBy {
         case "bar name":
-            return dex.barNames
-        case "bar location":
-            return dex.barLocations
-        default:
+            return dex.barNamesAndLocations
+        case "type":
             return CocktailType.allCases.map { $0.rawValue }
+        case "glassware":
+            return Glassware.allCases.map { $0.rawValue }
+        default:
+            return []
         }
     }
     
@@ -62,14 +64,16 @@ struct SpecsTabView: View {
                         } else if filteredSpecs.filter { $0.favorite }.count == 0 {
                             Text("No favorites with all ingredients in stock")
                         } else {
-                            ForEach(sortOptions, id: \.self) { header in
+                            ForEach(sortOptions, id: \.self) { sort in
                                 switch userSettings.sortBy {
                                 case "bar name":
-                                    SpecsListView(text: header, specs: filteredSpecs.filter { $0.favorite && $0.barName == header}, sortBy: userSettings.sortBy)
-                                case "bar location":
-                                    SpecsListView(text: header, specs: filteredSpecs.filter { $0.favorite && $0.barLocation == header}, sortBy: userSettings.sortBy)
+                                    SpecsListView(text: sort, specs: filteredSpecs.filter { $0.favorite && $0.barName + ", " + $0.barLocation == sort }, sortBy: userSettings.sortBy)
+                                case "type":
+                                    SpecsListView(text: sort.capitalized, specs: filteredSpecs.filter { $0.favorite && $0.type == sort }, sortBy: userSettings.sortBy)
+                                case "glassware":
+                                    SpecsListView(text: sort.capitalized, specs: filteredSpecs.filter { $0.favorite && $0.glassware == sort }, sortBy: userSettings.sortBy)
                                 default:
-                                    SpecsListView(text: header.capitalized, specs: filteredSpecs.filter { $0.favorite && $0.type == header}, sortBy: userSettings.sortBy)
+                                    EmptyView()
                                 }
                             }
                         }
@@ -86,11 +90,13 @@ struct SpecsTabView: View {
                             ForEach(sortOptions, id: \.self) { sort in
                                 switch userSettings.sortBy {
                                 case "bar name":
-                                    SpecsListView(text: sort, specs: filteredSpecs.filter { !$0.favorite && $0.barName == sort}, sortBy: userSettings.sortBy)
-                                case "bar location":
-                                    SpecsListView(text: sort, specs: filteredSpecs.filter { !$0.favorite && $0.barLocation == sort}, sortBy: userSettings.sortBy)
+                                    SpecsListView(text: sort, specs: filteredSpecs.filter { !$0.favorite && $0.barName + ", " + $0.barLocation == sort }, sortBy: userSettings.sortBy)
+                                case "type":
+                                    SpecsListView(text: sort.capitalized, specs: filteredSpecs.filter { !$0.favorite && $0.type == sort }, sortBy: userSettings.sortBy)
+                                case "glassware":
+                                    SpecsListView(text: sort.capitalized, specs: filteredSpecs.filter { !$0.favorite && $0.glassware == sort }, sortBy: userSettings.sortBy)
                                 default:
-                                    SpecsListView(text: sort.capitalized, specs: filteredSpecs.filter { !$0.favorite && $0.type == sort}, sortBy: userSettings.sortBy)
+                                    EmptyView()
                                 }
                             }
                         }

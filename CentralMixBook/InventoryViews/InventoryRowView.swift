@@ -28,6 +28,21 @@ struct InventoryRowView: View {
             }
             // makes stock button responsive
             .buttonStyle(BorderlessButtonStyle())
+            .contextMenu {
+                Label(ingredient.type.capitalized, systemImage: "tag")
+                
+                if !ingredient.subtype.isEmpty {
+                    Label(ingredient.subtype.capitalized, systemImage: "tag.circle")
+                }
+                
+                if !ingredient.price.isEmpty {
+                    Label(ingredient.price, systemImage: "dollarsign.square")
+                }
+                
+                if !ingredient.supplier.isEmpty {
+                    Label(ingredient.supplier, systemImage: "mappin.and.ellipse")
+                }
+            }
         }
     }
 }

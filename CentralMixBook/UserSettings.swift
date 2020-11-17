@@ -49,9 +49,9 @@ class UserSettings: ObservableObject {
     }
     
     enum SortBy: String, CaseIterable, Identifiable {
-        case type
         case barName = "bar name"
-        case barLocation = "bar location"
+        case type
+        case glassware
         
         var id: String { return rawValue }
     }

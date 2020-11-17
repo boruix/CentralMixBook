@@ -23,7 +23,7 @@ enum CocktailType: String, CaseIterable, Identifiable {
     case sidecar
         // core flavor is composed of a spirit and a substantial amount of flavorful liqueur
         // both balanced and seasoned by liqueur, which also provides sweetness, sometimes in combination with another sweetener
-        // balanced by highly acidic citrus juice, typicall lemon or lime
+        // balanced by highly acidic citrus juice, typically lemon or lime
     case whiskeyHighball = "whiskey highball"
         // composed of a core spirit that also provides seasoning, and is balanced by a nonalcoholic mixer
         // core can be split between any number of spirits, wines, or fortified wines
@@ -38,38 +38,14 @@ enum CocktailType: String, CaseIterable, Identifiable {
 
 // need CaseIterable to loop over allCases for pickers
 enum Glassware: String, CaseIterable, Identifiable {
-    case absinthe                                   // 9
-    case belgian = "Belgian"                        // 15
-    case ceramicCoconut = "ceramic coconut"         // 20
-    case champagne = "Champagne flute"              // 7 or 8
-    case cobbler                                    // 11½
-    case collins = "Collins"                        // 10
     case coupe                                      // 5, 5½, 6, or 9¾
     case doubleRocks = "double rocks"               // 13 or 14
-    case eggCoupe = "egg coupe"                     // 9
-    case explosionVessel = "explosion vessel"       // 192
-    case fancyFizz = "fancy fizz"                   // 6
-    case fizz                                       // 8, 9, or 10
-    case fortified                                  // 7
-    case heatproof = "heatproof mug"                // 10
     case highball                                   // 11 or 12
-    case hotCocktail = "hot-cocktail"               // 8
     case julep                                      // 13
-    case martini                                    // 4½
     case nickAndNora = "Nick & Nora"                // 5 or 6
-    case pilsner = "Pilsner"                        // 12 or 16
-    case punch = "punch bowl & cups"
-    case port                                       // 7
-    case roosterCup = "rooster cup"                 // 18
-    case shot = "shot glass"                        // 1½
+    case pilsner                                    // 12 or 16
+    case punch = "punch bowl"
     case singleRocks = "single rocks"               // 9 or 9½
-    case snifter                                    // 19 or 22
-    case spirit                                     // 5
-    case tiki = "tiki mug"                          // 18 or 22
-    case toddy = "toddy mug"
-    case tulip                                      // 6
-    case water = "water glass"                      // 12
-    case wine = "wine glass"                        // 11½
     
     var id: String { self.rawValue }
 }
@@ -80,6 +56,7 @@ enum Ice: String, CaseIterable, Identifiable {
     case oneAndOneQuarterInchCube = "1¼-in cubes"
     case twoInchCube = "2-in cube"
     case crushed = "Crushed"
+    case sphere = "Large Sphere"
     
     var id: String { self.rawValue }
 }
@@ -139,7 +116,7 @@ class Spec: Codable, Comparable, Equatable, Identifiable, ObservableObject {
     @Published var type = CocktailType.oldFashioned.rawValue
     @Published var ingredients = [SpecIngredient()]
     @Published var garnish = ""
-    @Published var glassware = Glassware.absinthe.rawValue
+    @Published var glassware = Glassware.coupe.rawValue
     @Published var ice = Ice.none.rawValue
     @Published var directions = [""]
     @Published var editorsNotes = ""
@@ -272,16 +249,15 @@ class Dex: ObservableObject {
         return names.sorted()
     }
     
-    var barLocations: [String] {
-        var locations = [String]()
+    var barNamesAndLocations: [String] {
+        var namesAndLocations = [String]()
         specs.forEach { spec in
-            if !locations.contains(spec.barLocation) {
-                locations.append(spec.barLocation)
+            if !namesAndLocations.contains(spec.barName + ", " + spec.barLocation) {
+                namesAndLocations.append(spec.barName + ", " + spec.barLocation)
             }
         }
-        return locations.sorted()
+        return namesAndLocations.sorted()
     }
-    
     
     static let saveKey = "CMB-Specs"
     let filename = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0].appendingPathComponent(saveKey)
@@ -303,7 +279,6 @@ class Dex: ObservableObject {
     private func save() {
         do {
             let data = try JSONEncoder().encode(self.specs.sorted())
-            //print(String(data: data, encoding: .utf8)!)
             try data.write(to: filename, options: [.atomicWrite, .completeFileProtection])
         } catch {
             print("Unable to save data.")

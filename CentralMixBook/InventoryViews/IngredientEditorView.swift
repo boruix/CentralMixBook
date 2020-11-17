@@ -11,7 +11,6 @@ struct IngredientEditorView: View {
     
     @State private var baseSubtype = IngredientType.base.subtypes[0]
     @State private var modifierSubtype = IngredientType.modifier.subtypes[0]
-    @State private var homemade = false
     private let generator = UISelectionFeedbackGenerator()
         
     var body: some View {
@@ -23,9 +22,9 @@ struct IngredientEditorView: View {
 
                 // ingredient type
                 HStack {
-                    Text("Type")
+                    Label("Type", systemImage: "tag").foregroundColor(.primary)
                     Spacer()
-                    
+            
                     Menu {
                         Picker("Type", selection: $ingredient.type) {
                             ForEach(IngredientType.allCases) { type in
@@ -56,7 +55,7 @@ struct IngredientEditorView: View {
 
                 // ingredient subtype
                 HStack {
-                    Text("Subtype")
+                    Label("Subtype", systemImage: "tag.circle")
                         .foregroundColor(["base", "modifier"].contains(ingredient.type) ? .primary : .secondary)
                     
                     Spacer()
@@ -96,39 +95,27 @@ struct IngredientEditorView: View {
                 .onChange(of: ingredient.stock) { _ in
                     generator.selectionChanged()
                 }
-                
-                // available in-store / homemade
-                Picker("Availability", selection: $homemade) {
-                    Text("In-Store").tag(false)
-                    Text("Homemade").tag(true)
-                }
-                .pickerStyle(SegmentedPickerStyle())
-                .onChange(of: homemade) { _ in
-                    generator.selectionChanged()
-                }
             }
             
-            if !homemade {
-                Section(header: Text("Purchase Information").fontWeight(.bold)) {
-                    // ingredient price
-                    HStack {
-                        Image(systemName: "dollarsign.square")
-                        TextField("Price", text: $ingredient.price)
-                            .keyboardType(.numberPad)
-                    }
-                    
-                    // ingredient supplier
-                    HStack {
-                        Image(systemName: "mappin.and.ellipse")
-                        TextField("Supplier", text: $ingredient.supplier)
-                    }
+            Section(header: Text("Purchase Information").fontWeight(.bold)) {
+                // ingredient price
+                HStack {
+                    Image(systemName: "dollarsign.square")
+                    TextField("Price", text: $ingredient.price)
+                        .keyboardType(.numberPad)
                 }
-            } else {
-                // ingredient notes
-                Section(header: Text("Notes").fontWeight(.bold)) {
-                    TextEditor(text: $ingredient.notes)
-                        .foregroundColor(ingredient.notes == "None" ? .secondary : .primary)
+                
+                // ingredient supplier
+                HStack {
+                    Image(systemName: "mappin.and.ellipse")
+                    TextField("Supplier", text: $ingredient.supplier)
                 }
+            }
+
+            // ingredient notes
+            Section(header: Text("Notes").fontWeight(.bold)) {
+                TextEditor(text: $ingredient.notes)
+                    .foregroundColor(ingredient.notes == "None" ? .secondary : .primary)
             }
         }
     }
