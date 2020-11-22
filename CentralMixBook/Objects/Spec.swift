@@ -119,6 +119,31 @@ extension Spec {
     }
 }
 
+// MARK: functions for stock
+extension Spec {
+    // can be made with in-stock ingredients
+    func isComplete(_ inventory: Inventory) -> Bool {
+        let specIngredients = ingredients.map { $0.name }
+        let oosIngredients = inventory.ingredients.filter { !$0.stock }.map { $0.name }
+
+        // does the set of oos ingredients contain any of the spec's ingredients
+        return Set(oosIngredients).intersection(specIngredients).isEmpty
+    }
+    
+    // can be made iff using the provided additional ingredients
+    func isCompleteWith(_ additional: [Ingredient], from inventory: Inventory) -> Bool {
+        let specIngredients = ingredients.map { $0.name }
+        let oosIngredients = inventory.ingredients.filter { !$0.stock }.map { $0.name }
+        let specOos = Set(oosIngredients).intersection(specIngredients)
+        
+        // if spec has no out-of-stock ingredients, return false
+        if specOos.isEmpty { return false }
+        
+        // if spec's oos are a subset of the provided ingredients, return true
+        return specOos.isSubset(of: additional.map {$0.name })
+    }
+}
+
 // MARK: editing functions
 extension Spec {
     func trimStrings() {

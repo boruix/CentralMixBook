@@ -13,10 +13,6 @@ class Inventory: ObservableObject {
     let filename = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0].appendingPathComponent(saveKey)
     
     init() {
-        ingredients = Bundle.main.decode("DefaultIngredients.json")
-        ingredients = ingredients.sorted()
-        return
-        
         if let data = try? Data(contentsOf: filename) {
             if let decoded = try? JSONDecoder().decode([Ingredient].self, from: data) {
                 ingredients = decoded

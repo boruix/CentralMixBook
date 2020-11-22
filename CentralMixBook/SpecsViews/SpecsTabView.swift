@@ -17,22 +17,7 @@ struct SpecsTabView: View {
     // specs filtered by search bar and show / hide incomplete specs button
     private var filteredSpecs: [Spec] {
         if searchBar.text.isEmpty {
-            if userSettings.hideIncomplete {
-                var filteredSpecs = [Spec]()
-                let oosIngredients = inventory.ingredients.filter { !$0.stock }
-                let oosIngredientNames = oosIngredients.map { $0.name }
-
-                for spec in dex.specs {
-                    let specIngredients = spec.ingredients.map { $0.name }
-                    
-                    if Set(oosIngredientNames).intersection(specIngredients).isEmpty {
-                        filteredSpecs.append(spec)
-                    }
-                }
-                return filteredSpecs
-            } else {
-                return dex.specs
-            }
+            return dex.specs.filter { !userSettings.hideIncomplete || $0.isComplete(inventory) }
         } else {
             return dex.specs.filter { $0.name.localizedStandardContains(searchBar.text) }
         }

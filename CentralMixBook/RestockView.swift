@@ -12,46 +12,27 @@ struct RestockView: View {
     @EnvironmentObject var userSettings: UserSettings
     
     @State private var restockTuples = [(specs: [Spec], ingredients: [Ingredient], cost: Int)]()
-    
+
     // restock-marked ingredients
     private var restockIngredients: [Ingredient] {
         return inventory.ingredients.filter { $0.restock }
     }
 
-    // specs that can be made using in-stock and restock-marked ingredients
+    // additional specs that can be made if using restock-marked ingredients
     private var currentRestockSpecs: [Spec] {
-        var newSpecs = [Spec]()
-
-        for spec in dex.specs {
-            var complete = true
-            var usingRestock = false
-            
-            for specIngredient in spec.ingredients {
-                if let foundIngredient = inventory.getIngredientFromName(specIngredient.name) {
-                    if !foundIngredient.stock && !restockIngredients.contains(foundIngredient) {
-                        complete = false
-                        break
-                    } else if restockIngredients.contains(foundIngredient) {
-                        usingRestock = true
-                    } 
-                } else {
-                    complete = false
-                    break
-                }
-            }
-            if complete && usingRestock { newSpecs.append(spec) }
-        }
-        return newSpecs
+        return dex.specs.filter { $0.isCompleteWith(restockIngredients, from: inventory)}
     }
     
     var body: some View {
         NavigationView {
             Form {
                 // MARK: ingredients to restock
-                Section(header: Text("Ingredients marked for restock:"),
-                        footer: Text(restockIngredients.isEmpty
-                                     ? "Long press on an ingredient to mark it for restock"
-                                     : "Cost: \(restockIngredients.map { Int($0.price) ?? 0 }.reduce(0, +))")) {
+                Section(
+                    header: Text("Ingredients marked for restock:"),
+                    footer: Text(restockIngredients.isEmpty
+                                    ? "Long press on an ingredient to mark it for restock"
+                                    : "Cost: \(restockIngredients.map { Int($0.price) ?? 0 }.reduce(0, +))")
+                ) {
                     if restockIngredients.isEmpty {
                         Text("None")
                     } else {
@@ -63,7 +44,11 @@ struct RestockView: View {
                 
                 // MARK: possible new specs
                 if !restockIngredients.isEmpty {
-                    Section(header: Text(currentRestockSpecs.isEmpty ? "No new specs can be made yet" : "Can make these new specs:")) {
+                    Section(
+                        header: Text(currentRestockSpecs.isEmpty
+                                        ? "No new specs can be made yet"
+                                        : "Can make these new specs:")
+                    ) {
                         ForEach(currentRestockSpecs) { spec in
                             NavigationLink(destination: SpecDetailedView(spec: spec)) {
                                 SpecRowView(spec: spec, sort: "glassware")
@@ -72,24 +57,39 @@ struct RestockView: View {
                     }
                 }
                 
-                Section(footer: VStack { Divider().frame(height: 1.5).background(Color.secondary) }) { }
-                
-                // MARK: button: find ingredients
-                // FIXME: add loading screen
-                Button(action: {
-                    // reset restock variables
-                    restockTuples = []
-                    var minCostSpecs = getMinCostSpecs(ignoring: restockIngredients)
-                    
-                    // loop through until all specs can be made
-                    while minCostSpecs != nil {
-                        restockTuples.append(minCostSpecs!)
-                        minCostSpecs = getMinCostSpecs(ignoring: restockTuples.flatMap { $0.ingredients } + restockIngredients)
+                Section(
+                    footer: VStack {
+                        if inventory.ingredients.isEmpty {
+                            Text("No ingredients have been added")
+                        } else if dex.specs.isEmpty {
+                            Text("No specs have been added")
+                        } else if inventory.ingredients.filter { !$0.stock && !$0.restock }.isEmpty {
+                            Text("All ingredients are in stock or marked for restock")
+                        }
+                        Divider().frame(height: 1.5).background(Color.secondary)
                     }
-                }) {
-                    Text("Find next ingredients")
-                        .fontWeight(.bold)
-                        .frame(maxWidth: .infinity, alignment: .center)
+                ) {
+                    // MARK: button: find ingredients
+                    Button(action: {
+                        // reset restock variables
+                        restockTuples = []
+                        var minCostSpecs = getMinCostSpecs(ignoring: restockIngredients)
+                                                
+                        // loop through until all specs can be made
+                        while minCostSpecs != nil {
+                            restockTuples.append(minCostSpecs!)
+                            minCostSpecs = getMinCostSpecs(ignoring: restockTuples.flatMap { $0.ingredients } + restockIngredients)
+                        }
+                    }) {
+                        Text("Find next ingredients")
+                            .fontWeight(.bold)
+                            .frame(maxWidth: .infinity, alignment: .center)
+                    }
+                    .disabled(
+                        inventory.ingredients.isEmpty
+                            || dex.specs.isEmpty
+                            || inventory.ingredients.filter { !$0.stock && !$0.restock }.isEmpty
+                    )
                 }
                 
                 // MARK: next ingredients & specs
@@ -130,7 +130,7 @@ struct RestockView: View {
     }
     
     // gets the set of specs that requires minimum cost and maximum number of missing ingredients to complete
-    func getMinCostSpecs(ignoring: [Ingredient]) -> (specs: [Spec], ingredients: [Ingredient], cost: Int)? {
+    private func getMinCostSpecs(ignoring: [Ingredient]) -> (specs: [Spec], ingredients: [Ingredient], cost: Int)? {
         var incompleteSpecs = [(spec: Spec, numOos: Int, ingredients: [Ingredient], cost: Int)]()
         
         for spec in dex.specs {
@@ -173,7 +173,7 @@ struct RestockView: View {
         }
     }
     
-    func getMostUsedSet(from setsOfIngredients: [[Ingredient]]) -> [String] {
+    private func getMostUsedSet(from setsOfIngredients: [[Ingredient]]) -> [String] {
         // initialize dictionary of [ingredient.name : spec.name]
         var numSpecs = [[String]:Int]()
         for set in setsOfIngredients { numSpecs[set.map { $0.name }] = 0 }
