@@ -8,35 +8,37 @@ import SwiftUI
 
 struct SpecsListView: View {
     @EnvironmentObject var dex: Dex
+    @EnvironmentObject var userSettings: UserSettings
     
     let text: String
     let specs: [Spec]
-    let sortBy: String
     
     @State private var collapseSection = false
     private let generator = UIImpactFeedbackGenerator(style: .light)
     
     var body: some View {
         if specs.count > 0 {
-            
-            Section(header: HeaderView(text: text, fontType: .body, imageScale: .small, collapseSection: $collapseSection)) {
-                
+            Section(header: HeaderView(text: text,
+                                       fontType: .body,
+                                       imageScale: .small,
+                                       collapseSection: $collapseSection)
+            ) {
                 ForEach(specs) { spec in
-                    
                     if !collapseSection {
-                        
                         NavigationLink(destination: SpecDetailedView(spec: spec)) {
-                            
                             HStack {
                                 Button(action: {
                                     // toggles .favorite for a spec in dex
-                                    dex.toggleFavorite(spec)
+                                    withAnimation { dex.toggleFavorite(spec) }
                                     generator.impactOccurred()
                                 }) {
                                     Image(systemName: spec.favorite ? "star.fill" : "star")
                                 }
                                 
-                                SpecRowView(spec: spec, sort: sortBy)
+                                SpecRowView(
+                                    spec: spec,
+                                    sort: userSettings.specsSort
+                                )
                             }
                             // makes favorite button responsive
                             .buttonStyle(BorderlessButtonStyle())

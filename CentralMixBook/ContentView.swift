@@ -24,6 +24,12 @@ struct ContentView: View {
                     Image(systemName: "list.bullet")
                     Text("Inventory")
                 }
+            
+            RestockView()
+                .tabItem {
+                    Image(systemName: "bag")
+                    Text("Restock")
+                }
         }
         .environmentObject(inventory)
         .environmentObject(dex)

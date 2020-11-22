@@ -18,54 +18,73 @@ struct SpecDetailedView: View {
     
     var body: some View {
         Form {
+            // MARK: name, bar, location, type
             Section(header: Text("Drink Information").fontWeight(.bold)) {
-                // name
                 Text(spec.name).fontWeight(.heavy)
             
-                // bar name
                 if !spec.barName.isEmpty {
                     Label(spec.barName, systemImage: "house")
                 }
                 
-                // bar city
                 if !spec.barLocation.isEmpty {
                     Label(spec.barLocation, systemImage: "mappin.and.ellipse")
                 }
                 
-                // cocktail type
                 Label(spec.type.capitalized, systemImage: "tag")
             }
             .foregroundColor(.primary)
             
-            // list of ingredients
+            // MARK: ingredients
             Section(header: Text("Ingredients").fontWeight(.bold)) {
                 ForEach(spec.ingredients.indices, id: \.self) { i in
-                    if let j = inventory.ingredients.firstIndex(where: { $0.name == spec.ingredients[i].ingredient }) {
+                    if let foundIngredient = inventory.getIngredientFromName(spec.ingredients[i].name) {
                         // specification ingredient found in inventory
-                        NavigationLink(destination: IngredientDetailedView(ingredient: inventory.ingredients[j])) {
+                        NavigationLink(destination: IngredientDetailedView(ingredient: foundIngredient)) {
                             HStack{
-                                // toggles .stock for an ingredient in inventory
+                                // toggles .stock for an ingredient
                                 Button(action: {
-                                    inventory.toggleStock(spec.ingredients[i].ingredient)
+                                    inventory.toggleStock(foundIngredient)
                                     generator.impactOccurred()
                                 }) {
-                                    Image(systemName: inventory.ingredients[j].stock ? "checkmark.circle.fill" : "circle")
+                                    Image(systemName: foundIngredient.stock ? "checkmark.circle.fill" : "circle")
                                 }
                                 
                                 Text(spec.ingredients[i].amount)
                                     .font(.callout)
                                     .fontWeight(.semibold)
                                 + Text(spec.ingredients[i].amount.isEmpty ? "" : " ")
-                                + Text(spec.ingredients[i].ingredient)
+                                + Text(spec.ingredients[i].name)
+                                
+                                Spacer()
+                                
+                                if foundIngredient.restock {
+                                    Image(systemName: "bag")
+                                }
                             }
                             // makes stock button responsive
                             .buttonStyle(BorderlessButtonStyle())
+                            .contextMenu {
+                                // toggles .restock for an ingredient
+                                Button(action: {
+                                    withAnimation { inventory.toggleRestock(foundIngredient) }
+                                }) {
+                                    HStack {
+                                        if foundIngredient.restock {
+                                            Text("Remove from restock list")
+                                            Image(systemName: "bag.badge.minus")
+                                        } else {
+                                            Text("Add to restock list")
+                                            Image(systemName: "bag.badge.plus")
+                                        }
+                                    }
+                                }
+                            }
                         }
                     } else {
                         // specification ingredient not found in inventory
                         Button(action: {
                             // add missing ingredient to inventory
-                            missingIngredient.name = spec.ingredients[i].ingredient
+                            missingIngredient.name = spec.ingredients[i].name
                             showingAdd = true
                             generator.impactOccurred()
                         }) {
@@ -76,7 +95,7 @@ struct SpecDetailedView: View {
                                 Text(spec.ingredients[i].amount + " ")
                                     .font(.callout)
                                     .fontWeight(.semibold)
-                                + Text(spec.ingredients[i].ingredient)
+                                + Text(spec.ingredients[i].name)
                             }
                             .foregroundColor(.primary)
                         }
@@ -86,14 +105,14 @@ struct SpecDetailedView: View {
                     }
                 }
                 
-                // garnish
+                // MARK: garnish
                 Text("GARNISH: ")
                     .font(.caption)
                     .fontWeight(.bold)
                 + Text(spec.garnish.isEmpty ? "None" : spec.garnish)
                 
                 HStack {
-                    // glassware
+                    // MARK: glassware
                     Text("GLASS: ")
                         .font(.caption)
                         .fontWeight(.bold)
@@ -101,7 +120,7 @@ struct SpecDetailedView: View {
                     
                     Spacer()
                     
-                    // ice
+                    // MARK: ice
                     Text("ICE: ")
                         .font(.caption)
                         .fontWeight(.bold)
@@ -109,7 +128,7 @@ struct SpecDetailedView: View {
                 }
             }
             
-            // list of directions
+            // MARK: directions
             Section(header: Text("Directions").fontWeight(.bold)) {
                 ForEach(spec.directions.indices, id: \.self) { i in
                     Label(spec.directions[i], systemImage: "\(i + 1).circle")
@@ -117,7 +136,7 @@ struct SpecDetailedView: View {
                 }
             }
             
-            // editor's notes
+            // MARK: editor's notes
             if !spec.editorsNotes.isEmpty {
                 Section(header: Text("Editor's Notes").fontWeight(.bold)) {
                     Text(spec.editorsNotes)
@@ -125,11 +144,7 @@ struct SpecDetailedView: View {
             }
         }
         .navigationBarTitle("", displayMode: .inline)
-        .navigationBarItems(trailing: Button(action: {
-            // show edit ingredient sheet
-            showingEdit = true
-            generator.impactOccurred()
-        }) { Text("Edit") })
+        .navigationBarItems(trailing: EditButton(showingSheet: $showingEdit))
         .sheet(isPresented: $showingEdit) {
             EditExistingSpecView(spec: spec, showingEdit: $showingEdit)
         }

@@ -1,1381 +1,1525 @@
 [
     {
         "name":"Agave Nectar",
-        "type":"sweetener",
+        "type":"Sweetener",
         "subtype":"",
         "stock":false,
-        "price":"",
-        "supplier":"",
-        "notes":"None"
+        "price":"6",
+        "supplier":"Whole Foods",
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"Ali Wadi Pomegranate Molasses",
-        "type":"sweetener",
+        "type":"Sweetener",
         "subtype":"",
         "stock":false,
         "price":"14",
-        "supplier":"",
-        "notes":""
+        "supplier":"Amazon",
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"Amaro Averna",
-        "type":"modifier",
-        "subtype":"amaro / aperitif / digestif",
+        "type":"Modifier",
+        "subtype":"Amaro / Aperitif / Digestif",
         "stock":false,
         "price":"35",
-        "supplier":"",
-        "notes":"None"
+        "supplier":"Astor Wines & Spirits",
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"Amaro Lucano",
-        "type":"modifier",
-        "subtype":"amaro / aperitif / digestif",
+        "type":"Modifier",
+        "subtype":"Amaro / Aperitif / Digestif",
         "stock":false,
         "price":"30",
-        "supplier":"",
-        "notes":"None"
+        "supplier":"Astor Wines & Spirits",
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"Amaro Meletti",
-        "type":"modifier",
-        "subtype":"amaro / aperitif / digestif",
+        "type":"Modifier",
+        "subtype":"Amaro / Aperitif / Digestif",
         "stock":false,
         "price":"20",
-        "supplier":"",
-        "notes":"None"
+        "supplier":"Astor Wines & Spirits",
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"Amaro Montenegro",
-        "type":"modifier",
-        "subtype":"amaro / aperitif / digestif",
+        "type":"Modifier",
+        "subtype":"Amaro / Aperitif / Digestif",
         "stock":false,
         "price":"35",
-        "supplier":"",
-        "notes":"None"
+        "supplier":"Astor Wines & Spirits",
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"Amaro Nonino Quintessentia",
-        "type":"modifier",
-        "subtype":"amaro / aperitif / digestif",
+        "type":"Modifier",
+        "subtype":"Amaro / Aperitif / Digestif",
         "stock":false,
         "price":"50",
-        "supplier":"",
-        "notes":"None"
+        "supplier":"Astor Wines & Spirits",
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"Angostura Bitters",
-        "type":"bitters",
+        "type":"Bitters",
         "subtype":"",
         "stock":false,
         "price":"11",
-        "supplier":"",
-        "notes":"None"
+        "supplier":"Dual Specialty Store",
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"Aperol Aperitivo Liqueur",
-        "type":"modifier",
-        "subtype":"amaro / aperitif / digestif",
+        "type":"Modifier",
+        "subtype":"Amaro / Aperitif / Digestif",
         "stock":false,
         "price":"25",
-        "supplier":"",
-        "notes":"None"
+        "supplier":"Astor Wines & Spirits",
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"Banks 5-Island Rum",
-        "type":"base",
-        "subtype":"rum",
+        "type":"Base",
+        "subtype":"Rum",
         "stock":false,
         "price":"30",
-        "supplier":"",
-        "notes":"None"
+        "supplier":"Astor Wines & Spirits",
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"Beefeater 24 London Dry Gin",
-        "type":"base",
-        "subtype":"gin",
+        "type":"Base",
+        "subtype":"Gin",
         "stock":false,
         "price":"35",
-        "supplier":"",
-        "notes":"None"
+        "supplier":"Astor Wines & Spirits",
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"Beefeater London Dry Gin",
-        "type":"base",
-        "subtype":"gin",
+        "type":"Base",
+        "subtype":"Gin",
         "stock":false,
         "price":"30",
-        "supplier":"",
-        "notes":"None"
+        "supplier":"Astor Wines & Spirits",
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"Bénédictine",
-        "type":"modifier",
-        "subtype": "liqueur",
+        "type":"Modifier",
+        "subtype": "Liqueur",
         "stock":false,
         "price":"22",
-        "supplier":"",
-        "notes":"None"
+        "supplier":"Astor Wines & Spirits",
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"Berkshire Mountain Greylock Gin",
-        "type":"base",
-        "subtype":"gin",
+        "type":"Base",
+        "subtype":"Gin",
         "stock":false,
         "price":"30",
-        "supplier":"",
-        "notes":"None"
+        "supplier":"Astor Wines & Spirits",
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"Bigallet China-China Amer",
-        "type":"modifier",
-        "subtype":"amaro / aperitif / digestif",
+        "type":"Modifier",
+        "subtype":"Amaro / Aperitif / Digestif",
         "stock":false,
         "price":"42",
-        "supplier":"",
-        "notes":"None"
+        "supplier":"Astor Wines & Spirits",
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"Bitter Truth Aromatic Bitters",
-        "type":"bitters",
+        "type":"Bitters",
         "subtype":"",
         "stock":false,
         "price":"19",
-        "supplier":"",
-        "notes":"None"
+        "supplier":"Astor Wines & Spirits",
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"Bitter Truth Creole Bitters",
-        "type":"bitters",
+        "type":"Bitters",
         "subtype":"",
         "stock":false,
         "price":"19",
-        "supplier":"",
-        "notes":"None"
+        "supplier":"Astor Wines & Spirits",
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"Bittermens Hopped Grapefruit Bitters",
-        "type":"bitters",
+        "type":"Bitters",
         "subtype":"",
         "stock":false,
         "price":"18",
-        "supplier":"",
-        "notes":"None"
+        "supplier":"Astor Wines & Spirits",
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"Bittermens Xocolatl Mole Bitters",
-        "type":"bitters",
+        "type":"Bitters",
         "subtype":"",
         "stock":false,
         "price":"18",
-        "supplier":"",
-        "notes":"None"
+        "supplier":"Astor Wines & Spirits",
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"Blackberry",
-        "type":"other",
+        "type":"Other",
         "subtype":"",
         "stock":false,
-        "price":"",
-        "supplier":"",
-        "notes":"None"
+        "price":"4",
+        "supplier":"Trader Joe's",
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"Bols Genever Gin",
-        "type":"base",
-        "subtype":"gin",
+        "type":"Base",
+        "subtype":"Gin",
         "stock":false,
         "price":"43",
-        "supplier":"",
-        "notes":"None"
+        "supplier":"Astor Wines & Spirits",
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"Bonal Gentiane-Quina",
-        "type":"modifier",
-        "subtype":"amaro / aperitif / digestif",
+        "type":"Modifier",
+        "subtype":"Amaro / Aperitif / Digestif",
         "stock":false,
         "price":"20",
-        "supplier":"",
-        "notes":"None"
+        "supplier":"Astor Wines & Spirits",
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"Bonne Maman Orange Marmalade",
-        "type":"sweetener",
+        "type":"Sweetener",
         "subtype":"",
         "stock":false,
-        "price":"11",
-        "supplier":"",
-        "notes":"None"
+        "price":"5",
+        "supplier":"Amazon",
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"Brandied Cherry",
-        "type":"other",
+        "type":"Other",
         "subtype":"",
         "stock":false,
-        "price":"",
-        "supplier":"",
-        "notes":"None"
+        "price":"19",
+        "supplier":"Amazon",
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"Bushmills Irish Whiskey",
-        "type":"base",
-        "subtype":"whiskey",
+        "type":"Base",
+        "subtype":"Whiskey",
         "stock":false,
         "price":"32",
-        "supplier":"",
-        "notes":"None"
+        "supplier":"Astor Wines & Spirits",
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"Campari",
-        "type":"modifier",
-        "subtype":"amaro / aperitif / digestif",
+        "type":"Modifier",
+        "subtype":"Amaro / Aperitif / Digestif",
         "stock":false,
         "price":"32",
-        "supplier":"",
-        "notes":"None"
+        "supplier":"Astor Wines & Spirits",
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"Cardamaro",
-        "type":"modifier",
-        "subtype":"amaro / aperitif / digestif",
+        "type":"Modifier",
+        "subtype":"Amaro / Aperitif / Digestif",
         "stock":false,
         "price":"22",
-        "supplier":"",
-        "notes":"None"
+        "supplier":"Astor Wines & Spirits",
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"Carpano Antica Formula Vermouth",
-        "type":"modifier",
-        "subtype":"vermouth",
+        "type":"Modifier",
+        "subtype":"Vermouth",
         "stock":false,
         "price":"19",
-        "supplier":"",
-        "notes":"None"
+        "supplier":"Astor Wines & Spirits",
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"Carpano Punt e Mes",
-        "type":"modifier",
-        "subtype":"vermouth",
+        "type":"Modifier",
+        "subtype":"Vermouth",
         "stock":false,
         "price":"22",
-        "supplier":"",
-        "notes":"None"
+        "supplier":"Astor Wines & Spirits",
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"Chareau Aloe Vera Liqueur",
-        "type":"modifier",
-        "subtype":"liqueur",
+        "type":"Modifier",
+        "subtype":"Liqueur",
         "stock":false,
         "price":"40",
-        "supplier":"",
-        "notes":"None"
+        "supplier":"Astor Wines & Spirits",
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"Chartreuse Green",
-        "type":"modifier",
-        "subtype": "liqueur",
+        "type":"Modifier",
+        "subtype": "Liqueur",
         "stock":false,
         "price":"30",
-        "supplier":"",
-        "notes":"None"
+        "supplier":"Astor Wines & Spirits",
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"Chartreuse Yellow",
-        "type":"modifier",
-        "subtype":"liqueur",
+        "type":"Modifier",
+        "subtype":"Liqueur",
         "stock":false,
         "price":"30",
-        "supplier":"",
-        "notes":"None"
+        "supplier":"Astor Wines & Spirits",
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"Club Soda",
-        "type":"other",
+        "type":"Other",
         "subtype":"",
         "stock":false,
-        "price":"",
-        "supplier":"",
-        "notes":"None"
+        "price":"3",
+        "supplier":"Whole Foods",
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"Cocchi Americano Aperitif",
-        "type":"modifier",
-        "subtype":"amaro / aperitif / digestif",
+        "type":"Modifier",
+        "subtype":"Amaro / Aperitif / Digestif",
         "stock":false,
         "price":"18",
-        "supplier":"",
-        "notes":"None"
+        "supplier":"Astor Wines & Spirits",
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"Cocchi Barolo Chinato",
-        "type":"modifier",
-        "subtype":"amaro / aperitif / digestif",
+        "type":"Modifier",
+        "subtype":"Amaro / Aperitif / Digestif",
         "stock":false,
         "price":"44",
-        "supplier":"",
-        "notes":"None"
+        "supplier":"Astor Wines & Spirits",
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"Cocchi Vermouth di Torino",
-        "type":"modifier",
-        "subtype":"vermouth",
+        "type":"Modifier",
+        "subtype":"Vermouth",
         "stock":false,
         "price":"18",
-        "supplier":"",
-        "notes":"None"
+        "supplier":"Astor Wines & Spirits",
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"Coffee Bean",
-        "type":"other",
+        "type":"Other",
         "subtype":"",
         "stock":false,
         "price":"",
         "supplier":"",
-        "notes":"None"
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"Cointreau Liqueur",
-        "type":"modifier",
-        "subtype":"liqueur",
+        "type":"Modifier",
+        "subtype":"Liqueur",
         "stock":false,
         "price":"22",
-        "supplier":"",
-        "notes":"None"
+        "supplier":"Astor Wines & Spirits",
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"Combier Triple Sec",
-        "type":"modifier",
-        "subtype":"liqueur",
+        "type":"Modifier",
+        "subtype":"Liqueur",
         "stock":false,
         "price":"19",
-        "supplier":"",
-        "notes":"None"
+        "supplier":"Astor Wines & Spirits",
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"Cucumber Slice",
-        "type":"other",
+        "type":"Other",
         "subtype":"",
         "stock":false,
-        "price":"",
-        "supplier":"",
-        "notes":"None"
+        "price":"3",
+        "supplier":"Trader Joe's",
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"Cynar Ricetta Originale",
-        "type":"modifier",
-        "subtype":"amaro / aperitif / digestif",
+        "type":"Modifier",
+        "subtype":"Amaro / Aperitif / Digestif",
         "stock":false,
         "price":"30",
-        "supplier":"",
-        "notes":"None"
+        "supplier":"Astor Wines & Spirits",
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"Death & Co Peychaud's Bitters",
-        "type":"bitters",
+        "type":"Bitters",
         "subtype":"",
         "stock":false,
-        "price":"",
-        "supplier":"",
-        "notes":"2 parts Peychaud's Bitters\n1 part Bitter Truth Creole Bitters"
+        "price":"24",
+        "supplier":"Homemade",
+        "notes":"2 parts Peychaud's Bitters\n1 part Bitter Truth Creole Bitters",
+        "restock":false
     },
     {
         "name":"Death & Co Sweet Vermouth",
-        "type":"modifier",
-        "subtype":"vermouth",
+        "type":"Modifier",
+        "subtype":"Vermouth",
         "stock":false,
-        "price":"",
-        "supplier":"",
-        "notes":"1 part Dolin Rouge Vermouth\n1 part Carpano Pune e Mes"
+        "price":"32",
+        "supplier":"Homemade",
+        "notes":"1 part Dolin Rouge Vermouth\n1 part Carpano Pune e Mes",
+        "restock":false
     },
     {
         "name":"Del Maguey Chichicapa Mezcal",
-        "type":"base",
-        "subtype":"mezcal",
+        "type":"Base",
+        "subtype":"Mezcal",
         "stock":false,
         "price":"70",
-        "supplier":"",
-        "notes":"None"
+        "supplier":"Astor Wines & Spirits",
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"Demerara Sugar Cube",
-        "type":"sweetener",
+        "type":"Sweetener",
         "subtype":"",
         "stock":false,
-        "price":"",
-        "supplier":"",
-        "notes":""
+        "price":"11",
+        "supplier":"Amazon",
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"Diplomático Reserva Exclusiva Rum",
-        "type":"base",
-        "subtype":"rum",
+        "type":"Base",
+        "subtype":"Rum",
         "stock":false,
         "price":"35",
-        "supplier":"",
-        "notes":"None"
+        "supplier":"Astor Wines & Spirits",
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"Dolin Blanc Vermouth",
-        "type":"modifier",
-        "subtype":"vermouth",
+        "type":"Modifier",
+        "subtype":"Vermouth",
         "stock":false,
         "price":"10",
-        "supplier":"",
-        "notes":"None"
+        "supplier":"Astor Wines & Spirits",
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"Dolin Dry Vermouth",
-        "type":"modifier",
-        "subtype":"vermouth",
+        "type":"Modifier",
+        "subtype":"Vermouth",
         "stock":false,
         "price":"10",
-        "supplier":"",
-        "notes":"None"
+        "supplier":"Astor Wines & Spirits",
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"Dolin Rouge Vermouth",
-        "type":"modifier",
-        "subtype":"vermouth",
+        "type":"Modifier",
+        "subtype":"Vermouth",
         "stock":false,
         "price":"10",
-        "supplier":"",
-        "notes":"None"
+        "supplier":"Astor Wines & Spirits",
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"Dom. Montreuil Réserve Calvados",
-        "type":"base",
-        "subtype":"brandy",
+        "type":"Base",
+        "subtype":"Brandy",
         "stock":false,
         "price":"45",
-        "supplier":"",
-        "notes":"None"
+        "supplier":"Astor Wines & Spirits",
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"Drambuie",
-        "type":"modifier",
-        "subtype":"liqueur",
+        "type":"Modifier",
+        "subtype":"Liqueur",
         "stock":false,
         "price":"25",
-        "supplier":"",
-        "notes":"None"
+        "supplier":"Astor Wines & Spirits",
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"Dubonnet Rouge",
-        "type":"modifier",
-        "subtype":"amaro / aperitif / digestif",
+        "type":"Modifier",
+        "subtype":"Amaro / Aperitif / Digestif",
         "stock":false,
         "price":"15",
-        "supplier":"",
-        "notes":"None"
+        "supplier":"Astor Wines & Spirits",
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"Egg",
-        "type":"other",
+        "type":"Other",
         "subtype":"",
         "stock":false,
-        "price":"",
-        "supplier":"",
-        "notes":"None"
+        "price":"3",
+        "supplier":"Trader Joe's",
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"Egg White",
-        "type":"other",
+        "type":"Other",
         "subtype":"",
         "stock":false,
-        "price":"",
-        "supplier":"",
-        "notes":"None"
+        "price":"3",
+        "supplier":"Trader Joe's",
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"El Tesoro Reposado Tequila",
-        "type":"base",
-        "subtype":"tequila",
+        "type":"Base",
+        "subtype":"Tequila",
         "stock":false,
         "price":"52",
-        "supplier":"",
-        "notes":"None"
+        "supplier":"Astor Wines & Spirits",
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"Elijah Craig Small Batch Bourbon",
-        "type":"base",
-        "subtype":"whiskey",
+        "type":"Base",
+        "subtype":"Whiskey",
         "stock":false,
         "price":"30",
-        "supplier":"",
-        "notes":"None"
+        "supplier":"Astor Wines & Spirits",
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"Evan Williams Black Label Bourbon",
-        "type":"base",
-        "subtype":"whiskey",
+        "type":"Base",
+        "subtype":"Whiskey",
         "stock":false,
         "price":"18",
-        "supplier":"",
-        "notes":"None"
+        "supplier":"Astor Wines & Spirits",
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"Famous Grouse Blended Scotch",
-        "type":"base",
-        "subtype":"whiskey",
+        "type":"Base",
+        "subtype":"Whiskey",
         "stock":false,
         "price":"30",
-        "supplier":"",
-        "notes":"None"
+        "supplier":"Astor Wines & Spirits",
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"Fee Brothers Black Walnut Bitters",
-        "type":"bitters",
+        "type":"Bitters",
         "subtype":"",
         "stock":false,
         "price":"9",
-        "supplier":"",
-        "notes":"None"
+        "supplier":"Dual Specialty Store",
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"Fee Brothers Whiskey Barrel-Aged Bitters",
-        "type":"bitters",
+        "type":"Bitters",
         "subtype":"",
         "stock":false,
         "price":"9",
-        "supplier":"",
-        "notes":"None"
+        "supplier":"Dual Specialty Store",
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"Fernet-Branca",
-        "type":"modifier",
-        "subtype":"amaro / aperitif / digestif",
+        "type":"Modifier",
+        "subtype":"Amaro / Aperitif / Digestif",
         "stock":false,
         "price":"19",
-        "supplier":"",
-        "notes":"None"
+        "supplier":"Astor Wines & Spirits",
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"Fever-Tree Tonic Water",
-        "type":"topper",
+        "type":"Topper",
         "subtype":"",
         "stock":false,
-        "price":"",
-        "supplier":"",
-        "notes":"None"
+        "price":"5",
+        "supplier":"Whole Foods",
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"Fuji Apple Slice",
-        "type":"other",
+        "type":"Other",
         "subtype":"",
         "stock":false,
-        "price":"",
-        "supplier":"",
-        "notes":"None"
+        "price":"1",
+        "supplier":"Trader Joe's",
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"George Dickel #12 Whiskey",
-        "type":"base",
-        "subtype":"whiskey",
+        "type":"Base",
+        "subtype":"Whiskey",
         "stock":false,
         "price":"42",
-        "supplier":"",
-        "notes":"None"
+        "supplier":"Astor Wines & Spirits",
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"Galliano l'Autentico",
-        "type":"modifier",
-        "subtype":"liqueur",
+        "type":"Modifier",
+        "subtype":"Liqueur",
         "stock":false,
         "price":"24",
-        "supplier":"",
-        "notes":"None"
+        "supplier":"Astor Wines & Spirits",
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"Giffard Banane du Brésil",
-        "type":"modifier",
-        "subtype":"liqueur",
+        "type":"Modifier",
+        "subtype":"Liqueur",
         "stock":false,
         "price":"30",
-        "supplier":"",
-        "notes":"None"
+        "supplier":"Astor Wines & Spirits",
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"Giffard Crème de Cacao Blanc",
-        "type":"modifier",
-        "subtype":"liqueur",
+        "type":"Modifier",
+        "subtype":"Liqueur",
         "stock":false,
         "price":"30",
-        "supplier":"",
-        "notes":"None"
+        "supplier":"Astor Wines & Spirits",
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"Giffard Crème de Pamplemousse",
-        "type":"modifier",
-        "subtype": "liqueur",
+        "type":"Modifier",
+        "subtype": "Liqueur",
         "stock":false,
         "price":"25",
-        "supplier":"",
-        "notes":"None"
+        "supplier":"Astor Wines & Spirits",
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"Glenlivet 12-Yr Scotch",
-        "type":"base",
-        "subtype":"whiskey",
+        "type":"Base",
+        "subtype":"Whiskey",
         "stock":false,
         "price":"53",
-        "supplier":"",
-        "notes":"None"
+        "supplier":"Astor Wines & Spirits",
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"Gran Centenario Plata Tequila",
-        "type":"base",
-        "subtype":"tequila",
+        "type":"Base",
+        "subtype":"Tequila",
         "stock":false,
         "price":"30",
-        "supplier":"",
-        "notes":"None"
+        "supplier":"Astor Wines & Spirits",
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"Grand Marnier",
-        "type":"modifier",
-        "subtype":"liqueur",
+        "type":"Modifier",
+        "subtype":"Liqueur",
         "stock":false,
         "price":"22",
-        "supplier":"",
-        "notes":"None"
+        "supplier":"Astor Wines & Spirits",
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"Grapefruit Juice",
-        "type":"juice",
+        "type":"Juice",
         "subtype":"",
         "stock":false,
         "price":"",
         "supplier":"",
-        "notes":"None"
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"Grapefruit Twist",
-        "type":"other",
+        "type":"Other",
         "subtype":"",
         "stock":false,
         "price":"",
         "supplier":"",
-        "notes":"None"
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"Green Bell Pepper",
-        "type":"other",
+        "type":"Other",
         "subtype":"",
         "stock":false,
         "price":"",
         "supplier":"",
-        "notes":"None"
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"Hakushu 12-Yr Whiskey",
-        "type":"base",
-        "subtype":"whiskey",
+        "type":"Base",
+        "subtype":"Whiskey",
         "stock":false,
         "price":"175",
-        "supplier":"",
-        "notes":"None"
+        "supplier":"Astor Wines & Spirits",
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"Hayman's Old Tom Gin",
-        "type":"base",
-        "subtype":"gin",
+        "type":"Base",
+        "subtype":"Gin",
         "stock":false,
         "price":"27",
-        "supplier":"",
-        "notes":"None"
+        "supplier":"Astor Wines & Spirits",
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"Heavy Cream",
-        "type":"other",
+        "type":"Other",
         "subtype":"",
         "stock":false,
-        "price":"",
-        "supplier":"",
-        "notes":"None"
+        "price":"3",
+        "supplier":"Trader Joe's",
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"Jameson Irish Whiskey",
-        "type":"base",
-        "subtype":"whiskey",
+        "type":"Base",
+        "subtype":"Whiskey",
         "stock":false,
         "price":"37",
-        "supplier":"",
-        "notes":"None"
+        "supplier":"Astor Wines & Spirits",
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"Krogstad Aquavit",
-        "type":"base",
-        "subtype":"other",
+        "type":"Base",
+        "subtype":"Other",
         "stock":false,
         "price":"27",
-        "supplier":"",
-        "notes":"None"
+        "supplier":"Astor Wines & Spirits",
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"Laird’s Apple Brandy 100",
-        "type":"base",
-        "subtype":"brandy",
+        "type":"Base",
+        "subtype":"Brandy",
         "stock":false,
         "price":"32",
-        "supplier":"",
-        "notes":"None"
+        "supplier":"Astor Wines & Spirits",
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"Laphroaig 10-Yr Islay Scotch",
-        "type":"base",
-        "subtype":"whiskey",
+        "type":"Base",
+        "subtype":"Whiskey",
         "stock":false,
         "price":"55",
-        "supplier":"",
-        "notes":"None"
+        "supplier":"Astor Wines & Spirits",
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"Lemon Juice",
-        "type":"juice",
+        "type":"Juice",
         "subtype":"",
         "stock":false,
         "price":"",
         "supplier":"",
-        "notes":"None"
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"Lillet Blanc",
-        "type":"modifier",
-        "subtype":"amaro / aperitif / digestif",
+        "type":"Modifier",
+        "subtype":"Amaro / Aperitif / Digestif",
         "stock":false,
         "price":"20",
-        "supplier":"",
-        "notes":"None"
+        "supplier":"Astor Wines & Spirits",
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"Lillet Rouge",
-        "type":"modifier",
-        "subtype":"amaro / aperitif / digestif",
+        "type":"Modifier",
+        "subtype":"Amaro / Aperitif / Digestif",
         "stock":false,
         "price":"20",
-        "supplier":"",
-        "notes":"None"
+        "supplier":"Astor Wines & Spirits",
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"Lime Juice",
-        "type":"juice",
+        "type":"Juice",
         "subtype":"",
         "stock":false,
         "price":"",
         "supplier":"",
-        "notes":"None"
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"Linie Aquavit",
-        "type":"base",
-        "subtype":"other",
+        "type":"Base",
+        "subtype":"Other",
         "stock":false,
         "price":"30",
-        "supplier":"",
-        "notes":"None"
+        "supplier":"Astor Wines & Spirits",
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"Los Amantes Joven Mezcal",
-        "type":"base",
-        "subtype":"mezcal",
+        "type":"Base",
+        "subtype":"Mezcal",
         "stock":false,
         "price":"50",
-        "supplier":"",
-        "notes":"None"
+        "supplier":"Astor Wines & Spirits",
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"Lustau East India Solera Reserva Cream Sherry",
-        "type":"modifier",
-        "subtype":"fortified wine",
+        "type":"Modifier",
+        "subtype":"Fortified Wine",
         "stock":false,
         "price":"26",
-        "supplier":"",
-        "notes":"None"
+        "supplier":"Astor Wines & Spirits",
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"Lustau Los Arcos Amontillado Sherry",
-        "type":"modifier",
-        "subtype":"fortified wine",
+        "type":"Modifier",
+        "subtype":"Fortified Wine",
         "stock":false,
         "price":"16",
-        "supplier":"",
-        "notes":"None"
+        "supplier":"Astor Wines & Spirits",
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"Lustau Palo Cortado Sherry",
-        "type":"modifier",
-        "subtype":"fortified wine",
+        "type":"Modifier",
+        "subtype":"Fortified Wine",
         "stock":false,
         "price":"26",
-        "supplier":"",
-        "notes":"None"
+        "supplier":"Astor Wines & Spirits",
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"Luxardo Maraschino Liqueur",
-        "type":"modifier",
-        "subtype":"liqueur",
+        "type":"Modifier",
+        "subtype":"Liqueur",
         "stock":false,
         "price":"22",
-        "supplier":"",
-        "notes":"None"
+        "supplier":"Astor Wines & Spirits",
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"Lustau Pedro Ximénez San Emilio Sherry",
-        "type":"modifier",
-        "subtype":"fortified wine",
+        "type":"Modifier",
+        "subtype":"Fortified Wine",
         "stock":false,
         "price":"29",
-        "supplier":"",
-        "notes":"None"
+        "supplier":"Astor Wines & Spirits",
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"Macchu Pisco",
-        "type":"base",
-        "subtype":"brandy",
+        "type":"Base",
+        "subtype":"Brandy",
         "stock":false,
         "price":"26",
-        "supplier":"",
-        "notes":"None"
+        "supplier":"Astor Wines & Spirits",
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"Maple Syrup",
-        "type":"sweetener",
+        "type":"Sweetener",
         "subtype":"",
         "stock":false,
-        "price":"",
-        "supplier":"",
-        "notes":"Dark, robust, formerly Grade B"
+        "price":"8",
+        "supplier":"Whole Foods",
+        "notes":"Dark, robust, formerly Grade B",
+        "restock":false
     },
     {
         "name":"Maraska Maraschino Liqueur",
-        "type":"modifier",
-        "subtype":"liqueur",
+        "type":"Modifier",
+        "subtype":"Liqueur",
         "stock":false,
         "price":"30",
-        "supplier":"",
-        "notes":"None"
+        "supplier":"Astor Wines & Spirits",
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"Marie Brizard Crème de Cacao Blanc",
-        "type":"modifier",
-        "subtype":"liqueur",
+        "type":"Modifier",
+        "subtype":"Liqueur",
         "stock":false,
         "price":"20",
-        "supplier":"",
-        "notes":"None"
+        "supplier":"Astor Wines & Spirits",
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"Marie Brizard Crème de Menthe Blanche",
-        "type":"modifier",
-        "subtype":"liqueur",
+        "type":"Modifier",
+        "subtype":"Liqueur",
         "stock":false,
         "price":"20",
-        "supplier":"",
-        "notes":"None"
+        "supplier":"Astor Wines & Spirits",
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"Marie Brizard Orange Curaçao",
-        "type":"modifier",
-        "subtype": "liqueur",
+        "type":"Modifier",
+        "subtype": "Liqueur",
         "stock":false,
         "price":"22",
-        "supplier":"",
-        "notes":"None"
+        "supplier":"Astor Wines & Spirits",
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"Nardini Amaro",
-        "type":"modifier",
-        "subtype":"amaro / aperitif / digestif",
+        "type":"Modifier",
+        "subtype":"Amaro / Aperitif / Digestif",
         "stock":false,
         "price":"50",
-        "supplier":"",
-        "notes":"None"
+        "supplier":"Astor Wines & Spirits",
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"Noilly Prat Dry Vermouth",
-        "type":"modifier",
-        "subtype":"vermouth",
+        "type":"Modifier",
+        "subtype":"Vermouth",
         "stock":false,
         "price":"15",
-        "supplier":"",
-        "notes":"None"
+        "supplier":"Astor Wines & Spirits",
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"Noilly Prat Extra-Dry Vermouth",
-        "type":"modifier",
-        "subtype":"vermouth",
+        "type":"Modifier",
+        "subtype":"Vermouth",
         "stock":false,
         "price":"7",
-        "supplier":"",
-        "notes":"None"
+        "supplier":"Astor Wines & Spirits",
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"Nux Alpina Walnut Liqueur",
-        "type":"modifier",
-        "subtype":"liqueur",
+        "type":"Modifier",
+        "subtype":"Liqueur",
         "stock":false,
         "price":"30",
-        "supplier":"",
-        "notes":"None"
+        "supplier":"Astor Wines & Spirits",
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"Old Forester 100 Bourbon",
-        "type":"base",
-        "subtype":"whiskey",
+        "type":"Base",
+        "subtype":"Whiskey",
         "stock":false,
         "price":"35",
-        "supplier":"",
-        "notes":"None"
+        "supplier":"Astor Wines & Spirits",
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"Old Grand-Dad 114 Bourbon",
-        "type":"base",
-        "subtype":"whiskey",
+        "type":"Base",
+        "subtype":"Whiskey",
         "stock":false,
         "price":"30",
-        "supplier":"",
-        "notes":"None"
+        "supplier":"Astor Wines & Spirits",
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"Old Overholt Rye Whiskey",
-        "type":"base",
-        "subtype":"whiskey",
+        "type":"Base",
+        "subtype":"Whiskey",
         "stock":false,
         "price":"23",
-        "supplier":"",
-        "notes":"None"
+        "supplier":"Astor Wines & Spirits",
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"Orange Juice",
-        "type":"juice",
+        "type":"Juice",
         "subtype":"",
         "stock":false,
         "price":"",
         "supplier":"",
-        "notes":"None"
-    },
-    {
-        "name":"Orange Marmalade",
-        "type":"other",
-        "subtype":"",
-        "stock":false,
-        "price":"",
-        "supplier":"",
-        "notes":"None"
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"Pernod Absinthe",
-        "type":"base",
-        "subtype":"other",
+        "type":"Base",
+        "subtype":"Other",
         "stock":false,
         "price":"70",
-        "supplier":"",
-        "notes":"None"
+        "supplier":"Astor Wines & Spirits",
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"Perry's Tot Navy-Strength Gin",
-        "type":"base",
-        "subtype":"gin",
+        "type":"Base",
+        "subtype":"Gin",
         "stock":false,
         "price":"25",
-        "supplier":"",
-        "notes":"None"
+        "supplier":"Astor Wines & Spirits",
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"Peychaud's Bitters",
-        "type":"bitters",
+        "type":"Bitters",
         "subtype":"",
         "subtype2": "",
         "stock":false,
         "price":"5",
         "supplier":"Dual Specialty Store",
-        "notes":"None"
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"Pierre Ferrand 1840 Cognac",
-        "type":"base",
-        "subtype":"brandy",
+        "type":"Base",
+        "subtype":"Brandy",
         "stock":false,
         "price":"40",
-        "supplier":"",
-        "notes":"None"
+        "supplier":"Astor Wines & Spirits",
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"Pierre Ferrand Ambre Cognac",
-        "type":"base",
-        "subtype":"brandy",
+        "type":"Base",
+        "subtype":"Brandy",
         "stock":false,
         "price":"50",
-        "supplier":"",
-        "notes":"None"
+        "supplier":"Astor Wines & Spirits",
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"Pierre Ferrand Dry Curaçao",
-        "type":"base",
-        "subtype":"brandy",
+        "type":"Base",
+        "subtype":"Brandy",
         "stock":false,
         "price":"30",
-        "supplier":"",
-        "notes":"None"
+        "supplier":"Astor Wines & Spirits",
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"Pineapple Juice",
-        "type":"juice",
+        "type":"Juice",
         "subtype":"",
         "stock":false,
         "price":"",
         "supplier":"",
-        "notes":"None"
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"Plymouth Gin",
-        "type":"base",
-        "subtype":"gin",
+        "type":"Base",
+        "subtype":"Gin",
         "stock":false,
         "price":"38",
-        "supplier":"",
-        "notes":"None"
+        "supplier":"Astor Wines & Spirits",
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"Plymouth Sloe Gin",
-        "type":"modifier",
-        "subtype":"liqueur",
+        "type":"Modifier",
+        "subtype":"Liqueur",
         "stock":false,
         "price":"50",
-        "supplier":"",
-        "notes":"None"
+        "supplier":"Astor Wines & Spirits",
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"Rabarbaro Zucca Amaro",
-        "type":"modifier",
-        "subtype":"amaro / aperitif / digestif",
+        "type":"Modifier",
+        "subtype":"Amaro / Aperitif / Digestif",
         "stock":false,
         "price":"35",
-        "supplier":"",
-        "notes":"None"
+        "supplier":"Astor Wines & Spirits",
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"Raspberry",
-        "type":"other",
+        "type":"Other",
         "subtype":"",
         "stock":false,
-        "price":"",
-        "supplier":"",
-        "notes":"None"
+        "price":"3",
+        "supplier":"Trader Joe's",
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"Red Jacket Orchard Apple Cider",
         "type":"Other",
         "subtype":"",
         "stock":false,
-        "price":"",
-        "supplier":"",
-        "notes":"None"
+        "price":"2",
+        "supplier":"Whole Foods",
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"Redbreast 12-Yr Irish Whiskey",
-        "type":"base",
-        "subtype":"whiskey",
+        "type":"Base",
+        "subtype":"Whiskey",
         "stock":false,
         "price":"62",
-        "supplier":"",
-        "notes":"None"
+        "supplier":"Astor Wines & Spirits",
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"Regans' Orange Bitters No. 6",
-        "type":"bitters",
+        "type":"Bitters",
         "subtype":"",
         "stock":false,
         "price":"5",
-        "supplier":"",
-        "notes":"None"
+        "supplier":"Dual Specialty Store",
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"Rhum Clément VSOP Rum",
-        "type":"base",
-        "subtype":"rum",
+        "type":"Base",
+        "subtype":"Rum",
         "stock":false,
         "price":"40",
-        "supplier":"",
-        "notes":"None"
+        "supplier":"Astor Wines & Spirits",
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"Ricard Anis Pastis",
-        "type":"modifier",
-        "subtype":"liqueur",
+        "type":"Modifier",
+        "subtype":"Liqueur",
         "subtype2": "",
         "stock":false,
         "price":"35",
-        "supplier":"",
-        "notes":"None"
+        "supplier":"Astor Wines & Spirits",
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"Rittenhouse Rye 100 Proof",
-        "type":"base",
-        "subtype":"whiskey",
+        "type":"Base",
+        "subtype":"Whiskey",
         "stock":false,
         "price":"23",
-        "supplier":"",
-        "notes":"None"
+        "supplier":"Astor Wines & Spirits",
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"Ron Zacapa 23 Rum",
-        "type":"base",
-        "subtype":"rum",
+        "type":"Base",
+        "subtype":"Rum",
         "stock":false,
         "price":"45",
-        "supplier":"",
-        "notes":"None"
+        "supplier":"Astor Wines & Spirits",
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"Rothman & Winter Orchard Apricot",
-        "type":"modifier",
-        "subtype": "liqueur",
+        "type":"Modifier",
+        "subtype": "Liqueur",
         "stock":false,
         "price":"25",
-        "supplier":"",
-        "notes":"None"
+        "supplier":"Astor Wines & Spirits",
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"Russell's Reserve Single Barrel Rye",
-        "type":"base",
-        "subtype":"whiskey",
+        "type":"Base",
+        "subtype":"Whiskey",
         "stock":false,
         "price":"65",
-        "supplier":"",
-        "notes":"None"
+        "supplier":"Astor Wines & Spirits",
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"Santa Teresa 1796 Rum",
-        "type":"base",
-        "subtype":"rum",
+        "type":"Base",
+        "subtype":"Rum",
         "stock":false,
         "price":"45",
-        "supplier":"",
-        "notes":"None"
+        "supplier":"Astor Wines & Spirits",
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"Seltzer",
-        "type":"topper",
+        "type":"Topper",
         "subtype":"",
         "stock":false,
         "price":"",
         "supplier":"",
-        "notes":"None"
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"Siembre Azul Blanco Tequila",
-        "type":"base",
-        "subtype":"tequila",
+        "type":"Base",
+        "subtype":"Tequila",
         "stock":false,
         "price":"50",
-        "supplier":"",
-        "notes":"None"
+        "supplier":"Astor Wines & Spirits",
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"Siete Laguas Blanco Tequila",
-        "type":"base",
-        "subtype":"tequila",
+        "type":"Base",
+        "subtype":"Tequila",
         "stock":false,
         "price":"50",
-        "supplier":"",
-        "notes":"None"
+        "supplier":"Astor Wines & Spirits",
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"Siete Laguas Reposado Tequila",
-        "type":"base",
-        "subtype":"tequila",
+        "type":"Base",
+        "subtype":"Tequila",
         "stock":false,
         "price":"43",
-        "supplier":"",
-        "notes":"None"
+        "supplier":"Astor Wines & Spirits",
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"Smith & Cross Jamaica Rum",
-        "type":"base",
-        "subtype":"rum",
+        "type":"Base",
+        "subtype":"Rum",
         "stock":false,
         "price":"30",
-        "supplier":"",
-        "notes":"None"
+        "supplier":"Astor Wines & Spirits",
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"Solerno Blood Orange Liqueur",
-        "type":"modifier",
-        "subtype":"liqueur",
+        "type":"Modifier",
+        "subtype":"Liqueur",
         "stock":false,
         "price":"37",
-        "supplier":"",
-        "notes":"None"
+        "supplier":"Astor Wines & Spirits",
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"Sombra Mezcal",
-        "type":"base",
-        "subtype":"mezcal",
+        "type":"Base",
+        "subtype":"Mezcal",
         "stock":false,
         "price":"34",
-        "supplier":"",
-        "notes":"None"
+        "supplier":"Astor Wines & Spirits",
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"St. Elizabeth Allspice Dram",
-        "type":"modifier",
-        "subtype":"liqueur",
+        "type":"Modifier",
+        "subtype":"Liqueur",
         "stock":false,
         "price":"29",
-        "supplier":"",
-        "notes":"None"
+        "supplier":"Astor Wines & Spirits",
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"St. George Absinthe Verte",
-        "type":"base",
-        "subtype":"other",
+        "type":"Base",
+        "subtype":"Other",
         "stock":false,
         "price":"60",
-        "supplier":"",
-        "notes":"None"
+        "supplier":"Astor Wines & Spirits",
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"St-Germain",
-        "type":"modifier",
-        "subtype":"liqueur",
+        "type":"Modifier",
+        "subtype":"Liqueur",
         "stock":false,
         "price":"35",
-        "supplier":"",
-        "notes":"None"
+        "supplier":"Astor Wines & Spirits",
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"Strawberry",
-        "type":"other",
+        "type":"Other",
         "subtype":"",
         "stock":false,
-        "price":"",
-        "supplier":"",
-        "notes":"None"
+        "price":"5",
+        "supplier":"Trader Joe's",
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"Strega",
-        "type":"modifier",
-        "subtype":"liqueur",
+        "type":"Modifier",
+        "subtype":"Liqueur",
         "stock":false,
         "price":"37",
-        "supplier":"",
-        "notes":"None"
+        "supplier":"Astor Wines & Spirits",
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"Suze Aperitif",
-        "type":"modifier",
-        "subtype":"amaro / aperitif / digestif",
+        "type":"Modifier",
+        "subtype":"Amaro / Aperitif / Digestif",
         "stock":false,
         "price":"30",
-        "supplier":"",
-        "notes":"None"
+        "supplier":"Astor Wines & Spirits",
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"Tanqueray London Dry Gin",
-        "type":"base",
-        "subtype":"gin",
+        "type":"Base",
+        "subtype":"Gin",
         "stock":false,
         "price":"35",
-        "supplier":"",
-        "notes":"None"
+        "supplier":"Astor Wines & Spirits",
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"Tanqueray No. Ten Gin",
-        "type":"base",
-        "subtype":"gin",
+        "type":"Base",
+        "subtype":"Gin",
         "stock":false,
         "price":"50",
-        "supplier":"",
-        "notes":"None"
+        "supplier":"Astor Wines & Spirits",
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"Tempus Fugit Crême de Menthe",
-        "type":"modifier",
-        "subtype":"liqueur",
+        "type":"Modifier",
+        "subtype":"Liqueur",
         "stock":false,
         "price":"35",
-        "supplier":"",
-        "notes":"None"
+        "supplier":"Astor Wines & Spirits",
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"Thai Bird Chile-Infused Aperol",
-        "type":"modifier",
-        "subtype":"amaro / aperitif / digestif",
+        "type":"Modifier",
+        "subtype":"Amaro / Aperitif / Digestif",
         "stock":false,
         "price":"",
-        "supplier":"",
-        "notes":"Yield: 750 mL\n\n10 Thai bird chiles, diced\n750 mL Aperol Aperitivo Liqueur\n\n1. Steep the chiles and Aperol in a container for 5 minutes; allow to steep longer for a spicier end product\n2. Strain out the chiles when the desired spice level has been reached\n3. Store in an airtight container, refrigerated, indefinitely"
+        "supplier":"Homemade",
+        "notes":"Yield: 750 mL\n\n10 Thai bird chiles, diced\n750 mL Aperol Aperitivo Liqueur\n\n1. Steep the chiles and Aperol in a container for 5 minutes; allow to steep longer for a spicier end product\n2. Strain out the chiles when the desired spice level has been reached\n3. Store in an airtight container, refrigerated, indefinitely",
+        "restock":false
+
     },
     {
         "name":"Van Oosten Batavia Arrack",
-        "type":"base",
-        "subtype":"rum",
+        "type":"Base",
+        "subtype":"Rum",
         "stock":false,
         "price":"30",
-        "supplier":"",
-        "notes":"None"
+        "supplier":"Astor Wines & Spirits",
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"Varnelli l'Anice Secco Speciale",
-        "type":"modifier",
-        "subtype":"liqueur",
+        "type":"Modifier",
+        "subtype":"Liqueur",
         "stock":false,
         "price":"50",
-        "supplier":"",
-        "notes":"None"
+        "supplier":"Astor Wines & Spirits",
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"Vieux Pontarlier Absinthe",
-        "type":"base",
-        "subtype":"other",
+        "type":"Base",
+        "subtype":"Other",
         "stock":false,
         "price":"60",
-        "supplier":"",
-        "notes":"None"
+        "supplier":"Astor Wines & Spirits",
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"Vya Sweet Vermouth",
-        "type":"modifier",
-        "subtype":"vermouth",
+        "type":"Modifier",
+        "subtype":"Vermouth",
         "stock":false,
         "price":"15",
-        "supplier":"",
-        "notes":"None"
+        "supplier":"Astor Wines & Spirits",
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"Water",
-        "type":"other",
+        "type":"Other",
         "subtype":"",
         "stock":false,
-        "price":"",
-        "supplier":"",
-        "notes":"Chilled"
+        "price":"0",
+        "supplier":"Homemade",
+        "notes":"Chilled",
+        "restock":false
     },
     {
         "name":"White Sugar Cube",
-        "type":"sweetener",
+        "type":"Sweetener",
         "subtype":"",
         "stock":false,
-        "price":"",
-        "supplier":"",
-        "notes":"None"
+        "price":"7",
+        "supplier":"Whole Foods",
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"Woodford Reserve Bourbon",
-        "type":"base",
-        "subtype":"whiskey",
+        "type":"Base",
+        "subtype":"Whiskey",
         "stock":false,
         "price":"40",
-        "supplier":"",
-        "notes":"None"
+        "supplier":"Astor Wines & Spirits",
+        "notes":"None",
+        "restock":false
     },
     {
         "name":"Zirbenz Stone Pine Liqueur",
-        "type":"modifier",
-        "subtype":"liqueur",
+        "type":"Modifier",
+        "subtype":"Liqueur",
         "stock":false,
         "price":"27",
-        "supplier":"",
-        "notes":"None"
+        "supplier":"Astor Wines & Spirits",
+        "notes":"None",
+        "restock":false
     }
 ]

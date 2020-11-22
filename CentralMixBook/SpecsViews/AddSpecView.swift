@@ -24,7 +24,7 @@ struct AddSpecView: View {
                 SpecEditorView(spec: spec)
                 
                 Button(action: {
-                    // add new specification to specs array in dex
+                    // add new spec
                     addNewSpec(newSpec: spec)
                 }) {
                     Text("Add new specification")
@@ -33,18 +33,17 @@ struct AddSpecView: View {
                 }
             }
             .navigationBarTitle("Add New Spec")
-            .navigationBarItems(leading: Button(action: {
-                // dismiss current add specification sheet
-                showingAdd = false
-                impactGenerator.impactOccurred()
-            }) {
-                Text("Cancel").foregroundColor(.red)
-            }, trailing: Button(action: {
-                // add new specification to specs array in dex
-                addNewSpec(newSpec: spec)
-            }) { Text("Add") })
+            .navigationBarItems(
+                leading: CancelButton(showingSheet: $showingAdd),
+                trailing: Button(action: {
+                    // show add spec sheet
+                    addNewSpec(newSpec: spec)
+                }) { Text("Add").padding(.leading).padding(.vertical) }
+            )
             .alert(isPresented: $showingAlert) {
-                Alert(title: Text(alertTitle), message: Text(alertMessage), dismissButton: .default(Text("OK")))
+                Alert(title: Text(alertTitle),
+                      message: Text(alertMessage),
+                      dismissButton: .default(Text("OK")))
             }
         }
     }
@@ -54,31 +53,46 @@ struct AddSpecView: View {
         
         // validation: name is empty
         guard newSpec.hasValidName else {
-            specError(title: "Specification name is empty", message: "Please enter a name")
+            specError(
+                title: "Specification name is empty",
+                message: "Please enter a name"
+            )
             return
         }
 
         // validation: has at least one ingredient
         guard newSpec.hasIngredients else {
-            specError(title: "Specification has no ingredients", message: "Please enter at least one ingredient")
+            specError(
+                title: "Specification has no ingredients",
+                message: "Please enter at least one ingredient"
+            )
             return
         }
         
         // validation: array of SpecIngredients is fully populated
         guard newSpec.hasValidIngredients else {
-            specError(title: "Specification has invalid ingredients", message: "Please fill out or remove all incomplete ingredients")
+            specError(
+                title: "Specification has invalid ingredients",
+                message: "Please fill out or remove all incomplete ingredients"
+            )
             return
         }
         
         // validation: has at least one direction
         guard newSpec.hasDirections else {
-            specError(title: "Specification has no directions", message: "Please enter at least one direction")
+            specError(
+                title: "Specification has no directions",
+                message: "Please enter at least one direction"
+            )
             return
         }
         
         // validation: array of directions is fully populated
         guard newSpec.hasValidDirections else {
-            specError(title: "Specification has empty directions", message: "Please fill out or remove all empty directions")
+            specError(
+                title: "Specification has empty directions",
+                message: "Please fill out or remove all empty directions"
+            )
             return
         }
         

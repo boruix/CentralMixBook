@@ -25,8 +25,8 @@ struct AddIngredientToInventoryView: View {
                 IngredientEditorView(ingredient: newIngredient)
                 
                 Button(action: {
-                    // add new ingredient to ingredients arrary in inventory
-                    addIngredientToInventory(newIngredient: newIngredient)
+                    // add new ingredient
+                    addIngredientToInventory(newIngredient)
                 }) {
                     Text("Add new ingredient")
                         .fontWeight(.bold)
@@ -34,47 +34,55 @@ struct AddIngredientToInventoryView: View {
                 }
             }
             .navigationBarTitle("Add New Ingredient")
-            .navigationBarItems(leading: Button(action: {
-                // dismiss current add ingredient sheet
-                showingAdd = false
-                impactGenerator.impactOccurred()
-            }) {
-                Text("Cancel").foregroundColor(.red)
-            }, trailing: Button(action: {
-                // add new ingredient to ingredients arrary in inventory
-                addIngredientToInventory(newIngredient: newIngredient)
-            }) { Text("Add") })
+            .navigationBarItems(
+                leading: CancelButton(showingSheet: $showingAdd),
+                trailing: Button(action: {
+                    // add new ingredient
+                    addIngredientToInventory(newIngredient)
+                }) { Text("Add").padding(.leading).padding(.vertical) }
+            )
             .alert(isPresented: $showingAlert) {
-                Alert(title: Text(alertTitle), message: Text(alertMessage), dismissButton: .default(Text("OK")))
+                Alert(title: Text(alertTitle),
+                      message: Text(alertMessage),
+                      dismissButton: .default(Text("OK")))
             }
         }
         // for creating ingredient from non-existent listed ingredient on a spec
         .onAppear() { newIngredient.name = ingredient.name }
     }
     
-    private func addIngredientToInventory(newIngredient: Ingredient) {
+    private func addIngredientToInventory(_ newIngredient: Ingredient) {
         newIngredient.trimStrings()
 
         // validation: name is empty
         guard newIngredient.hasValidName else {
-            ingredientError(title: "Ingredient name is empty", message: "Please enter a name")
+            ingredientError(
+                title: "Ingredient name is empty",
+                message: "Please enter a name"
+            )
             return
         }
 
         // validation: name is unique
-        guard newIngredient.hasUniqueName(ingredient: newIngredient, inventory: inventory) else {
-            ingredientError(title: "An existing ingredient already has this name", message: "Please enter a new name")
+        guard newIngredient.hasUniqueName(in: inventory) else {
+            ingredientError(
+                title: "An existing ingredient already has this name",
+                message: "Please enter a new name"
+            )
             return
         }
         
         // validation: price is a numeric value
         guard newIngredient.hasValidPrice else {
-            ingredientError(title: "Invalid price", message: "Please enter a valid price")
+            ingredientError(
+                title: "Invalid price",
+                message: "Please enter a valid price"
+            )
             return
         }
         
         // if ingredient type is not base or modifier, make subtype empty
-        if !["base", "modifier"].contains(newIngredient.type) {
+        if !["Base", "Modifier"].contains(newIngredient.type) {
             newIngredient.subtype = ""
         }
         
@@ -95,6 +103,9 @@ struct AddIngredientToInventoryView_Previews: PreviewProvider {
     @State static var showingAdd = true
 
     static var previews: some View {
-        AddIngredientToInventoryView(ingredient: Ingredient(), showingAdd: $showingAdd)
+        AddIngredientToInventoryView(
+            ingredient: Ingredient(),
+            showingAdd: $showingAdd
+        )
     }
 }

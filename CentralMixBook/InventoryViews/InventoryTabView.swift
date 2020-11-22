@@ -6,94 +6,176 @@
 
 import SwiftUI
 
+// MARK: InventoryTabView
 struct InventoryTabView: View {
     @EnvironmentObject var inventory: Inventory
     @EnvironmentObject var userSettings: UserSettings
     
+    @ObservedObject var searchBar = SearchBar()
     @State private var showingAdd = false
-    private let generator = UIImpactFeedbackGenerator(style: .light)
 
-    var filteredInventory: [Ingredient] {
-        if userSettings.hideOutOfStock {
-            return inventory.ingredients.filter { $0.stock }
+    // inventory filtered by search bar and show / hide out-of-stock button
+    private var filteredInventory: [Ingredient] {
+        if searchBar.text.isEmpty {
+            return inventory.ingredients.filter { $0.stock || !userSettings.hideOutOfStock }
         } else {
-            return inventory.ingredients
+            return inventory.ingredients.filter { $0.name.localizedStandardContains(searchBar.text) }
         }
-    }
-    
-    var baseInventory: [Ingredient] {
-        return filteredInventory.filter { $0.type == "base" }
-    }
-    
-    var modifierInventory: [Ingredient] {
-        return filteredInventory.filter { $0.type == "modifier" }
     }
     
     var body: some View {
         NavigationView {
             Form {
-                if baseInventory.count > 0 {
-                    
-                    Section(header: HeaderView(text: "Base Spirits", fontType: .subheadline, imageScale: .large, collapseSection: $userSettings.collapseBases)) {
+                if filteredInventory.isEmpty {
+                    // MARK: if no ingredients showing
+                    Text(userSettings.hideOutOfStock
+                            ? "No ingredients in stock"
+                            : "No ingredients added")
+                } else {
+                    // MARK: if sort by type
+                    switch userSettings.inventorySort {
+                    case "Type":
+                        InventorySuperSectionView(
+                            superSectionName: "Base Spirits",
+                            subSectionTypes: IngredientType.base.subtypes,
+                            subInventory: filteredInventory.filter { $0.type == "Base" }
+                        )
                         
-                        if !userSettings.collapseBases {
-                            
-                            ForEach(IngredientType.base.subtypes, id: \.self) { base in
-                                InventoryTypeView(text: base.capitalized, typeInventory: baseInventory.filter { $0.subtype == base }, fontType: .body, imageScale: .small)
-                            }
+                        InventorySuperSectionView(
+                            superSectionName: "Modifiers",
+                            subSectionTypes: IngredientType.modifier.subtypes,
+                            subInventory: filteredInventory.filter { $0.type == "Modifier" }
+                        )
+                        
+                        ForEach(["Bitters", "Sweetener", "Juice", "Topper", "Other"], id: \.self) { ingredientType in
+                            InventorySectionView(
+                                sectionName: ingredientType + (["Bitters", "Other"].contains(ingredientType) ? "" : "s"),
+                                inventorySection: filteredInventory.filter { $0.type == ingredientType }
+                            )
                         }
+                        
+                    // MARK: if sort by supplier
+                    case "Supplier":
+                        ForEach(inventory.suppliers, id: \.self) { supplier in
+                            InventorySectionView(
+                                sectionName: supplier,
+                                inventorySection: filteredInventory.filter { $0.supplier == supplier }
+                            )
+                        }
+                        
+                        InventorySectionView(
+                            sectionName: "No supplier listed",
+                            inventorySection: filteredInventory.filter { $0.supplier.isEmpty }
+                        )
+                        
+                    // MARK: if sort by price
+                    case "Price":
+                        let pricedInventory = filteredInventory.filter { !$0.price.isEmpty }
+                        
+                        InventorySectionView(
+                            sectionName: "$10 or under",
+                            inventorySection: pricedInventory.filter { Int($0.price)! <= 10 }
+                        )
+                        
+                        InventorySectionView(
+                            sectionName: "Over $10, up to $20",
+                            inventorySection: pricedInventory.filter { (11...20).contains(Int($0.price)!) }
+                        )
+                        
+                        InventorySectionView(
+                            sectionName: "Over $20, up to $25",
+                            inventorySection: pricedInventory.filter { (21...25).contains(Int($0.price)!) }
+                        )
+                        
+                        InventorySectionView(
+                            sectionName: "Over $25, up to $30",
+                            inventorySection: pricedInventory.filter { (26...30).contains(Int($0.price)!) }
+                        )
+                        
+                        InventorySectionView(
+                            sectionName: "Over $30, up to $40",
+                            inventorySection: pricedInventory.filter { (31...40).contains(Int($0.price)!) }
+                        )
+                        
+                        InventorySectionView(
+                            sectionName: "Over $40",
+                            inventorySection: pricedInventory.filter { Int($0.price)! > 40 }
+                        )
+                        
+                        InventorySectionView(
+                            sectionName: "No price listed",
+                            inventorySection: filteredInventory.filter { $0.price.isEmpty }
+                        )
+                    default:
+                        EmptyView()
                     }
                 }
-                
-                if modifierInventory.count > 0 {
-                    
-                    Section(header: HeaderView(text: "Modifiers", fontType: .subheadline, imageScale: .large, collapseSection: $userSettings.collapseModifiers)) {
-                        
-                        if !userSettings.collapseModifiers {
-                            
-                            ForEach(IngredientType.modifier.subtypes, id: \.self) { modifier in
-                                InventoryTypeView(text: modifier.capitalized, typeInventory: modifierInventory.filter { $0.subtype == modifier}, fontType: .body, imageScale: .small)
-                            }
-                        }
-                    }
-                }
-                
-                InventoryTypeView(text: "Bitters", typeInventory: filteredInventory.filter { $0.type == "bitters" })
-                
-                InventoryTypeView(text: "Sweeteners",  typeInventory: filteredInventory.filter { $0.type == "sweetener" })
-                
-                InventoryTypeView(text: "Juices", typeInventory: filteredInventory.filter { $0.type == "juice" })
-                
-                InventoryTypeView(text: "Toppers", typeInventory: filteredInventory.filter { $0.type == "topper" })
-                
-                InventoryTypeView(text: "Other", typeInventory: filteredInventory.filter { $0.type == "other" })
             }
             .navigationBarTitle("Inventory")
+            .add(searchBar)
             .toolbar {
                 ToolbarItem(placement: .bottomBar) {
-                    Button(action: {
-                        // show or hide out-of-stock ingredients
-                        withAnimation { userSettings.hideOutOfStock.toggle() }
-                        generator.impactOccurred()      // needs to come after
-                    }) {
-                        Image(systemName: userSettings.hideOutOfStock ? "line.horizontal.3.decrease.circle.fill" : "line.horizontal.3.decrease.circle")
-                    }
+                    // MARK: toggle show oos
+                    ShowHideButton(setting: $userSettings.hideOutOfStock)
                 }
                 
                 ToolbarItem(placement: .bottomBar) { Spacer() }
                 
                 ToolbarItem(placement: .bottomBar) {
-                    Button(action: {
-                        // add new ingredient to ingredients arrary in Inventory
-                        showingAdd = true
-                        generator.impactOccurred()
-                    }) { Image(systemName: "plus") }
+                    // MARK: sort inventory menu
+                    SortByMenu(
+                        sortBy: $userSettings.inventorySort,
+                        options: UserSettings.InventorySortBy.allCases.map { $0.id }
+                    )
+                }
+                
+                ToolbarItem(placement: .bottomBar) { Spacer() }
+                
+                ToolbarItem(placement: .bottomBar) {
+                    // MARK: add ingredient button
+                    AddButton(showingAdd: $showingAdd)
                 }
             }
             // prevents toolbar from disappearing when navigating
             .onAppear() { inventory.objectWillChange.send() }
             .sheet(isPresented: $showingAdd) {
-                AddIngredientToInventoryView(ingredient: Ingredient(), showingAdd: $showingAdd)
+                AddIngredientToInventoryView(
+                    ingredient: Ingredient(),
+                    showingAdd: $showingAdd
+                )
+            }
+        }
+    }
+}
+
+// MARK: InventorySuperSectionView
+private struct InventorySuperSectionView: View {
+    let superSectionName: String
+    let subSectionTypes: [String]
+    let subInventory: [Ingredient]
+    
+    @State private var collapsed = false
+    
+    var body: some View {
+        if !subInventory.isEmpty {
+            Section(
+                header: HeaderView(text: superSectionName,
+                                   fontType: .subheadline,
+                                   imageScale: .large,
+                                   collapseSection: $collapsed),
+                footer: Text("Count: \(subInventory.count)")
+            ) {
+                if !collapsed {
+                    ForEach(subSectionTypes, id: \.self) { type in
+                        InventorySectionView(
+                            sectionName: type,
+                            inventorySection: subInventory.filter { $0.subtype == type },
+                            fontType: .body,
+                            imageScale: .small,
+                            footerCount: false
+                        )
+                    }
+                }
             }
         }
     }

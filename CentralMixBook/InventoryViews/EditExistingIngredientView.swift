@@ -35,20 +35,19 @@ struct EditExistingIngredientView: View {
                 }
             }
             .navigationBarTitle("Edit Ingredient")
-            .navigationBarItems(leading: Button(action: {
-                // dismiss current edit ingredient sheet
-                showingEdit = false
-                impactGenerator.impactOccurred()
-            }) {
-                Text("Cancel").foregroundColor(.red)
-            }, trailing: Button(action: {
-                // save changes to existing ingredient
-                editIngredient(from: ingredient, to: editedIngredient)
-            }) { Text("Save") })
+            .navigationBarItems(
+                leading: CancelButton(showingSheet: $showingEdit),
+                trailing: Button(action: {
+                    // save changes to existing ingredient
+                    editIngredient(from: ingredient, to: editedIngredient)
+                }) { Text("Save").padding(.leading).padding(.vertical) }
+            )
             // to stop unsaved edits from propagating back to views
             .onAppear() { editedIngredient.copy(from: ingredient) }
             .alert(isPresented: $showingAlert) {
-                Alert(title: Text(alertTitle), message: Text(alertMessage), dismissButton: .default(Text("OK")))
+                Alert(title: Text(alertTitle),
+                      message: Text(alertMessage),
+                      dismissButton: .default(Text("OK")))
             }
         }
     }
@@ -58,35 +57,44 @@ struct EditExistingIngredientView: View {
 
         // validation: name is empty
         guard edited.hasValidName else {
-            ingredientError(title: "Ingredient name is empty", message: "Please enter a name")
+            ingredientError(
+                title: "Ingredient name is empty",
+                message: "Please enter a name"
+            )
             return
         }
 
         // validation: name is unique
         if edited.name.uppercased() != original.name.uppercased() {
-            guard edited.hasUniqueName(ingredient: edited, inventory: inventory) else {
-                ingredientError(title: "An existing ingredient already has this name", message: "Please enter a new name")
+            guard edited.hasUniqueName(in: inventory) else {
+                ingredientError(
+                    title: "An existing ingredient already has this name",
+                    message: "Please enter a new name"
+                )
                 return
             }
         }
         
-        // validation: price is a numeric value
+        // validation: price is empty or an integer
         guard edited.hasValidPrice else {
-            ingredientError(title: "Invalid price", message: "Please enter a valid price")
+            ingredientError(
+                title: "Invalid price",
+                message: "Please enter a valid integer price"
+            )
             return
         }
 
         // if ingredient type is not base or modifier, make subtype empty
-        if !["base", "modifier"].contains(edited.type) {
+        if !["Base", "Modifier"].contains(edited.type) {
             edited.subtype = ""
         }
         
         // update edited ingredient name in specs
         if original.name != edited.name {
-            for i in 0 ..< dex.specs.count {
-                for j in 0 ..< dex.specs[i].ingredients.count {
-                    if dex.specs[i].ingredients[j].ingredient == original.name {
-                        dex.specs[i].ingredients[j].ingredient = edited.name
+            for spec in dex.specs {
+                for specIngredient in spec.ingredients {
+                    if specIngredient.name == original.name {
+                        specIngredient.name = edited.name
                     }
                 }
             }
@@ -109,6 +117,9 @@ struct EditExistingIngredientView_Previews: PreviewProvider {
     @State static var showingEdit = false
     
     static var previews: some View {
-        EditExistingIngredientView(ingredient: Ingredient(), showingEdit: $showingEdit)
+        EditExistingIngredientView(
+            ingredient: Ingredient(),
+            showingEdit: $showingEdit
+        )
     }
 }

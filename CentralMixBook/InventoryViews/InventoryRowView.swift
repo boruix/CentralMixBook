@@ -10,39 +10,39 @@ struct InventoryRowView: View {
     @EnvironmentObject var inventory: Inventory
     
     @ObservedObject var ingredient: Ingredient
+    let sort: String
     
     private let generator = UIImpactFeedbackGenerator(style: .light)
     
     var body: some View {
         NavigationLink(destination: IngredientDetailedView(ingredient: ingredient)) {
             HStack {
-                Button(action: {
-                    // toggles .stock for an ingredient in inventory
-                    inventory.toggleStock(ingredient.name)
-                    generator.impactOccurred()
-                }) {
-                    Image(systemName: ingredient.stock ? "checkmark.circle.fill" : "circle")
-                }
+                StockButton(ingredient: ingredient)
                 
-                Text(ingredient.name).font(.callout)
+                VStack(alignment: .leading) {
+                    HStack {
+                        Text(ingredient.name)
+                        Spacer()
+                        if ingredient.restock { Image(systemName: "bag") }
+                    }
+                    
+                    if !ingredient.supplier.isEmpty && !ingredient.price.isEmpty {
+                        HStack {
+                            Text(sort == "supplier" ? ingredient.type : ingredient.supplier)
+                                .fontWeight(.light)
+                            
+                            Spacer()
+                            Text(ingredient.price).fontWeight(.light)
+                        }
+                        .font(.callout)
+                        .foregroundColor(.secondary)
+                    }
+                }
+                .lineLimit(1)
             }
             // makes stock button responsive
             .buttonStyle(BorderlessButtonStyle())
-            .contextMenu {
-                Label(ingredient.type.capitalized, systemImage: "tag")
-                
-                if !ingredient.subtype.isEmpty {
-                    Label(ingredient.subtype.capitalized, systemImage: "tag.circle")
-                }
-                
-                if !ingredient.price.isEmpty {
-                    Label(ingredient.price, systemImage: "dollarsign.square")
-                }
-                
-                if !ingredient.supplier.isEmpty {
-                    Label(ingredient.supplier, systemImage: "mappin.and.ellipse")
-                }
-            }
+            .contextMenu { RestockButton(ingredient: ingredient) }
         }
     }
 }

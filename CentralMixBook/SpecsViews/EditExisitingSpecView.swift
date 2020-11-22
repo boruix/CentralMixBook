@@ -8,10 +8,9 @@
 import SwiftUI
 
 struct EditExistingSpecView: View {
-    //@EnvironmentObject var inventory: Inventory
     @EnvironmentObject var dex: Dex
     
-    @ObservedObject var spec: Spec
+    @StateObject var spec: Spec
     @Binding var showingEdit: Bool
     
     @StateObject private var editedSpec = Spec()
@@ -25,7 +24,11 @@ struct EditExistingSpecView: View {
         NavigationView {
             Form {
                 // invalidAttempts arrays need spec to initalize correct length
-                SpecEditorView(spec: editedSpec, ingredientsInvalidAttempts: [Int](repeating: 0, count: spec.ingredients.count), directionsInvalidAttempts: [Int](repeating: 0, count: spec.directions.count))
+                SpecEditorView(
+                    spec: editedSpec,
+                    ingredientsInvalidAttempts: [Int](repeating: 0, count: spec.ingredients.count),
+                    directionsInvalidAttempts: [Int](repeating: 0, count: spec.directions.count)
+                )
                 
                 Button(action: {
                     // save changes to existing specification
@@ -37,20 +40,19 @@ struct EditExistingSpecView: View {
                 }
             }
             .navigationBarTitle("Edit Specification")
-            .navigationBarItems(leading: Button(action: {
-                // dismiss current add specification sheet
-                showingEdit = false
-                impactGenerator.impactOccurred()
-            }) {
-                Text("Cancel").foregroundColor(.red)
-            }, trailing: Button(action: {
-                // save changes to existing specification
-                editSpec(from: spec, to: editedSpec)
-            }) { Text("Save") })
+            .navigationBarItems(
+                leading: CancelButton(showingSheet: $showingEdit),
+                trailing: Button(action: {
+                    // save changes to existing specification
+                    editSpec(from: spec, to: editedSpec)
+                }) { Text("Save").padding(.leading).padding(.vertical) }
+            )
             // to stop unsaved edits from propagating back to views
             .onAppear() {editedSpec.copy(from: spec) }
             .alert(isPresented: $showingAlert) {
-                Alert(title: Text(alertTitle), message: Text(alertMessage), dismissButton: .default(Text("OK")))
+                Alert(title: Text(alertTitle),
+                      message: Text(alertMessage),
+                      dismissButton: .default(Text("OK")))
             }
         }
     }
@@ -60,31 +62,45 @@ struct EditExistingSpecView: View {
 
         // validation: name is empty
         guard edited.hasValidName else {
-            specError(title: "Specification name is empty", message: "Please enter a name")
+            specError(
+                title: "Specification name is empty",
+                message: "Please enter a name"
+            )
             return
         }
 
         // validation: has at least one ingredient
         guard edited.hasIngredients else {
-            specError(title: "Specification has no ingredients", message: "Please enter at least one ingredient")
+            specError(
+                title: "Specification has no ingredients",
+                message: "Please enter at least one ingredient"
+            )
             return
         }
         
         // validation: array of SpecIngredients is fully populated
         guard edited.hasValidIngredients else {
-            specError(title: "Specification has invalid ingredients", message: "Please fill out or remove all incomplete ingredients")
+            specError(
+                title: "Specification has invalid ingredients",
+                message: "Please fill out or remove all incomplete ingredients"
+            )
             return
         }
         
         // validation: has at least one direction
         guard edited.hasDirections else {
-            specError(title: "Specification has no directions", message: "Please enter at least one direction")
+            specError(
+                title: "Specification has no directions",
+                message: "Please enter at least one direction"
+            )
             return
         }
         
         // validation: array of directions is fully populated
         guard edited.hasValidDirections else {
-            specError(title: "Specification has empty directions", message: "Please fill out or remove all empty directions")
+            specError(title: "Specification has empty directions",
+                      message: "Please fill out or remove all empty directions"
+            )
             return
         }
         

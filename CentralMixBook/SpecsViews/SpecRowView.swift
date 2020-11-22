@@ -13,10 +13,10 @@ struct SpecRowView: View {
     
     var body: some View {
         VStack(alignment: .leading) {
-            Text(spec.name)
+            Text(spec.name).lineLimit(1)
             
             HStack {
-                Text(sort == "bar name" ? spec.type.capitalized : spec.barName)
+                Text(sort == "bar" ? spec.type.capitalized : spec.barName)
                     .fontWeight(.light)
                 
                 Spacer()
@@ -27,14 +27,16 @@ struct SpecRowView: View {
             .padding(.trailing, 10)
             .font(.callout)
             .foregroundColor(.secondary)
-            .contextMenu {
-                Label(spec.barName, systemImage: "house")
-                Label(spec.barLocation, systemImage: "mappin.and.ellipse")
-                Label(spec.type.capitalized, systemImage: "tag")
-                Text("Garnish: " + (spec.garnish == "" ? "None" : spec.garnish))
-                Text("Glass: " + spec.glassware.capitalized)
-                Label("Ice: " + spec.ice, systemImage: "cube")
-            }
+            
+        }
+        .lineLimit(1)
+        .contextMenu {
+            Label(spec.barName, systemImage: "house")
+            Label(spec.barLocation, systemImage: "mappin.and.ellipse")
+            Label(spec.type.capitalized, systemImage: "tag")
+            Text("Garnish: " + (spec.garnish == "" ? "None" : spec.garnish))
+            Text("Glass: " + spec.glassware.capitalized)
+            Text("Ice: " + spec.ice)
         }
     }
 }

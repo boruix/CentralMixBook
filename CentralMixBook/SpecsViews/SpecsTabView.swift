@@ -11,137 +11,74 @@ struct SpecsTabView: View {
     @EnvironmentObject var dex: Dex
     @EnvironmentObject var userSettings: UserSettings
 
+    @ObservedObject var searchBar = SearchBar()
     @State private var showingAdd = false
-    private let impactGenerator = UIImpactFeedbackGenerator(style: .light)
-    private let selectionGenerator = UISelectionFeedbackGenerator()
 
-    private var sortOptions: [String] {
-        switch userSettings.sortBy {
-        case "bar name":
-            return dex.barNamesAndLocations
-        case "type":
-            return CocktailType.allCases.map { $0.rawValue }
-        case "glassware":
-            return Glassware.allCases.map { $0.rawValue }
-        default:
-            return []
-        }
-    }
-    
+    // specs filtered by search bar and show / hide incomplete specs button
     private var filteredSpecs: [Spec] {
-        var filteredSpecs = [Spec]()
-        
-        if userSettings.hideIncomplete {
-            dex.specs.forEach { spec in
-                var complete = true
-                
-                for specIngredient in spec.ingredients {
-                    if let foundIngredient = inventory.getIngredient(specIngredient.ingredient) {
-                        if !foundIngredient.stock {
-                            complete = false
-                            break
-                        }
-                    } else {
-                        complete = false
-                        break
+        if searchBar.text.isEmpty {
+            if userSettings.hideIncomplete {
+                var filteredSpecs = [Spec]()
+                let oosIngredients = inventory.ingredients.filter { !$0.stock }
+                let oosIngredientNames = oosIngredients.map { $0.name }
+
+                for spec in dex.specs {
+                    let specIngredients = spec.ingredients.map { $0.name }
+                    
+                    if Set(oosIngredientNames).intersection(specIngredients).isEmpty {
+                        filteredSpecs.append(spec)
                     }
                 }
-                if complete { filteredSpecs.append(spec) }
+                return filteredSpecs
+            } else {
+                return dex.specs
             }
-            return filteredSpecs
         } else {
-            return dex.specs
+            return dex.specs.filter { $0.name.localizedStandardContains(searchBar.text) }
         }
     }
     
+    // FIXME: account for specs with no bar name / location
     var body: some View {
         NavigationView {
             Form {
-                Section(header: HeaderView(text: "Favorites", fontType: .subheadline, imageScale: .large, collapseSection: $userSettings.collapseFavorites)) {
-                    if !userSettings.collapseFavorites {
-                        if dex.specs.filter { $0.favorite }.count == 0 {
-                            Text("No favorites")
-                        } else if filteredSpecs.filter { $0.favorite }.count == 0 {
-                            Text("No favorites with all ingredients in stock")
-                        } else {
-                            ForEach(sortOptions, id: \.self) { sort in
-                                switch userSettings.sortBy {
-                                case "bar name":
-                                    SpecsListView(text: sort, specs: filteredSpecs.filter { $0.favorite && $0.barName + ", " + $0.barLocation == sort }, sortBy: userSettings.sortBy)
-                                case "type":
-                                    SpecsListView(text: sort.capitalized, specs: filteredSpecs.filter { $0.favorite && $0.type == sort }, sortBy: userSettings.sortBy)
-                                case "glassware":
-                                    SpecsListView(text: sort.capitalized, specs: filteredSpecs.filter { $0.favorite && $0.glassware == sort }, sortBy: userSettings.sortBy)
-                                default:
-                                    EmptyView()
-                                }
-                            }
-                        }
-                    }
-                }
+                // MARK: favorites
+                SpecSuperSectionView(
+                    superSectionName: "Favorites",
+                    subSpecs: filteredSpecs.filter { $0.favorite },
+                    dexHasAny: !dex.specs.filter { $0.favorite }.isEmpty,
+                    collapsed: $userSettings.collapseFavorites
+                )
                 
-                Section(header: HeaderView(text: "All Other Specifications", fontType: .subheadline, imageScale: .large, collapseSection: $userSettings.collapseOthers)) {
-                    if !userSettings.collapseOthers {
-                        if dex.specs.filter { !$0.favorite }.count == 0 {
-                            Text("No specifications")
-                        } else if filteredSpecs.filter { !$0.favorite }.count == 0 {
-                            Text("No specs with all ingredients in stock")
-                        } else {
-                            ForEach(sortOptions, id: \.self) { sort in
-                                switch userSettings.sortBy {
-                                case "bar name":
-                                    SpecsListView(text: sort, specs: filteredSpecs.filter { !$0.favorite && $0.barName + ", " + $0.barLocation == sort }, sortBy: userSettings.sortBy)
-                                case "type":
-                                    SpecsListView(text: sort.capitalized, specs: filteredSpecs.filter { !$0.favorite && $0.type == sort }, sortBy: userSettings.sortBy)
-                                case "glassware":
-                                    SpecsListView(text: sort.capitalized, specs: filteredSpecs.filter { !$0.favorite && $0.glassware == sort }, sortBy: userSettings.sortBy)
-                                default:
-                                    EmptyView()
-                                }
-                            }
-                        }
-                    }
-                }
+                // MARK: not-favorites
+                SpecSuperSectionView(
+                    superSectionName: "Specs",
+                    subSpecs: filteredSpecs.filter { !$0.favorite },
+                    dexHasAny: !dex.specs.filter { !$0.favorite }.isEmpty,
+                    collapsed: $userSettings.collapseOthers
+                )
             }
             .navigationBarTitle("Specifications")
+            .add(searchBar)
             .toolbar {
-                // show or hide specifications with missing ingredients
                 ToolbarItem(placement: .bottomBar) {
-                    Button(action: {
-                        withAnimation { userSettings.hideIncomplete.toggle() }
-                        impactGenerator.impactOccurred()
-                    }) {
-                        Image(systemName: userSettings.hideIncomplete ? "line.horizontal.3.decrease.circle.fill" : "line.horizontal.3.decrease.circle")
-                    }
+                    // MARK: toggle show incomplete
+                    ShowHideButton(setting: $userSettings.hideIncomplete)
                 }
                 
                 ToolbarItem(placement: .bottomBar) { Spacer() }
                 
-                // sort specifications
                 ToolbarItem(placement: .bottomBar) {
-                    Menu {
-                        Picker("Sort by", selection: $userSettings.sortBy) {
-                            ForEach(UserSettings.SortBy.allCases.reversed()) { option in
-                                Text(option.rawValue.capitalized)
-                            }
-                        }
-                    } label: {
-                        // this one in particular needs padding for tapability
-                        Image(systemName: "arrow.up.arrow.down").padding()
-                    }
-                    .onChange(of: userSettings.sortBy) { _ in
-                        selectionGenerator.selectionChanged()
-                    }
+                    // MARK: sort specs menu
+                    SortByMenu(sortBy: $userSettings.specsSort,
+                               options: UserSettings.SpecsSortBy.allCases.map { $0.id })
                 }
                 
                 ToolbarItem(placement: .bottomBar) { Spacer() }
                 
-                // add a new specification
                 ToolbarItem(placement: .bottomBar) {
-                    Button(action: {
-                        showingAdd = true
-                        impactGenerator.impactOccurred()
-                    }) { Image(systemName: "plus") }
+                    // MARK: add spec button
+                    AddButton(showingAdd: $showingAdd)
                 }
             }
             // prevents toolbar from disappearing when navigating
@@ -152,3 +89,77 @@ struct SpecsTabView: View {
         }
     }
 }
+
+// MARK: SpecSuperSectionView
+private struct SpecSuperSectionView: View {
+    @EnvironmentObject var dex: Dex
+    @EnvironmentObject var userSettings: UserSettings
+
+    let superSectionName: String
+    let subSpecs: [Spec]
+    let dexHasAny: Bool
+    @Binding var collapsed: Bool
+    
+    private var subSectionTypes: [String] {
+        // sections to sort specs by
+        switch userSettings.specsSort {
+        case "Bar":
+            return dex.barNamesAndLocations
+        case "Type":
+            return CocktailType.allCases.map { $0.id }
+        case "Glassware":
+            return Glassware.allCases.map { $0.id }
+        default:
+            return []
+        }
+    }
+    
+    var body: some View {
+        Section(
+            header: HeaderView(text: superSectionName,
+                               fontType: .subheadline,
+                               imageScale: .large,
+                               collapseSection: $collapsed)
+        ) {
+            if !collapsed {
+                if subSpecs.isEmpty {
+                    if dexHasAny {
+                        Text("No \(superSectionName.lowercased()) with all ingredients in stock")
+                    } else {
+                        Text("No \(superSectionName.lowercased())")
+                    }
+                } else {
+                    ForEach(subSectionTypes, id: \.self) { subSection in
+                        switch userSettings.specsSort {
+                        case "Bar":
+                            SpecsListView(
+                                text: subSection,
+                                specs: subSpecs.filter { $0.barName + ($0.barLocation.isEmpty ? "" : ", " + $0.barLocation) == subSection }
+                            )
+                        case "Type":
+                            SpecsListView(
+                                text: subSection,
+                                specs: subSpecs.filter { $0.type == subSection }
+                            )
+                        case "Glassware":
+                            SpecsListView(
+                                text: subSection,
+                                specs: subSpecs.filter { $0.glassware == subSection }
+                            )
+                        default:
+                            EmptyView()
+                        }
+                    }
+                    
+                    if userSettings.specsSort == "Bar" {
+                        SpecsListView(
+                            text: "No bar listed",
+                            specs: subSpecs.filter { $0.barName.isEmpty }
+                        )
+                    }
+                }
+            }
+        }
+    }
+}
+

@@ -1,11 +1,12 @@
 //
-//  HeaderView.swift
+//  StackViews.swift
 //  CentralMixBook
 //
 //
 
 import SwiftUI
 
+// MARK: collapsible section header
 struct HeaderView: View {
     let text: String
     let fontType: Font
@@ -25,24 +26,37 @@ struct HeaderView: View {
             
             Image(systemName: "chevron.up")
                 .imageScale(imageScale)
-                .rotation3DEffect(.degrees(rotateAmount), axis: (x: 1, y: 0, z: 0))
+                .rotation3DEffect(
+                    .degrees(rotateAmount),
+                    axis: (x: 1, y: 0, z: 0)
+                )
         }
         // makes the whole HStack tappable, including the blank areas
         .contentShape(Rectangle())
         .onTapGesture {
             withAnimation {
-                generator.impactOccurred()
                 collapseSection.toggle()
-                rotateAmount = (rotateAmount + 180).truncatingRemainder(dividingBy: 360)
+                rotateAmount = collapseSection ? 180 : 0
+                generator.impactOccurred()
             }
         }
     }
 }
 
-struct HeaderView_Previews: PreviewProvider {
-    @State static var collapseSection = false
+// MARK: multi-line text input
+struct MultiLineTextInput: View {
+    let title: String
+    @Binding var text: String
     
-    static var previews: some View {
-        HeaderView(text: "Example", fontType: .body, imageScale: .medium, collapseSection: $collapseSection)
+    var body: some View {
+        ZStack(alignment: .leading) {
+            if text.isEmpty {
+                Text(title)
+                    .foregroundColor(.secondary)
+                    .padding(.leading, 4)
+            }
+            
+            TextEditor(text: $text)
+        }
     }
 }
